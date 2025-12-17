@@ -2,6 +2,7 @@
 import { createTheme, MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 import React from "react";
+import { QueryProvider } from "./query-provider";
 
 // Styles
 import "@mantine/core/styles.css";
@@ -17,9 +18,11 @@ const theme = createTheme({
 
 export const AppProvider = ({ children }: AppProviderProps) => {
   return (
-    <MantineProvider theme={theme}>
-      <Notifications autoClose={4000} position="top-right" />
-      {children}
-    </MantineProvider>
+    <QueryProvider>
+      <MantineProvider theme={theme}>
+        <Notifications autoClose={4000} position="top-right" />
+        {children}
+      </MantineProvider>
+    </QueryProvider>
   );
 };

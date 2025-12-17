@@ -1,6 +1,6 @@
 "use client";
 
-import { AppProvider } from "@/components/providers/app-provider";
+import { AppProvider } from "@/providers/app-provider";
 import {
   Button,
   Container,
