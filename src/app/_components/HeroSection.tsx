@@ -29,7 +29,7 @@ export function HeroSection() {
         </Button>
         <Button
           component={Link}
-          href="/dashboard"
+          href="/home"
           size="lg"
           variant="default"
           leftSection={<IconDashboard size={20} />}
