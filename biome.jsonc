@@ -56,7 +56,8 @@
       },
       "suspicious": {
         "noExplicitAny": "error",
-        "noEmptyBlockStatements": "error"
+        "noEmptyBlockStatements": "error",
+        "noArrayIndexKey": "warn"
       },
       "complexity": {
         "noExtraBooleanCast": "error",

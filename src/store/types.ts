@@ -1,8 +1,10 @@
 export interface LocalStoreState {
   count: number;
+  preferredCurrency: string;
   increment: () => void;
   decrement: () => void;
   reset: () => void;
+  setPreferredCurrency: (currency: string) => void;
 }
 
 export interface SessionStoreState {

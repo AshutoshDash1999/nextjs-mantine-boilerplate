@@ -6,6 +6,7 @@ export const useLocalStore = create<LocalStoreState>()(
   persist(
     (set) => ({
       count: 0,
+      preferredCurrency: "usd",
       increment: () =>
         set((state) => ({
           count: state.count + 1,
@@ -17,6 +18,10 @@ export const useLocalStore = create<LocalStoreState>()(
       reset: () =>
         set({
           count: 0,
+        }),
+      setPreferredCurrency: (currency: string) =>
+        set({
+          preferredCurrency: currency,
         }),
     }),
     {
