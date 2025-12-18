@@ -23,35 +23,35 @@ const TOOLS = [
     title: "React 19",
     description:
       "Future-ready with Actions, Optimistic UI updates, and the React Compiler.",
-    color: "blue",
+    color: "blue.6",
   },
   {
     icon: IconBolt,
     title: "Biome",
     description:
       "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue.",
-    color: "yellow",
+    color: "yellow.6",
   },
   {
     icon: IconBrandTypescript,
     title: "TypeScript 5",
     description:
       "Latest type safety features to catch errors early and improve maintainability.",
-    color: "blue",
+    color: "blue.6",
   },
   {
     icon: IconDatabase,
     title: "Zustand",
     description:
       "A small, fast, and scalable bearbones state-management solution.",
-    color: "orange",
+    color: "orange.6",
   },
   {
     icon: IconBrandGit,
     title: "Husky & Commitlint",
     description:
       "Ensures all commits meet standard conventions and code quality checks before pushing.",
-    color: "red",
+    color: "red.6",
   },
 ];
 
@@ -78,8 +78,8 @@ export function ModernTooling() {
       >
         {TOOLS.map((tool) => (
           <Group key={tool.title} wrap="nowrap" align="flex-start">
-            <ThemeIcon size={24} radius="md" variant="light" color={tool.color}>
-              <tool.icon size={14} />
+            <ThemeIcon radius="md" variant="light" color={tool.color}>
+              <tool.icon />
             </ThemeIcon>
             <div>
               <Text size="md" fw={600}>

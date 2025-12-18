@@ -30,7 +30,6 @@ export function UsageInstructions() {
         <List
           spacing="md"
           size="md"
-          center
           icon={
             <ThemeIcon color="teal" size={24} radius="xl">
               <IconCheck size={16} />

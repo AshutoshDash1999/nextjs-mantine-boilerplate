@@ -1,4 +1,4 @@
-import { mantineHtmlProps } from "@mantine/core";
+import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { AppProvider } from "@/providers/app-provider";
@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" {...mantineHtmlProps}>
+      <head>
+        <ColorSchemeScript defaultColorScheme="auto" />
+      </head>
       <body className={`${nunito.variable}`}>
         <AppProvider>{children}</AppProvider>
       </body>
