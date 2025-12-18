@@ -3,7 +3,7 @@
 import { Card, Center, Stack, Text, Title } from "@mantine/core";
 import { IconChartLine } from "@tabler/icons-react";
 
-export function PortfolioPage() {
+function PortfolioPage() {
   return (
     <Stack gap="md" p="md">
       <Title order={2}>Portfolio</Title>
@@ -28,3 +28,5 @@ export function PortfolioPage() {
     </Stack>
   );
 }
+
+export default PortfolioPage;

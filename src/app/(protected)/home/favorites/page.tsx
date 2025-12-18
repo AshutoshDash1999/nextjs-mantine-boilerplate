@@ -3,7 +3,7 @@
 import { Card, Center, Stack, Text, Title } from "@mantine/core";
 import { IconStar } from "@tabler/icons-react";
 
-export function FavoritesPage() {
+function FavoritesPage() {
   return (
     <Stack gap="md" p="md">
       <Title order={2}>Favorites</Title>
@@ -23,3 +23,5 @@ export function FavoritesPage() {
     </Stack>
   );
 }
+
+export default FavoritesPage;

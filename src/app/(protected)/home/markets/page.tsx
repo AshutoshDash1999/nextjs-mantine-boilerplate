@@ -13,12 +13,13 @@ import {
 } from "@mantine/core";
 import { useState } from "react";
 import { useMarkets } from "@/api/hooks";
+import { useLocalStore } from "@/store";
 import { formatCurrency, formatPercentage } from "@/utils/format";
 import { MarketsSkeleton } from "./_components/skeleton-loader";
 
-export default function MarketsPage() {
+function MarketsPage() {
   const [page, setPage] = useState(1);
-  const [vsCurrency, setVsCurrency] = useState("usd");
+  const { preferredCurrency } = useLocalStore();
   const [order, setOrder] = useState<
     | "market_cap_desc"
     | "gecko_desc"
@@ -30,7 +31,7 @@ export default function MarketsPage() {
     | "id_desc"
   >("market_cap_desc");
   const { coins, isLoading } = useMarkets({
-    vs_currency: vsCurrency,
+    vs_currency: preferredCurrency,
     order,
     per_page: 20,
     page,
@@ -54,7 +55,9 @@ export default function MarketsPage() {
         </Group>
       </Table.Td>
       <Table.Td>
-        <Text fw={500}>{formatCurrency(coin.current_price, vsCurrency)}</Text>
+        <Text fw={500}>
+          {formatCurrency(coin.current_price, preferredCurrency)}
+        </Text>
       </Table.Td>
       <Table.Td>
         <Badge
@@ -65,10 +68,14 @@ export default function MarketsPage() {
         </Badge>
       </Table.Td>
       <Table.Td>
-        <Text size="sm">{formatCurrency(coin.market_cap, vsCurrency)}</Text>
+        <Text size="sm">
+          {formatCurrency(coin.market_cap, preferredCurrency)}
+        </Text>
       </Table.Td>
       <Table.Td>
-        <Text size="sm">{formatCurrency(coin.total_volume, vsCurrency)}</Text>
+        <Text size="sm">
+          {formatCurrency(coin.total_volume, preferredCurrency)}
+        </Text>
       </Table.Td>
       <Table.Td>
         <Text size="sm">#{coin.market_cap_rank}</Text>
@@ -81,29 +88,6 @@ export default function MarketsPage() {
       <Group justify="space-between">
         <Title order={2}>Cryptocurrency Markets</Title>
         <Group>
-          <Select
-            value={vsCurrency}
-            onChange={(value) => setVsCurrency(value || "usd")}
-            data={[
-              {
-                value: "usd",
-                label: "USD",
-              },
-              {
-                value: "eur",
-                label: "EUR",
-              },
-              {
-                value: "btc",
-                label: "BTC",
-              },
-              {
-                value: "eth",
-                label: "ETH",
-              },
-            ]}
-            w={100}
-          />
           <Select
             value={order}
             onChange={(value) =>
@@ -146,3 +130,5 @@ export default function MarketsPage() {
     </Stack>
   );
 }
+
+export default MarketsPage;

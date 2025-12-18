@@ -14,7 +14,7 @@ import {
 import { useTrending } from "@/api/hooks";
 import { TrendingSkeleton } from "./_components/skeleton-loader";
 
-export function TrendingPage() {
+function TrendingPage() {
   const { trendingCoins, isLoading } = useTrending();
 
   if (isLoading) {
@@ -86,3 +86,5 @@ export function TrendingPage() {
     </Stack>
   );
 }
+
+export default TrendingPage;
