@@ -2,6 +2,7 @@ import { Container } from "@mantine/core";
 import {
   HeroSection,
   ModernTooling,
+  QuickLinks,
   ThemeToggle,
   UsageInstructions,
   WhyUseTemplate,
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <WhyUseTemplate />
       <ModernTooling />
+      <QuickLinks />
       <UsageInstructions />
     </Container>
   );

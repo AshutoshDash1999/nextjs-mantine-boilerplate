@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Anchor,
   Button,
@@ -10,10 +12,21 @@ import {
   TextInput,
   Title,
 } from "@mantine/core";
+import { IconArrowLeft } from "@tabler/icons-react";
+import Link from "next/link";
 
-export function LoginPage() {
+function LoginPage() {
   return (
-    <Container size="lg" my={40}>
+    <Container size="md" my={40}>
+      <Button
+        component={Link}
+        href="/"
+        variant="subtle"
+        leftSection={<IconArrowLeft size={16} />}
+        mb="lg"
+      >
+        Back to Home
+      </Button>
       <Title ta="center" order={2} fw={500}>
         Welcome back!
       </Title>
@@ -49,3 +62,5 @@ export function LoginPage() {
     </Container>
   );
 }
+
+export default LoginPage;
