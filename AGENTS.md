@@ -1,10 +1,10 @@
-# Agent Guidelines for CoinGecko Dashboard
+# Agent Guidelines for Next.js Mantine Boilerplate
 
 This document provides essential information for AI coding assistants working on this project.
 
 ## 📋 Project Overview
 
-**CoinGecko Dashboard** is a modern cryptocurrency dashboard built with:
+**Next.js Mantine Boilerplate** is a modern, production-ready boilerplate built with:
 
 - **Next.js 16** (App Router) - React framework
 - **React 19** with React Compiler enabled

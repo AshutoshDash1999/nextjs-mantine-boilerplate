@@ -1,16 +1,38 @@
-# CoinGecko Dashboard
+# Nextjs Mantine Boilerplate
 
-A modern, feature-rich cryptocurrency dashboard built with Next.js 16, React 19, and Mantine UI. This application provides real-time cryptocurrency market data, trending coins, and a beautiful user interface for tracking your favorite cryptocurrencies.
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-16.0.10-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![Mantine](https://img.shields.io/badge/Mantine-8.3.10-339AF0?style=for-the-badge&logo=mantine&logoColor=white)
+![Node](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Biome](https://img.shields.io/badge/Biome-2.2.0-60C5BA?style=for-the-badge&logo=biome&logoColor=white)
+![License](https://img.shields.io/badge/License-Private-red?style=for-the-badge)
+
+</div>
+
+A modern, production-ready boilerplate for building web applications with Next.js 16, React 19, and Mantine UI v8. This template includes everything you need to kickstart your project with best practices, TypeScript, state management, and a beautiful UI component library.
+
+**Perfect for:** Building dashboards, admin panels, SaaS applications, and modern web apps.
 
 ## 🚀 Features
 
-- **Real-time Market Data**: View current cryptocurrency prices, market cap, volume, and 24h changes
-- **Trending Coins**: Discover the most trending cryptocurrencies on CoinGecko
-- **Currency Preferences**: Switch between multiple currencies (USD, EUR, GBP, JPY, BTC, ETH) with persistent storage
-- **Dark/Light Theme**: Toggle between light and dark themes with system preference support
-- **Responsive Design**: Fully responsive layout that works on all devices
-- **Skeleton Loaders**: Smooth loading states for better user experience
-- **Error Handling**: Comprehensive error boundaries and user-friendly error pages
+- **⚡ Next.js 16 App Router**: Latest Next.js features with App Router architecture
+- **⚛️ React 19**: Cutting-edge React with React Compiler enabled
+- **🎨 Mantine UI v8**: Beautiful, accessible components out of the box
+- **📘 TypeScript**: Full type safety throughout the codebase
+- **🗄️ State Management**:
+  - Zustand for client-side global state
+  - TanStack Query for server state and API calls
+- **🌓 Theme Support**: Dark/light mode with system preference detection
+- **📱 Responsive Design**: Mobile-first, fully responsive layouts
+- **⚙️ Developer Experience**:
+  - Biome for fast linting and formatting
+  - Husky + lint-staged for Git hooks
+  - Conventional commits with commitlint
+  - TypeScript strict mode
+- **🎯 Best Practices**: Error boundaries, skeleton loaders, and optimized performance
 
 ## 🛠️ Tech Stack
 
@@ -22,7 +44,6 @@ A modern, feature-rich cryptocurrency dashboard built with Next.js 16, React 19,
   - [TanStack Query](https://tanstack.com/query) for server state
 - **API Client**: [react-query-ease](https://www.npmjs.com/package/react-query-ease)
 - **Icons**: [Tabler Icons](https://tabler.io/icons)
-- **Data Source**: [CoinGecko API](https://www.coingecko.com/en/api)
 - **Linting/Formatting**: [Biome](https://biomejs.dev/)
 - **Git Hooks**: Husky + lint-staged
 
@@ -38,7 +59,7 @@ A modern, feature-rich cryptocurrency dashboard built with Next.js 16, React 19,
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AshutoshDash1999/nextjs-mantine-boilerplate.git
 cd nextjs-mantine-boilerplate
 ```
 
@@ -52,20 +73,13 @@ yarn install
 pnpm install
 ```
 
-3. Set up environment variables:
+3. Set up environment variables (if needed):
 
 ```bash
 cp env.example .env.local
 ```
 
-Edit `.env.local` and add your CoinGecko API credentials (optional for demo API):
-
-```env
-NEXT_PUBLIC_COINGECKO_API_KEY=your_api_key_here
-NEXT_PUBLIC_COINGECKO_API_URL=https://api.coingecko.com/api/v3
-```
-
-**Note**: The app works with CoinGecko's free API without an API key, but rate limits apply. For production use, consider obtaining an API key.
+Edit `.env.local` and add any required environment variables for your project.
 
 4. Run the development server:
 
@@ -126,48 +140,45 @@ src/
 - `npm run format` - Format code with Biome
 - `npm run analyze` - Analyze bundle size
 
-## 🎨 Features in Detail
+## 🎨 What's Included
 
-### Dashboard Pages
+### Project Structure
 
-- **Markets**: Browse cryptocurrency markets with sorting, filtering, and pagination
-- **Trending**: View trending coins with scores and market rankings
-- **Favorites**: Save and manage your favorite cryptocurrencies (coming soon)
-- **Portfolio**: Track your cryptocurrency portfolio (coming soon)
+- **App Router Setup**: Next.js 16 App Router with route groups
+- **Protected Routes**: Example protected route layout with AppShell
+- **API Routes**: Next.js API route handlers
+- **Component Organization**: Well-structured component hierarchy
+- **State Management**: Zustand stores and TanStack Query hooks
+- **Utilities**: Formatting, date manipulation, and API helpers
 
-### Header Features
+### Example Features
 
-- Currency selector with persistent preferences
-- Theme toggle (light/dark/system)
-- User menu with profile, settings, and logout options
-
-### Sidebar Navigation
-
-- Quick navigation between dashboard sections
-- Active route highlighting
-- Responsive design with mobile breakpoint
+- **Dashboard Layout**: AppShell with header and sidebar
+- **Theme Toggle**: Switch between light/dark/system themes
+- **Error Handling**: Global error boundary and not-found pages
+- **Loading States**: Skeleton loaders for better UX
+- **Type Safety**: Full TypeScript coverage
 
 ## 🔧 Configuration
 
 ### Environment Variables
 
-- `NEXT_PUBLIC_COINGECKO_API_KEY`: CoinGecko API key (optional)
-- `NEXT_PUBLIC_COINGECKO_API_URL`: CoinGecko API base URL (defaults to public API)
+Create a `.env.local` file based on `env.example` and add your environment variables. All public variables must be prefixed with `NEXT_PUBLIC_`.
 
 ### Theme Configuration
 
-The app uses Mantine's theme system. You can customize the theme in `src/providers/app-provider.tsx`.
+The app uses Mantine's theme system. You can customize the theme in `src/providers/app-provider.tsx`:
 
-## 🌐 API Integration
+```typescript
+const theme = createTheme({
+  fontFamily: "var(--font-nunito), sans-serif",
+  // Add your customizations here
+});
+```
 
-The application uses the CoinGecko API for cryptocurrency data. Available endpoints:
+### API Integration
 
-- `/coins/markets` - Get market data
-- `/trending` - Get trending coins
-- `/coins/{id}` - Get coin details
-- `/simple/price` - Get simple price data
-
-All API calls are handled through custom React Query hooks in `src/api/hooks/useCoinGecko.ts`.
+The boilerplate includes example API hooks using TanStack Query. Customize `src/api/config.ts` and `src/api/hooks/` for your API needs.
 
 ## 🎯 Best Practices
 
@@ -184,11 +195,188 @@ This project is private and proprietary.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to the Next.js Mantine Boilerplate! This document provides guidelines and instructions for contributing to the project.
+
+### Getting Started
+
+1. **Fork the repository** and clone your fork:
+
+   ```bash
+   git clone https://github.com/AshutoshDash1999/nextjs-mantine-boilerplate.git
+   cd nextjs-mantine-boilerplate
+   ```
+
+   Or if you've already forked it, clone your fork:
+
+   ```bash
+   git clone https://github.com/<YOUR-USERNAME>/nextjs-mantine-boilerplate.git
+   cd nextjs-mantine-boilerplate
+   ```
+
+2. **Create a branch** for your changes:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   # or
+   git checkout -b fix/your-bug-fix
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Make your changes** following our coding standards (see below)
+
+5. **Test your changes**:
+
+   ```bash
+   npm run lint
+   npm run build
+   ```
+
+6. **Commit your changes** using conventional commits:
+
+   ```bash
+   git commit -m "feat: add new feature"
+   # or
+   git commit -m "fix: resolve bug in component"
+   ```
+
+7. **Push to your fork** and open a Pull Request
+
+### Coding Standards
+
+#### TypeScript
+
+- Always use TypeScript with proper typing
+- Avoid using `any` type - use `unknown` or proper types instead
+- Use type inference when appropriate, but be explicit for function parameters and return types
+
+#### React Patterns
+
+- Use `"use client"` directive for all interactive components
+- Keep components focused and single-purpose
+- Use custom hooks for reusable logic
+- Prefer named exports for components
+
+#### Mantine v8
+
+- **Always use Mantine v8 patterns** - check [Mantine v8 docs](https://mantine.dev/)
+- Use component props for styling when possible
+- Follow Mantine's spacing and color systems
+- Use responsive props for mobile-first design
+
+#### File Organization
+
+- Co-locate related components in the same directory
+- Use `_components/` folders for page-specific components
+- Keep shared components in `src/app/_components/` or `src/components/`
+- Export components through `index.ts` files
+
+#### State Management
+
+- Use **Zustand** for client-side global state
+- Use **TanStack Query** for server state and API calls
+- Keep state as local as possible
+
+#### Code Quality
+
+- Run `npm run lint` before committing
+- Run `npm run format` to auto-format code
+- Ensure all TypeScript errors are resolved
+- Write self-documenting code with clear variable names
+
+### Commit Message Guidelines
+
+We follow [Conventional Commits](https://www.conventionalcommits.org/):
+
+- `feat:` - New feature
+- `fix:` - Bug fix
+- `docs:` - Documentation changes
+- `style:` - Code style changes (formatting, etc.)
+- `refactor:` - Code refactoring
+- `perf:` - Performance improvements
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks
+
+Examples:
+
+```
+feat: add currency selector to dashboard header
+fix: resolve navigation issue in not-found page
+docs: update contribution guidelines
+refactor: extract API hooks into separate file
+```
+
+### Pull Request Process
+
+1. **Update documentation** if you've changed functionality
+2. **Add tests** if applicable (we're working on adding a test suite)
+3. **Ensure the build passes**: `npm run build`
+4. **Ensure linting passes**: `npm run lint`
+5. **Update the CHANGELOG** if applicable
+6. **Link related issues** in your PR description
+7. **Request review** from maintainers
+
+### PR Template
+
+When opening a PR, please fill out the template with:
+
+- Description of changes
+- Type of change (feature, bug fix, etc.)
+- Testing instructions
+- Screenshots (if UI changes)
+- Checklist of completed items
+
+### Development Workflow
+
+1. **Before starting work**, check existing issues and PRs to avoid duplicate work
+2. **Create an issue** first for significant changes to discuss the approach
+3. **Keep PRs focused** - one feature or fix per PR
+4. **Keep PRs small** - break large changes into smaller, reviewable PRs
+5. **Respond to feedback** promptly and be open to suggestions
+
+### Reporting Bugs
+
+When reporting bugs, please use the bug report template and include:
+
+- Clear description of the issue
+- Steps to reproduce
+- Expected vs actual behavior
+- Environment details (OS, browser, Node version)
+- Screenshots if applicable
+
+### Suggesting Features
+
+When suggesting features, please use the feature request template and include:
+
+- Clear description of the feature
+- Use case and motivation
+- Proposed implementation (if you have ideas)
+- Alternatives considered
+
+### Code Review
+
+- All PRs require at least one approval before merging
+- Be respectful and constructive in reviews
+- Address feedback promptly
+- Ask questions if something is unclear
+
+### Questions?
+
+If you have questions about contributing:
+
+- Open a discussion in GitHub Discussions
+- Ask in an issue with the `question` label
+- Check existing documentation in `AGENTS.md`
+
+Thank you for contributing! 🎉
 
 ## 📧 Support
 
-For support, please open an issue in the repository.
+For support, please open an issue in the repository using the appropriate template.
 
 ---
 

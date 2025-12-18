@@ -61,7 +61,7 @@ const LINKS = [
     icon: IconBrandGithub,
     label: "Repository",
     description: "View the source code for this template",
-    href: "https://github.com",
+    href: "https://github.com/AshutoshDash1999/nextjs-mantine-boilerplate",
     color: "gray.9",
   },
 ];
