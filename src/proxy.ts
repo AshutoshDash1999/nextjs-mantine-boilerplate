@@ -1,3 +1,9 @@
+// Use this file to add route restrictions
+
+import { NextRequest, NextResponse } from "next/server";
+
+
+
 // import { NextResponse } from 'next/server';
 // import type { NextRequest } from 'next/server';
 
@@ -7,7 +13,7 @@
 // // Define routes that are for unauthenticated users only
 // const authRoutes = ['/', '/login', '/register'];
 
-// export function middleware(request: NextRequest) {
+// export function proxy(request: NextRequest) {
 //   // Get the token from cookies (adjust cookie name as needed)
 //   const token = request.cookies.get('access_token')?.value;
 //   const { pathname } = request.nextUrl;
@@ -41,3 +47,7 @@
 //     '/((?!api|_next/static|_next/image|favicon.ico).*)',
 //   ],
 // };
+
+export function proxy(request: NextRequest) {
+  return NextResponse.next();
+}
