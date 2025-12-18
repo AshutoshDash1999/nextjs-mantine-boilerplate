@@ -1,4 +1,4 @@
-import { Container, Skeleton, Stack, SimpleGrid } from "@mantine/core";
+import { Container, SimpleGrid, Skeleton, Stack } from "@mantine/core";
 
 function Loading() {
   return (
@@ -13,17 +13,35 @@ function Loading() {
 
         {/* Content Cards Skeleton */}
         <Stack gap="md">
-          {[1, 2, 3].map((item) => (
+          {[
+            1,
+            2,
+            3,
+          ].map((item) => (
             <Skeleton key={item} height={180} radius="md" />
           ))}
         </Stack>
 
         {/* Grid Skeleton for Cards */}
         <SimpleGrid
-          cols={{ base: 1, sm: 2, md: 3 }}
-          spacing={{ base: "md", md: "xl" }}
+          cols={{
+            base: 1,
+            sm: 2,
+            md: 3,
+          }}
+          spacing={{
+            base: "md",
+            md: "xl",
+          }}
         >
-          {[1, 2, 3, 4, 5, 6].map((item) => (
+          {[
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+          ].map((item) => (
             <Stack key={item} gap="sm">
               <Skeleton height={160} radius="md" />
               <Skeleton height={24} width="85%" radius="md" />
