@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --write --no-errors-on-unmatched --colors=off"
+    ]
   },
   "dependencies": {
     "@mantine/core": "^8.3.10",
@@ -27,10 +33,14 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "typescript": "^5"
   }
 }
