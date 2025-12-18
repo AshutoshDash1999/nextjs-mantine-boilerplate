@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write",
+    "analyze": "cross-env ANALYZE=true next build",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -36,11 +37,13 @@
     "@biomejs/biome": "2.2.0",
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^20.2.0",
+    "@next/bundle-analyzer": "^16.0.10",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "cross-env": "^10.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "typescript": "^5"
