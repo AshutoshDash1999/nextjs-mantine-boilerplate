@@ -1,6 +1,5 @@
 "use client";
 
-import { AppProvider } from "@/providers/app-provider";
 import {
   Button,
   Container,
@@ -10,17 +9,19 @@ import {
   ThemeIcon,
   Title,
 } from "@mantine/core";
+import { AppProvider } from "@/providers/app-provider";
 import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
 import { IconAlertCircle, IconHome } from "@tabler/icons-react";
 import type { Metadata } from "next";
-import { Nunito, Poppins } from "next/font/google";
-import Link from "next/link";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
 const nunito = Nunito({
   variable: "--font-nunito",
-  subsets: ["latin"],
+  subsets: [
+    "latin",
+  ],
 });
 
 export const metadata: Metadata = {
@@ -59,11 +60,12 @@ export default function GlobalNotFound() {
                 </Stack>
 
                 <Button
-                  component={Link}
-                  href="/"
                   size="lg"
                   leftSection={<IconHome size={20} />}
                   mt="md"
+                  onClick={() => {
+                    window.location.href = "/";
+                  }}
                 >
                   Go Back Home
                 </Button>

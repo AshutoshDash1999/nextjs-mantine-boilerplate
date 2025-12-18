@@ -1,11 +1,14 @@
+import { mantineHtmlProps } from "@mantine/core";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import "./globals.css";
 import { AppProvider } from "@/providers/app-provider";
+import "./globals.css";
 
 const nunito = Nunito({
   variable: "--font-nunito",
-  subsets: ["latin"],
+  subsets: [
+    "latin",
+  ],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" {...mantineHtmlProps}>
       <body className={`${nunito.variable}`}>
         <AppProvider>{children}</AppProvider>
       </body>
