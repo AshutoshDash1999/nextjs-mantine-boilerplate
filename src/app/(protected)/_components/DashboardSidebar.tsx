@@ -10,7 +10,11 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function DashboardSidebar() {
+interface DashboardSidebarProps {
+  onItemClick?: () => void;
+}
+
+export function DashboardSidebar({ onItemClick }: DashboardSidebarProps) {
   const pathname = usePathname();
 
   const navItems = [
@@ -42,7 +46,7 @@ export function DashboardSidebar() {
 
   return (
     <Stack gap={0} w={250} h="100%">
-      <Stack gap={4} p="md">
+      <Stack gap={4} p={onItemClick ? 0 : "md"}>
         {navItems.map((item) => (
           <NavLink
             key={item.id}
@@ -54,6 +58,7 @@ export function DashboardSidebar() {
               pathname === item.href ||
               (pathname === "/home" && item.id === "markets")
             }
+            onClick={onItemClick}
           />
         ))}
       </Stack>

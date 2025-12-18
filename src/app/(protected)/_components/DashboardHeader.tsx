@@ -4,6 +4,7 @@ import {
   ActionIcon,
   Avatar,
   Box,
+  Burger,
   Group,
   Menu,
   Select,
@@ -11,7 +12,9 @@ import {
   UnstyledButton,
   useComputedColorScheme,
   useMantineColorScheme,
+  useMantineTheme,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import {
   IconLogout,
   IconMoon,
@@ -48,18 +51,36 @@ const currencies = [
   },
 ];
 
-export function DashboardHeader() {
+interface DashboardHeaderProps {
+  onBurgerClick: () => void;
+  drawerOpened: boolean;
+}
+
+export function DashboardHeader({
+  onBurgerClick,
+  drawerOpened,
+}: DashboardHeaderProps) {
   const { setColorScheme } = useMantineColorScheme();
   const computedColorScheme = useComputedColorScheme("light", {
     getInitialValueInEffect: true,
   });
+  const theme = useMantineTheme();
 
   const { preferredCurrency, setPreferredCurrency } = useLocalStore();
+  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
   return (
     <Box h="100%" px="md">
       <Group h="100%" justify="space-between">
         <Group gap="md">
+          {isMobile && (
+            <Burger
+              opened={drawerOpened}
+              onClick={onBurgerClick}
+              size="sm"
+              aria-label="Toggle navigation"
+            />
+          )}
           <Text fw={600} size="lg">
             CoinGecko Dashboard
           </Text>
@@ -74,20 +95,24 @@ export function DashboardHeader() {
             size="sm"
           />
 
-          <ActionIcon
-            onClick={() =>
-              setColorScheme(computedColorScheme === "light" ? "dark" : "light")
-            }
-            variant="default"
-            size="lg"
-            aria-label="Toggle color scheme"
-          >
-            {computedColorScheme === "dark" ? (
-              <IconSun stroke={1.5} size={18} />
-            ) : (
-              <IconMoon stroke={1.5} size={18} />
-            )}
-          </ActionIcon>
+          {!isMobile && (
+            <ActionIcon
+              onClick={() =>
+                setColorScheme(
+                  computedColorScheme === "light" ? "dark" : "light"
+                )
+              }
+              variant="default"
+              size="lg"
+              aria-label="Toggle color scheme"
+            >
+              {computedColorScheme === "dark" ? (
+                <IconSun stroke={1.5} size={18} />
+              ) : (
+                <IconMoon stroke={1.5} size={18} />
+              )}
+            </ActionIcon>
+          )}
 
           <Menu shadow="md" width={200} position="bottom-end">
             <Menu.Target>
@@ -99,6 +124,30 @@ export function DashboardHeader() {
             </Menu.Target>
 
             <Menu.Dropdown>
+              {isMobile && (
+                <>
+                  <Menu.Label>Theme</Menu.Label>
+                  <Menu.Item
+                    onClick={() =>
+                      setColorScheme(
+                        computedColorScheme === "light" ? "dark" : "light"
+                      )
+                    }
+                    leftSection={
+                      computedColorScheme === "dark" ? (
+                        <IconSun size={16} />
+                      ) : (
+                        <IconMoon size={16} />
+                      )
+                    }
+                  >
+                    {computedColorScheme === "dark"
+                      ? "Light Mode"
+                      : "Dark Mode"}
+                  </Menu.Item>
+                  <Menu.Divider />
+                </>
+              )}
               <Menu.Label>Account</Menu.Label>
               <Menu.Item leftSection={<IconUser size={16} />}>
                 Profile
