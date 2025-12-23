@@ -1,0 +1,181 @@
+{
+  "common": {
+    "signIn": "Sign In",
+    "startChatting": "Start Chatting Now",
+    "startAnalysis": "Start Legal Analysis",
+    "view": "View",
+    "preview": "Preview",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading",
+    "thinking": "Thinking...",
+    "language": "Language",
+    "theme": "Theme",
+    "account": "Account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "backToHome": "Back to Home",
+    "goBackHome": "Go Back Home",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "rename": "Rename"
+  },
+  "hero": {
+    "title": "Verdict.ai",
+    "subtitle": "Your intelligent legal assistant powered by AI. Analyze contracts, review documents, get legal insights, and draft agreements—all in one place."
+  },
+  "features": {
+    "title": "Powerful Legal Tools at Your Fingertips",
+    "subtitle": "Everything you need to handle legal documents and get answers to your legal questions.",
+    "documentAnalysis": {
+      "title": "Document Analysis",
+      "description": "Upload PDF documents and get instant analysis of contracts, agreements, and legal documents."
+    },
+    "legalQA": {
+      "title": "Legal Q&A",
+      "description": "Ask any legal question and receive comprehensive answers powered by advanced AI technology."
+    },
+    "voiceInput": {
+      "title": "Voice Input",
+      "description": "Speak your questions naturally using voice-to-text technology for a seamless experience."
+    },
+    "contractReview": {
+      "title": "Contract Review",
+      "description": "Get detailed reviews of contracts with highlighted risks, key terms, and recommendations."
+    },
+    "securePrivate": {
+      "title": "Secure & Private",
+      "description": "Your documents and conversations are handled with the highest security standards."
+    },
+    "availability": {
+      "title": "24/7 Availability",
+      "description": "Access legal assistance anytime, anywhere. No appointments needed."
+    },
+    "documentDrafting": {
+      "title": "Document Drafting",
+      "description": "Generate complete legal documents including notices, agreements, petitions, and contracts with proper formatting and legal clauses."
+    },
+    "contextAwareSuggestions": {
+      "title": "Smart Suggestions",
+      "description": "Get context-aware follow-up questions and suggestions based on your conversation history for seamless interactions."
+    },
+    "redditParsing": {
+      "title": "Reddit Integration",
+      "description": "Parse and analyze Reddit posts for legal insights and discussions, making it easy to get legal advice from community discussions."
+    },
+    "downloadDocx": {
+      "title": "Export Documents",
+      "description": "Download your legal documents and chat responses as Word files (DOCX) for easy sharing and offline access."
+    },
+    "indianLawFocus": {
+      "title": "Indian Law Specialized",
+      "description": "Exclusively focused on Indian laws, acts, statutes, and legal procedures with accurate legal terminology and references."
+    },
+    "multiLanguage": {
+      "title": "Multi-Language Support",
+      "description": "Get legal assistance in English, Hindi, Telugu, and Odia with proper legal terminology in your preferred language."
+    },
+    "themeSupport": {
+      "title": "Theme Customization",
+      "description": "Switch between light and dark themes with automatic system preference detection for comfortable viewing."
+    }
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "description": "Join thousands of users who trust Verdict.ai for their legal document analysis and legal questions. Start your first analysis today."
+  },
+  "chat": {
+    "welcomeMessage": "Hello! I am your Verdict.ai assistant specializing in Indian laws. How can I help you with your legal questions today?",
+    "placeholder": "Ask your legal question...",
+    "getStartedWith": "Get started with:",
+    "suggestions": "Suggestions:",
+    "defaultPrompts": {
+      "contractAct": "What are the key provisions of the Indian Contract Act?",
+      "filingCase": "Explain the procedure for filing a case in Indian courts",
+      "consumerRights": "What are my rights under the Consumer Protection Act?",
+      "criminalOffenses": "How does the Indian Penal Code define criminal offenses?",
+      "propertyRegistration": "What is the process for property registration in India?"
+    },
+    "errorMessages": {
+      "generic": "I apologize, but I encountered an error processing your request. Please try again or rephrase your question.",
+      "failedToGetResponse": "Failed to get response. Please try again.",
+      "permissionDenied": "Permission denied",
+      "permissionDeniedMessage": "Please allow microphone access to use speech-to-text. Check your browser settings if blocked.",
+      "invalidFileType": "Invalid file type",
+      "invalidFileTypeMessage": "Please upload a PDF file.",
+      "fileTooLarge": "File too large",
+      "fileTooLargeMessage": "File size must be less than 2MB.",
+      "fileAttached": "File attached",
+      "fileAttachedMessage": "{{fileName}} is ready to be sent.",
+      "pdfExtractionFailed": "Failed to extract text from PDF. Please try again.",
+      "redditParseFailed": "Failed to parse Reddit post. Please try again."
+    },
+    "tooltips": {
+      "uploadPdf": "Upload PDF (max 2MB)",
+      "speechNotSupported": "Speech recognition is not supported in this browser",
+      "stopListening": "Stop listening",
+      "startVoiceInput": "Start voice input"
+    },
+    "fileAttachment": {
+      "userAttachedFile": "[User has attached a file: {{fileName}}]",
+      "documentContent": "Document Content",
+      "extractingText": "Extracting text from PDF...",
+      "extractionSuccess": "Text extracted",
+      "extractionSuccessMessage": "PDF content has been extracted and will be analyzed."
+    },
+    "download": {
+      "button": "Download as DOCX",
+      "tooltip": "Download this document as a Word file",
+      "success": "Download successful",
+      "successMessage": "{{filename}} has been downloaded successfully",
+      "error": "Failed to download document. Please try again."
+    },
+    "tone": {
+      "normal": "Normal",
+      "lawyer": "Lawyer"
+    },
+    "reddit": {
+      "parseSuccess": "Reddit post parsed",
+      "parseSuccessMessage": "Successfully extracted Reddit post content",
+      "parsing": "Parsing Reddit post..."
+    },
+    "disclaimer": "Disclaimer: This is an AI product and not a substitute for legal advice. Please consult a licensed attorney for legal advice."
+  },
+  "dashboard": {
+    "header": {
+      "toggleNavigation": "Toggle navigation",
+      "toggleColorScheme": "Toggle color scheme"
+    },
+    "sidebar": {
+      "startNewAnalysis": "Start New Analysis",
+      "recentChats": "Recent Chats",
+      "noRecentChats": "No Recent Chats",
+      "deleteChat": "Delete Chat",
+      "deleteChatConfirm": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone."
+    }
+  },
+  "login": {
+    "title": "Welcome back!",
+    "noAccount": "Do not have an account yet?",
+    "createAccount": "Create account",
+    "email": "Email",
+    "emailPlaceholder": "you@mantine.dev",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign in",
+    "loginSuccessful": "Login successful",
+    "loginSuccessfulMessage": "You are now logged in",
+    "invalidEmail": "Invalid email address",
+    "passwordTooShort": "Password must be at least 6 characters"
+  },
+  "notFound": {
+    "title": "404",
+    "heading": "Page Not Found",
+    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+  }
+}

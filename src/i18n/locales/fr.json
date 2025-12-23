@@ -1,0 +1,181 @@
+{
+  "common": {
+    "signIn": "Se connecter",
+    "startChatting": "Commencer à discuter maintenant",
+    "startAnalysis": "Démarrer l'analyse juridique",
+    "view": "Voir",
+    "preview": "Aperçu",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement",
+    "thinking": "Réflexion...",
+    "language": "Langue",
+    "theme": "Thème",
+    "account": "Compte",
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre",
+    "backToHome": "Retour à l'accueil",
+    "goBackHome": "Retour à l'accueil",
+    "delete": "Supprimer",
+    "cancel": "Annuler",
+    "rename": "Renommer"
+  },
+  "hero": {
+    "title": "Verdict.ai",
+    "subtitle": "Votre assistant juridique intelligent alimenté par l'IA. Analysez les contrats, examinez les documents, obtenez des informations juridiques et rédigez des accords, le tout en un seul endroit."
+  },
+  "features": {
+    "title": "Outils juridiques puissants à portée de main",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer les documents juridiques et obtenir des réponses à vos questions juridiques.",
+    "documentAnalysis": {
+      "title": "Analyse de documents",
+      "description": "Téléchargez des documents PDF et obtenez une analyse instantanée des contrats, accords et documents juridiques."
+    },
+    "legalQA": {
+      "title": "Questions et réponses juridiques",
+      "description": "Posez n'importe quelle question juridique et recevez des réponses complètes alimentées par une technologie IA avancée."
+    },
+    "voiceInput": {
+      "title": "Saisie vocale",
+      "description": "Posez vos questions naturellement en utilisant la technologie de reconnaissance vocale pour une expérience fluide."
+    },
+    "contractReview": {
+      "title": "Révision de contrats",
+      "description": "Obtenez des révisions détaillées des contrats avec les risques mis en évidence, les termes clés et les recommandations."
+    },
+    "securePrivate": {
+      "title": "Sécurisé et privé",
+      "description": "Vos documents et conversations sont traités selon les normes de sécurité les plus élevées."
+    },
+    "availability": {
+      "title": "Disponibilité 24/7",
+      "description": "Accédez à l'assistance juridique à tout moment, n'importe où. Aucun rendez-vous nécessaire."
+    },
+    "documentDrafting": {
+      "title": "Rédaction de documents",
+      "description": "Générez des documents juridiques complets incluant des avis, accords, pétitions et contrats avec un formatage approprié et des clauses juridiques."
+    },
+    "contextAwareSuggestions": {
+      "title": "Suggestions intelligentes",
+      "description": "Obtenez des questions de suivi et des suggestions contextuelles basées sur votre historique de conversation pour des interactions fluides."
+    },
+    "redditParsing": {
+      "title": "Intégration Reddit",
+      "description": "Analysez et traitez les publications Reddit pour obtenir des informations juridiques et des discussions, facilitant l'obtention de conseils juridiques à partir de discussions communautaires."
+    },
+    "downloadDocx": {
+      "title": "Exporter des documents",
+      "description": "Téléchargez vos documents juridiques et réponses de chat sous forme de fichiers Word (DOCX) pour un partage facile et un accès hors ligne."
+    },
+    "indianLawFocus": {
+      "title": "Spécialisé en droit indien",
+      "description": "Exclusivement axé sur les lois, actes, statuts et procédures juridiques indiens avec une terminologie juridique précise et des références."
+    },
+    "multiLanguage": {
+      "title": "Support multilingue",
+      "description": "Obtenez une assistance juridique en anglais, hindi, telugu et odia avec une terminologie juridique appropriée dans votre langue préférée."
+    },
+    "themeSupport": {
+      "title": "Personnalisation du thème",
+      "description": "Basculez entre les thèmes clair et sombre avec détection automatique des préférences système pour une visualisation confortable."
+    }
+  },
+  "cta": {
+    "title": "Prêt à commencer?",
+    "description": "Rejoignez des milliers d'utilisateurs qui font confiance à Verdict.ai pour leur analyse de documents juridiques et leurs questions juridiques. Commencez votre première analyse aujourd'hui."
+  },
+  "chat": {
+    "welcomeMessage": "Bonjour! Je suis votre assistant Verdict.ai spécialisé dans les lois indiennes. Comment puis-je vous aider avec vos questions juridiques aujourd'hui?",
+    "placeholder": "Posez votre question juridique...",
+    "getStartedWith": "Commencez par:",
+    "suggestions": "Suggestions:",
+    "defaultPrompts": {
+      "contractAct": "Quelles sont les dispositions clés de la Loi sur les contrats indienne?",
+      "filingCase": "Expliquez la procédure pour déposer une affaire devant les tribunaux indiens",
+      "consumerRights": "Quels sont mes droits en vertu de la Loi sur la protection des consommateurs?",
+      "criminalOffenses": "Comment le Code pénal indien définit-il les infractions pénales?",
+      "propertyRegistration": "Quel est le processus d'enregistrement des biens en Inde?"
+    },
+    "errorMessages": {
+      "generic": "Je m'excuse, mais j'ai rencontré une erreur lors du traitement de votre demande. Veuillez réessayer ou reformuler votre question.",
+      "failedToGetResponse": "Échec de la réponse. Veuillez réessayer.",
+      "permissionDenied": "Permission refusée",
+      "permissionDeniedMessage": "Veuillez autoriser l'accès au microphone pour utiliser la reconnaissance vocale. Vérifiez les paramètres de votre navigateur si bloqué.",
+      "invalidFileType": "Type de fichier invalide",
+      "invalidFileTypeMessage": "Veuillez télécharger un fichier PDF.",
+      "fileTooLarge": "Fichier trop volumineux",
+      "fileTooLargeMessage": "La taille du fichier doit être inférieure à 2 Mo.",
+      "fileAttached": "Fichier joint",
+      "fileAttachedMessage": "{{fileName}} est prêt à être envoyé.",
+      "pdfExtractionFailed": "Échec de l'extraction du texte du PDF. Veuillez réessayer.",
+      "redditParseFailed": "Échec de l'analyse de la publication Reddit. Veuillez réessayer."
+    },
+    "tooltips": {
+      "uploadPdf": "Télécharger PDF (max 2 Mo)",
+      "speechNotSupported": "La reconnaissance vocale n'est pas prise en charge dans ce navigateur",
+      "stopListening": "Arrêter d'écouter",
+      "startVoiceInput": "Démarrer la saisie vocale"
+    },
+    "fileAttachment": {
+      "userAttachedFile": "[L'utilisateur a joint un fichier: {{fileName}}]",
+      "documentContent": "Contenu du document",
+      "extractingText": "Extraction du texte du PDF...",
+      "extractionSuccess": "Texte extrait",
+      "extractionSuccessMessage": "Le contenu du PDF a été extrait et sera analysé."
+    },
+    "download": {
+      "button": "Télécharger en DOCX",
+      "tooltip": "Télécharger ce document en fichier Word",
+      "success": "Téléchargement réussi",
+      "successMessage": "{{filename}} a été téléchargé avec succès",
+      "error": "Échec du téléchargement du document. Veuillez réessayer."
+    },
+    "tone": {
+      "normal": "Normal",
+      "lawyer": "Avocat"
+    },
+    "reddit": {
+      "parseSuccess": "Publication Reddit analysée",
+      "parseSuccessMessage": "Contenu de la publication Reddit extrait avec succès",
+      "parsing": "Analyse de la publication Reddit..."
+    },
+    "disclaimer": "Avertissement: Ceci est un produit IA et ne remplace pas les conseils juridiques. Veuillez consulter un avocat agréé pour des conseils juridiques."
+  },
+  "dashboard": {
+    "header": {
+      "toggleNavigation": "Basculer la navigation",
+      "toggleColorScheme": "Basculer le schéma de couleurs"
+    },
+    "sidebar": {
+      "startNewAnalysis": "Démarrer une nouvelle analyse",
+      "recentChats": "Chats récents",
+      "noRecentChats": "Aucun chat récent",
+      "deleteChat": "Supprimer le chat",
+      "deleteChatConfirm": "Êtes-vous sûr de vouloir supprimer \"{{name}}\"? Cette action ne peut pas être annulée."
+    }
+  },
+  "login": {
+    "title": "Bon retour!",
+    "noAccount": "Vous n'avez pas encore de compte?",
+    "createAccount": "Créer un compte",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@mantine.dev",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Votre mot de passe",
+    "rememberMe": "Se souvenir de moi",
+    "forgotPassword": "Mot de passe oublié?",
+    "signIn": "Se connecter",
+    "loginSuccessful": "Connexion réussie",
+    "loginSuccessfulMessage": "Vous êtes maintenant connecté",
+    "invalidEmail": "Adresse e-mail invalide",
+    "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères"
+  },
+  "notFound": {
+    "title": "404",
+    "heading": "Page non trouvée",
+    "description": "Oups! La page que vous recherchez n'existe pas. Elle a peut-être été déplacée, supprimée ou l'URL pourrait être incorrecte."
+  }
+}
