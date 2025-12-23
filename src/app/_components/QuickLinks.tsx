@@ -93,6 +93,7 @@ export function QuickLinks() {
             key={link.label}
             href={link.href}
             target="_blank"
+            rel="noopener noreferrer"
             underline="never"
             c="unset"
           >

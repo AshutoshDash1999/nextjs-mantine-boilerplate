@@ -9,6 +9,8 @@ const nunito = Nunito({
   subsets: [
     "latin",
   ],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -102,7 +104,7 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
-        <ColorSchemeScript defaultColorScheme="auto" />
+        <ColorSchemeScript defaultColorScheme="auto" suppressHydrationWarning />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className={`${nunito.variable}`}>
