@@ -9,6 +9,7 @@
 ![Node](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Biome](https://img.shields.io/badge/Biome-2.2.0-60C5BA?style=for-the-badge&logo=biome&logoColor=white)
 ![License](https://img.shields.io/badge/License-Private-red?style=for-the-badge)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world&env=NEXT_PUBLIC_COINGECKO_API_URL,NEXT_PUBLIC_COINGECKO_API_KEY&envDescription=API%20keys%20need%20for%20the%20dashboard%2C%20not%20compulsory%20if%20you%20want%20to%20remove%20the%20predefined%20page.&envLink=https%3A%2F%2Fdocs.coingecko.com%2F)
 
 </div>
 
