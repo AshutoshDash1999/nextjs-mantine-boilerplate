@@ -13,12 +13,11 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "Next.js Mantine Boilerplate - Production-Ready Dashboard Template",
+    default: "Next.js Mantine Boilerplate | Dashboard Template",
     template: "%s | Next.js Mantine Boilerplate",
   },
   description:
-    "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Perfect for building dashboards, admin panels, and SaaS applications.",
+    "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Build dashboards, admin panels, and SaaS apps faster.",
   keywords: [
     "Next.js",
     "React",
@@ -51,9 +50,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Next.js Mantine Boilerplate",
-    title: "Next.js Mantine Boilerplate - Production-Ready Dashboard Template",
+    title: "Next.js Mantine Boilerplate | Dashboard Template",
     description:
-      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease.",
+      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Build dashboards, admin panels, and SaaS apps faster.",
     images: [
       {
         url: "/website-cover.webp",
@@ -65,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next.js Mantine Boilerplate - Production-Ready Dashboard Template",
+    title: "Next.js Mantine Boilerplate | Dashboard Template",
     description:
-      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease.",
+      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Build dashboards, admin panels, and SaaS apps faster.",
     images: [
       "/website-cover.webp",
     ],
@@ -89,6 +88,10 @@ export const metadata: Metadata = {
     // google: "your-google-verification-code",
     // yandex: "your-yandex-verification-code",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -100,6 +103,7 @@ export default function RootLayout({
     <html lang="en" {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript defaultColorScheme="auto" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className={`${nunito.variable}`}>
         <AppProvider>{children}</AppProvider>

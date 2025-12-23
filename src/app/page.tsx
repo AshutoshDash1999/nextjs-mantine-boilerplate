@@ -3,6 +3,7 @@ import {
   HeroSection,
   ModernTooling,
   QuickLinks,
+  SocialShare,
   ThemeToggle,
   UsageInstructions,
   WhyUseTemplate,
@@ -17,6 +18,7 @@ export default function Home() {
       <ModernTooling />
       <QuickLinks />
       <UsageInstructions />
+      <SocialShare />
     </Container>
   );
 }
