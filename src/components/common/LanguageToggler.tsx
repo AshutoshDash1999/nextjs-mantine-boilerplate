@@ -23,9 +23,7 @@ interface GeolocationResponse {
 export function LanguageToggler() {
   const [isLoading, setIsLoading] = useState(true);
   const [detectedLanguage, setDetectedLanguage] = useState<string | null>(null);
-  const [currentLanguage, setCurrentLanguage] = useState<string>(
-    getCurrentLanguage()
-  );
+  const [currentLanguage, setCurrentLanguage] = useState<string>("en");
 
   // Fetch geolocation on mount (only once)
   useEffect(() => {
@@ -76,25 +74,25 @@ export function LanguageToggler() {
 
   // Get the language label for display
   const getLanguageLabel = (langCode: string | null): string => {
-    if (!langCode) {
-      return "Auto";
+    if (!langCode || langCode === "en") {
+      return "English";
     }
     const lang = SUPPORTED_LANGUAGES.find((l) => l.code === langCode);
-    return lang ? lang.nativeLabel : "Auto";
+    return lang ? lang.nativeLabel : langCode.toUpperCase();
   };
 
   // Determine current value for segmented control
-  // If currentLanguage matches detectedLanguage, show "auto", otherwise show "en"
+  // If currentLanguage matches detectedLanguage, show detected language code, otherwise show "en"
   const currentValue =
-    currentLanguage === detectedLanguage && detectedLanguage ? "auto" : "en";
-  console.log("detectedLanguage :", detectedLanguage);
-  console.log("currentValue :", currentValue);
+    currentLanguage === detectedLanguage && detectedLanguage
+      ? detectedLanguage
+      : "en";
 
   // Handle language change
   const handleLanguageChange = (value: string) => {
     if (value === "en") {
       changeLanguage("en");
-    } else if (value === "auto" && detectedLanguage) {
+    } else if (value === detectedLanguage && detectedLanguage) {
       changeLanguage(detectedLanguage);
     }
   };
@@ -111,7 +109,7 @@ export function LanguageToggler() {
       data={[
         {
           label: getLanguageLabel(detectedLanguage),
-          value: "auto",
+          value: detectedLanguage,
         },
         {
           label: "English",
