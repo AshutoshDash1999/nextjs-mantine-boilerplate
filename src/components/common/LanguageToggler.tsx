@@ -1,9 +1,13 @@
 "use client";
 
-import { Affix, SegmentedControl } from "@mantine/core";
+import { SegmentedControl } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { i18n, SUPPORTED_LANGUAGES } from "@/i18n";
-import { useLocalStore } from "@/store";
+import {
+  changeLanguage,
+  getCurrentLanguage,
+  i18n,
+  SUPPORTED_LANGUAGES,
+} from "@/i18n";
 
 interface GeolocationResponse {
   language: string;
@@ -17,10 +21,11 @@ interface GeolocationResponse {
 }
 
 export function LanguageToggler() {
-  const { preferredLanguage, setPreferredLanguage, setAutoDetectedLanguage } =
-    useLocalStore();
   const [isLoading, setIsLoading] = useState(true);
   const [detectedLanguage, setDetectedLanguage] = useState<string | null>(null);
+  const [currentLanguage, setCurrentLanguage] = useState<string>(
+    getCurrentLanguage()
+  );
 
   // Fetch geolocation on mount (only once)
   useEffect(() => {
@@ -36,33 +41,38 @@ export function LanguageToggler() {
 
           if (isSupported && lang !== "en") {
             setDetectedLanguage(lang);
-            setAutoDetectedLanguage(lang);
 
-            // If user hasn't manually selected a language, use auto-detected
-            const languageSelected = localStorage.getItem("language-selected");
-            if (!languageSelected) {
-              i18n.changeLanguage(lang);
-              setPreferredLanguage(lang);
+            // If current language is still default (en) or matches detected, use auto-detected
+            const currentLang = getCurrentLanguage();
+            if (currentLang === "en" || currentLang === lang) {
+              changeLanguage(lang);
+              setCurrentLanguage(lang);
             }
           } else {
             setDetectedLanguage(null);
-            setAutoDetectedLanguage(null);
           }
         }
       } catch (error) {
         console.error("Failed to fetch geolocation:", error);
         setDetectedLanguage(null);
-        setAutoDetectedLanguage(null);
       } finally {
         setIsLoading(false);
       }
     };
 
     fetchGeolocation();
-  }, [
-    setAutoDetectedLanguage,
-    setPreferredLanguage,
-  ]);
+
+    // Listen to language changes from i18n
+    const handleLanguageChanged = (lng: string) => {
+      setCurrentLanguage(lng);
+    };
+
+    i18n.on("languageChanged", handleLanguageChanged);
+
+    return () => {
+      i18n.off("languageChanged", handleLanguageChanged);
+    };
+  }, []);
 
   // Get the language label for display
   const getLanguageLabel = (langCode: string | null): string => {
@@ -74,20 +84,18 @@ export function LanguageToggler() {
   };
 
   // Determine current value for segmented control
-  // If preferredLanguage matches detectedLanguage, show "auto", otherwise show "en"
+  // If currentLanguage matches detectedLanguage, show "auto", otherwise show "en"
   const currentValue =
-    preferredLanguage === detectedLanguage && detectedLanguage ? "auto" : "en";
+    currentLanguage === detectedLanguage && detectedLanguage ? "auto" : "en";
+  console.log("detectedLanguage :", detectedLanguage);
+  console.log("currentValue :", currentValue);
 
   // Handle language change
   const handleLanguageChange = (value: string) => {
     if (value === "en") {
-      i18n.changeLanguage("en");
-      setPreferredLanguage("en");
-      localStorage.setItem("language-selected", "true");
+      changeLanguage("en");
     } else if (value === "auto" && detectedLanguage) {
-      i18n.changeLanguage(detectedLanguage);
-      setPreferredLanguage(detectedLanguage);
-      localStorage.setItem("language-selected", "true");
+      changeLanguage(detectedLanguage);
     }
   };
 
@@ -97,28 +105,19 @@ export function LanguageToggler() {
   }
 
   return (
-    <Affix
-      position={{
-        bottom: 20,
-        right: 20,
-      }}
-      zIndex={1000}
-    >
-      <SegmentedControl
-        value={currentValue}
-        onChange={handleLanguageChange}
-        data={[
-          {
-            label: getLanguageLabel(detectedLanguage),
-            value: "auto",
-          },
-          {
-            label: "English",
-            value: "en",
-          },
-        ]}
-        size="sm"
-      />
-    </Affix>
+    <SegmentedControl
+      value={currentValue}
+      onChange={handleLanguageChange}
+      data={[
+        {
+          label: getLanguageLabel(detectedLanguage),
+          value: "auto",
+        },
+        {
+          label: "English",
+          value: "en",
+        },
+      ]}
+    />
   );
 }

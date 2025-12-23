@@ -622,145 +622,6 @@ function getCurrencyAndLanguageFromCountryCode(countryCode: string | null): {
   }
 }
 
-/**
- * Get language code based on country, Accept-Language header, and region
- * Prioritizes Accept-Language header, then region-based detection, then country default
- */
-function getLanguageFromCountryCode(
-  countryCode: string | null,
-  acceptLanguage: string | null,
-  region: string | null,
-  defaultLanguage: string
-): string {
-  // First, try to parse Accept-Language header if available
-  // Accept any valid language code from the browser
-  if (acceptLanguage) {
-    // Parse Accept-Language header (e.g., "en-US,en;q=0.9,es;q=0.8")
-    const languages = acceptLanguage
-      .split(",")
-      .map((lang) => {
-        const parts = lang.trim().split(";");
-        return {
-          code: parts[0].split("-")[0].toLowerCase(),
-          quality: parts[1] ? parseFloat(parts[1].split("=")[1]) : 1.0,
-        };
-      })
-      .sort((a, b) => b.quality - a.quality);
-
-    // Return the first valid language code (2-letter ISO 639-1)
-    // Accept any language code, not just a restricted list
-    for (const lang of languages) {
-      if (lang.code && lang.code.length === 2) {
-        return lang.code;
-      }
-    }
-  }
-
-  // Fallback to country-based mapping
-  if (!countryCode) {
-    return "en";
-  }
-
-  const upperCountryCode = countryCode.toUpperCase();
-
-  // Special handling for Canada - check if Quebec for French
-  if (upperCountryCode === "CA" && region) {
-    const upperRegion = region.toUpperCase();
-    if (
-      upperRegion.includes("QUEBEC") ||
-      upperRegion.includes("QC") ||
-      upperRegion.includes("QUÉBEC")
-    ) {
-      return "fr";
-    }
-    // Default to English for other Canadian regions
-    return "en";
-  }
-
-  // Special handling for India - use region to determine language
-  if (upperCountryCode === "IN" && region) {
-    const upperRegion = region.toUpperCase();
-    // Telugu-speaking regions (Andhra Pradesh, Telangana)
-    if (
-      upperRegion.includes("ANDHRA") ||
-      upperRegion.includes("TELANGANA") ||
-      upperRegion.includes("AP") ||
-      upperRegion.includes("TS")
-    ) {
-      return "te";
-    }
-    // Odia-speaking regions (Odisha)
-    if (
-      upperRegion.includes("ODISHA") ||
-      upperRegion.includes("ORISSA") ||
-      upperRegion.includes("OD")
-    ) {
-      return "od";
-    }
-    // Bengali-speaking regions (West Bengal)
-    if (
-      upperRegion.includes("WEST BENGAL") ||
-      upperRegion.includes("WB") ||
-      upperRegion.includes("BENGAL")
-    ) {
-      return "bn";
-    }
-    // Tamil-speaking regions (Tamil Nadu)
-    if (
-      upperRegion.includes("TAMIL NADU") ||
-      upperRegion.includes("TN") ||
-      upperRegion.includes("TAMIL")
-    ) {
-      return "ta";
-    }
-    // Kannada-speaking regions (Karnataka)
-    if (
-      upperRegion.includes("KARNATAKA") ||
-      upperRegion.includes("KA") ||
-      upperRegion.includes("KARNATAKA")
-    ) {
-      return "kn";
-    }
-    // Malayalam-speaking regions (Kerala)
-    if (
-      upperRegion.includes("KERALA") ||
-      upperRegion.includes("KL") ||
-      upperRegion.includes("KERALA")
-    ) {
-      return "ml";
-    }
-    // Gujarati-speaking regions (Gujarat)
-    if (
-      upperRegion.includes("GUJARAT") ||
-      upperRegion.includes("GJ") ||
-      upperRegion.includes("GUJARAT")
-    ) {
-      return "gu";
-    }
-    // Marathi-speaking regions (Maharashtra)
-    if (
-      upperRegion.includes("MAHARASHTRA") ||
-      upperRegion.includes("MH") ||
-      upperRegion.includes("MAHARASHTRA")
-    ) {
-      return "mr";
-    }
-    // Punjabi-speaking regions (Punjab)
-    if (
-      upperRegion.includes("PUNJAB") ||
-      upperRegion.includes("PB") ||
-      upperRegion.includes("PUNJAB")
-    ) {
-      return "pa";
-    }
-    // Default to Hindi for other Indian regions
-    return "hi";
-  }
-
-  // Return the default language from country
-  return defaultLanguage;
-}
-
 export async function GET(request: NextRequest) {
   try {
     // Read Vercel request headers directly
@@ -782,24 +643,12 @@ export async function GET(request: NextRequest) {
     // Timezone from headers
     const timezone = headers.get("x-vercel-ip-timezone");
 
-    // Get Accept-Language header for language detection
-    const acceptLanguage = headers.get("accept-language");
-
     // Get country code (2-letter ISO code)
     const countryCode = country || null;
 
-    // Get currency and default language from country code using switch cases
-    const { currency, language: defaultLanguage } =
+    // Get currency and language from country code using switch cases
+    const { currency, language } =
       getCurrencyAndLanguageFromCountryCode(countryCode);
-
-    // Get language based on country code, Accept-Language header, and region
-    // This will override the default language if Accept-Language or region suggests otherwise
-    const language = getLanguageFromCountryCode(
-      countryCode,
-      acceptLanguage,
-      region || countryRegion,
-      defaultLanguage
-    );
 
     // Build comprehensive response
     const locationData: GeolocationResponse = {
