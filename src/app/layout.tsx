@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Next.js Mantine Boilerplate",
   },
   description:
-    "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Build dashboards, admin panels, and SaaS apps faster.",
+    "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate. Build dashboards, admin panels, and SaaS apps faster.",
   keywords: [
     "Next.js",
     "React",
@@ -47,6 +47,9 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_APP_URL ||
       "https://nextjs-mantine-boilerplate.vercel.app"
   ),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "Next.js Mantine Boilerplate",
     title: "Next.js Mantine Boilerplate | Dashboard Template",
     description:
-      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Build dashboards, admin panels, and SaaS apps faster.",
+      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate. Build dashboards, admin panels, and SaaS apps faster.",
     images: [
       {
         url: "/website-cover.webp",
@@ -68,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Next.js Mantine Boilerplate | Dashboard Template",
     description:
-      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease. Build dashboards, admin panels, and SaaS apps faster.",
+      "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate. Build dashboards, admin panels, and SaaS apps faster.",
     images: [
       "/website-cover.webp",
     ],
