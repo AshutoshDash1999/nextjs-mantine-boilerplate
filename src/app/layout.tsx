@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     images: [
       "/website-cover.webp",
     ],
-    creator: "@nextjsmantine",
+    creator: "Ashutosh Dash",
   },
   robots: {
     index: true,
