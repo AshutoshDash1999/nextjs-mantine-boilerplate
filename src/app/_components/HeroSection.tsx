@@ -9,8 +9,8 @@ export function HeroSection() {
       <Title order={1}>Next.js Mantine Boilerplate</Title>
       <Text c="dimmed" size="xl" maw={600}>
         A fully featured, production-ready template to jumpstart your new
-        project. Built with Next.js 16, React 19, Mantine v8, and modern tooling
-        like Biome.
+        project. Built with Next.js 16, React 19, Mantine v8, react-query-ease
+        for simplified API integration, and modern tooling like Biome.
       </Text>
 
       <Group justify="center" mt="md">

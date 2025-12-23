@@ -15,6 +15,8 @@
 
 A modern, production-ready boilerplate for building web applications with Next.js 16, React 19, and Mantine UI v8. This template includes everything you need to kickstart your project with best practices, TypeScript, state management, and a beautiful UI component library.
 
+**Key Highlight:** Powered by **react-query-ease** - a simplified API client that makes data fetching as easy as calling a function, eliminating boilerplate while maintaining full TypeScript support and TanStack Query's powerful caching.
+
 **Perfect for:** Building dashboards, admin panels, SaaS applications, and modern web apps.
 
 ## 💡 Why Use This Boilerplate?
@@ -88,6 +90,7 @@ const { coins, isLoading } = useMarkets({
 - **🗄️ State Management**:
   - Zustand for client-side global state
   - TanStack Query for server state and API calls
+- **🔌 Simplified API Client**: react-query-ease for zero-boilerplate API integration with automatic TypeScript inference
 - **🌓 Theme Support**: Dark/light mode with system preference detection
 - **📱 Responsive Design**: Mobile-first, fully responsive layouts
 - **⚙️ Developer Experience**:
@@ -221,6 +224,7 @@ src/
 - **Error Handling**: Global error boundary and not-found pages
 - **Loading States**: Skeleton loaders for better UX
 - **Type Safety**: Full TypeScript coverage
+- **Utility Functions**: Pre-built formatters for currency, percentages, numbers, dates, and time with localization support
 
 ## 🔧 Configuration
 
@@ -239,9 +243,59 @@ const theme = createTheme({
 });
 ```
 
-### API Integration
+### API Integration with react-query-ease
 
-The boilerplate includes example API hooks using TanStack Query. Customize `src/api/config.ts` and `src/api/hooks/` for your API needs.
+The boilerplate uses **react-query-ease** to simplify API integration. This powerful wrapper around TanStack Query eliminates boilerplate while maintaining all the benefits of React Query.
+
+#### Setting Up Your API Client
+
+Create an API client in `src/api/config.ts`:
+
+```typescript
+import { createApiClient } from "react-query-ease";
+
+export const myApi = createApiClient({
+  baseURL: process.env.NEXT_PUBLIC_API_URL || "https://api.example.com",
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+});
+```
+
+#### Creating Custom Hooks
+
+Create hooks in `src/api/hooks/` following this pattern:
+
+```typescript
+import { myApi } from "../config";
+
+export const useMyData = (params?: MyParams) => {
+  const query = myApi.useQuery<MyDataType>({
+    url: "/endpoint",
+    method: "GET",
+    key: ["myData", params],
+    params: {
+      // Your query parameters
+    },
+  });
+
+  return {
+    data: query.data ?? [],
+    isLoading: query.isLoading,
+    ...query, // Includes error, refetch, etc.
+  };
+};
+```
+
+#### Why react-query-ease?
+
+- **90% Less Code**: No need to write query functions, manual error handling, or cache key management
+- **Type-Safe**: Full TypeScript inference from your API responses
+- **Automatic Caching**: Leverages TanStack Query's caching without configuration
+- **Easy to Extend**: Add new endpoints by creating simple hook functions
+- **Perfect for Dashboards**: Ideal for applications with multiple data sources, pagination, and real-time updates
+
+See `src/api/hooks/useCoinGecko.ts` for complete examples of how to use react-query-ease in your project.
 
 ## 🎯 Best Practices
 
