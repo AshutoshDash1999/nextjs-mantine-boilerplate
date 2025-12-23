@@ -645,10 +645,12 @@ export async function GET(request: NextRequest) {
 
     // Get country code (2-letter ISO code)
     const countryCode = country || null;
+    console.log("countryCode :", countryCode);
 
     // Get currency and language from country code using switch cases
     const { currency, language } =
       getCurrencyAndLanguageFromCountryCode(countryCode);
+    console.log("language :", language);
 
     // Build comprehensive response
     const locationData: GeolocationResponse = {
