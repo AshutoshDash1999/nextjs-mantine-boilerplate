@@ -9,64 +9,60 @@ import {
   IconBrandVscode,
   IconDatabase,
 } from "@tabler/icons-react";
-
-const TOOLS = [
-  {
-    icon: IconBrandNextjs,
-    title: "Next.js 16",
-    description:
-      "The latest framework features including Server Actions and enhanced routing.",
-    color: "black",
-  },
-  {
-    icon: IconBrandReact,
-    title: "React 19",
-    description:
-      "Future-ready with Actions, Optimistic UI updates, and the React Compiler.",
-    color: "blue.6",
-  },
-  {
-    icon: IconBolt,
-    title: "Biome",
-    description:
-      "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue.",
-    color: "yellow.6",
-  },
-  {
-    icon: IconBrandTypescript,
-    title: "TypeScript 5",
-    description:
-      "Latest type safety features to catch errors early and improve maintainability.",
-    color: "blue.6",
-  },
-  {
-    icon: IconDatabase,
-    title: "Zustand",
-    description:
-      "A small, fast, and scalable bearbones state-management solution.",
-    color: "orange.6",
-  },
-  {
-    icon: IconBrandGit,
-    title: "Husky & Commitlint",
-    description:
-      "Ensures all commits meet standard conventions and code quality checks before pushing.",
-    color: "red.6",
-  },
-];
+import { useTranslation } from "@/i18n";
 
 export function ModernTooling() {
+  const { t } = useTranslation();
+
+  const TOOLS = [
+    {
+      icon: IconBrandNextjs,
+      title: t("modernTooling.tools.nextjs.title"),
+      description: t("modernTooling.tools.nextjs.description"),
+      color: "black",
+    },
+    {
+      icon: IconBrandReact,
+      title: t("modernTooling.tools.react.title"),
+      description: t("modernTooling.tools.react.description"),
+      color: "blue.6",
+    },
+    {
+      icon: IconBolt,
+      title: t("modernTooling.tools.biome.title"),
+      description: t("modernTooling.tools.biome.description"),
+      color: "yellow.6",
+    },
+    {
+      icon: IconBrandTypescript,
+      title: t("modernTooling.tools.typescript.title"),
+      description: t("modernTooling.tools.typescript.description"),
+      color: "blue.6",
+    },
+    {
+      icon: IconDatabase,
+      title: t("modernTooling.tools.zustand.title"),
+      description: t("modernTooling.tools.zustand.description"),
+      color: "orange.6",
+    },
+    {
+      icon: IconBrandGit,
+      title: t("modernTooling.tools.husky.title"),
+      description: t("modernTooling.tools.husky.description"),
+      color: "red.6",
+    },
+  ];
+
   return (
     <Card withBorder radius="md" p="xl" mb={80} bg="var(--mantine-color-body)">
       <Group mb="md">
         <ThemeIcon size={40} radius="md" variant="light" color="grape">
           <IconBrandVscode size={24} />
         </ThemeIcon>
-        <Title order={2}>Modern Tooling Stack</Title>
+        <Title order={2}>{t("modernTooling.title")}</Title>
       </Group>
       <Text c="dimmed" mb="lg">
-        We've hand-picked the best modern tools to ensure a smooth developer
-        experience and a high-quality codebase.
+        {t("modernTooling.subtitle")}
       </Text>
 
       <SimpleGrid

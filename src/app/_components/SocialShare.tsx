@@ -16,6 +16,7 @@ import {
   IconMail,
   IconShare,
 } from "@tabler/icons-react";
+import { useTranslation } from "@/i18n";
 
 // Contact information
 const CONTACT_INFO = {
@@ -28,6 +29,7 @@ const CONTACT_INFO = {
 };
 
 export function SocialShare() {
+  const { t } = useTranslation();
   const url = typeof window !== "undefined" ? window.location.href : "";
   const title = "Next.js Mantine Boilerplate | Dashboard Template";
   const description =
@@ -62,10 +64,10 @@ export function SocialShare() {
       {/* Share Section */}
       <Stack align="center" gap="md" w="100%">
         <Title order={2} ta="center">
-          Share This Template
+          {t("socialShare.share.title")}
         </Title>
         <Text c="dimmed" size="sm" ta="center">
-          Help others discover this production-ready boilerplate
+          {t("socialShare.share.subtitle")}
         </Text>
         <Group gap="sm" justify="center">
           <ActionIcon
@@ -123,15 +125,19 @@ export function SocialShare() {
         </Group>
       </Stack>
 
-      <Divider w="100%" label="Contact" labelPosition="center" />
+      <Divider
+        w="100%"
+        label={t("socialShare.contact.title")}
+        labelPosition="center"
+      />
 
       {/* Contact Section */}
       <Stack align="center" gap="md" w="100%">
         <Title order={3} ta="center" size="h4">
-          Get in Touch
+          {t("socialShare.contact.title")}
         </Title>
         <Text c="dimmed" size="sm" ta="center">
-          Have questions or want to collaborate? Reach out!
+          {t("socialShare.contact.subtitle")}
         </Text>
         <Group gap="md" justify="center" wrap="wrap">
           {CONTACT_INFO.email && (
@@ -195,7 +201,7 @@ export function SocialShare() {
         {CONTACT_INFO.email && (
           <Group gap="xs" justify="center">
             <Text size="sm" c="dimmed">
-              Email:
+              {t("socialShare.contact.emailLabel")}
             </Text>
             <Anchor
               href={`mailto:${CONTACT_INFO.email}`}
@@ -211,7 +217,7 @@ export function SocialShare() {
         )}
         {CONTACT_INFO.website && (
           <Text size="sm" c="dimmed">
-            Website:{" "}
+            {t("socialShare.contact.websiteLabel")}{" "}
             <Anchor
               href={CONTACT_INFO.website}
               target="_blank"

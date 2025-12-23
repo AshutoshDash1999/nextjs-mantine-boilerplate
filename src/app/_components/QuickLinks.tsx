@@ -19,65 +19,67 @@ import {
   IconDatabase,
   IconExternalLink,
 } from "@tabler/icons-react";
+import { useTranslation } from "@/i18n";
 import styles from "../page.module.css";
 
-const LINKS = [
-  {
-    icon: IconBrandNextjs,
-    label: "Next.js",
-    description: "The React Framework for the Web",
-    href: "https://nextjs.org",
-    color: "black",
-  },
-  {
-    icon: IconBrandReact,
-    label: "React",
-    description: "The library for web and native user interfaces",
-    href: "https://react.dev",
-    color: "blue.6",
-  },
-  {
-    icon: IconBrandMantine,
-    label: "Mantine",
-    description: "A fully featured React component library",
-    href: "https://mantine.dev",
-    color: "blue.5",
-  },
-  {
-    icon: IconBolt,
-    label: "Biome",
-    description: "Toolchain of the web",
-    href: "https://biomejs.dev",
-    color: "yellow.6",
-  },
-  {
-    icon: IconDatabase,
-    label: "Zustand",
-    description: "Global state manager in react/next",
-    href: "https://zustand.docs.pmnd.rs/",
-    color: "orange.6",
-  },
-  {
-    icon: IconBrandGithub,
-    label: "Repository",
-    description: "View the source code for this template",
-    href: "https://github.com/AshutoshDash1999/nextjs-mantine-boilerplate",
-    color: "gray.9",
-  },
-];
-
 export function QuickLinks() {
+  const { t } = useTranslation();
+
+  const LINKS = [
+    {
+      icon: IconBrandNextjs,
+      label: t("quickLinks.links.nextjs.label"),
+      description: t("quickLinks.links.nextjs.description"),
+      href: "https://nextjs.org",
+      color: "black",
+    },
+    {
+      icon: IconBrandReact,
+      label: t("quickLinks.links.react.label"),
+      description: t("quickLinks.links.react.description"),
+      href: "https://react.dev",
+      color: "blue.6",
+    },
+    {
+      icon: IconBrandMantine,
+      label: t("quickLinks.links.mantine.label"),
+      description: t("quickLinks.links.mantine.description"),
+      href: "https://mantine.dev",
+      color: "blue.5",
+    },
+    {
+      icon: IconBolt,
+      label: t("quickLinks.links.biome.label"),
+      description: t("quickLinks.links.biome.description"),
+      href: "https://biomejs.dev",
+      color: "yellow.6",
+    },
+    {
+      icon: IconDatabase,
+      label: t("quickLinks.links.zustand.label"),
+      description: t("quickLinks.links.zustand.description"),
+      href: "https://zustand.docs.pmnd.rs/",
+      color: "orange.6",
+    },
+    {
+      icon: IconBrandGithub,
+      label: t("quickLinks.links.repository.label"),
+      description: t("quickLinks.links.repository.description"),
+      href: "https://github.com/AshutoshDash1999/nextjs-mantine-boilerplate",
+      color: "gray.9",
+    },
+  ];
+
   return (
     <Card withBorder radius="md" p="xl" mb={80} bg="var(--mantine-color-body)">
       <Group mb="md">
         <ThemeIcon size={40} radius="md" variant="light" color="cyan">
           <IconExternalLink size={24} />
         </ThemeIcon>
-        <Title order={2}>Quick Links</Title>
+        <Title order={2}>{t("quickLinks.title")}</Title>
       </Group>
       <Text c="dimmed" mb="lg">
-        Essential resources and documentation for the technologies used in this
-        boilerplate.
+        {t("quickLinks.subtitle")}
       </Text>
 
       <SimpleGrid

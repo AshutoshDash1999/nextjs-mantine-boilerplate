@@ -2,15 +2,16 @@
 import { Button, Group, Stack, Text, Title } from "@mantine/core";
 import { IconDashboard, IconLogin } from "@tabler/icons-react";
 import Link from "next/link";
+import { useTranslation } from "@/i18n";
 
 export function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <Stack align="center" gap="lg" mb={80}>
-      <Title order={1}>Next.js Mantine Boilerplate</Title>
+      <Title order={1}>{t("hero.title")}</Title>
       <Text c="dimmed" size="xl" maw={600}>
-        A fully featured, production-ready template to jumpstart your new
-        project. Built with Next.js 16, React 19, Mantine v8, react-query-ease
-        for simplified API integration, and modern tooling like Biome.
+        {t("hero.subtitle")}
       </Text>
 
       <Group justify="center" mt="md">
@@ -25,7 +26,7 @@ export function HeroSection() {
             to: "cyan",
           }}
         >
-          Login
+          {t("hero.loginButton")}
         </Button>
         <Button
           component={Link}
@@ -34,7 +35,7 @@ export function HeroSection() {
           variant="default"
           leftSection={<IconDashboard size={20} />}
         >
-          Dashboard
+          {t("hero.dashboardButton")}
         </Button>
       </Group>
     </Stack>

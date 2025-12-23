@@ -1,181 +1,148 @@
 {
   "common": {
-    "signIn": "ସାଇନ୍ ଇନ୍ କରନ୍ତୁ",
-    "startChatting": "ବର୍ତ୍ତମାନ ଚାଟିଂ ଆରମ୍ଭ କରନ୍ତୁ",
-    "startAnalysis": "ଆଇନଗତ ବିଶ୍ଳେଷଣ ଆରମ୍ଭ କରନ୍ତୁ",
-    "view": "ଦେଖନ୍ତୁ",
-    "preview": "ପୂର୍ବାବଲୋକନ",
-    "error": "ତ୍ରୁଟି",
-    "success": "ସଫଳ",
-    "loading": "ଲୋଡ୍ ହେଉଛି",
-    "thinking": "ଚିନ୍ତା କରୁଛି...",
-    "language": "ଭାଷା",
-    "theme": "ଥିମ୍",
-    "account": "ଖାତା",
-    "profile": "ପ୍ରୋଫାଇଲ୍",
-    "settings": "ସେଟିଂସ୍",
-    "logout": "ଲଗ୍ ଆଉଟ୍",
-    "lightMode": "ଲାଇଟ୍ ମୋଡ୍",
-    "darkMode": "ଡାର୍କ୍ ମୋଡ୍",
-    "backToHome": "ଘରକୁ ଫେରନ୍ତୁ",
-    "goBackHome": "ଘରକୁ ଫେରନ୍ତୁ",
-    "delete": "ମିଟାନ୍ତୁ",
-    "cancel": "ବାତିଲ୍ କରନ୍ତୁ",
-    "rename": "ନାମ ବଦଳାନ୍ତୁ"
+    "login": "Login",
+    "dashboard": "Dashboard",
+    "language": "Language",
+    "theme": "Theme",
+    "account": "Account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "backToHome": "Back to Home",
+    "goBackHome": "Go Back Home",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "rename": "Rename",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading"
   },
   "hero": {
-    "title": "Verdict.ai",
-    "subtitle": "AI ଦ୍ୱାରା ଚାଳିତ ଆପଣଙ୍କର ବୁଦ୍ଧିମାନ ଆଇନଗତ ସହାୟକ। ଚୁକ୍ତିନାମା ବିଶ୍ଳେଷଣ କରନ୍ତୁ, ଦସ୍ତାବିଜ୍ ପରୀକ୍ଷା କରନ୍ତୁ, ଆଇନଗତ ଅନ୍ତର୍ଦୃଷ୍ଟି ପ୍ରାପ୍ତ କରନ୍ତୁ, ଏବଂ ଚୁକ୍ତିନାମା ପ୍ରସ୍ତୁତ କରନ୍ତୁ—ସବୁକିଛି ଗୋଟିଏ ଜାଗାରେ।"
+    "title": "Next.js Mantine Boilerplate",
+    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
+    "loginButton": "Login",
+    "dashboardButton": "Dashboard"
   },
-  "features": {
-    "title": "ଆପଣଙ୍କ ଆଙ୍ଗୁଳିର ଅଗ୍ରଭାଗରେ ଶକ୍ତିଶାଳୀ ଆଇନଗତ ସାଧନ",
-    "subtitle": "ଆଇନଗତ ଦସ୍ତାବିଜ୍ ହ୍ୟାଣ୍ଡଲ୍ କରିବା ଏବଂ ଆପଣଙ୍କର ଆଇନଗତ ପ୍ରଶ୍ନର ଉତ୍ତର ପାଇବା ପାଇଁ ଆପଣଙ୍କୁ ଯାହା ଦରକାର।",
-    "documentAnalysis": {
-      "title": "ଦସ୍ତାବିଜ୍ ବିଶ୍ଳେଷଣ",
-      "description": "PDF ଦସ୍ତାବିଜ୍ ଅପଲୋଡ୍ କରନ୍ତୁ ଏବଂ ଚୁକ୍ତିନାମା, ଚୁକ୍ତିନାମା, ଏବଂ ଆଇନଗତ ଦସ୍ତାବିଜ୍‌ର ତତ୍କ୍ଷଣାତ୍ ବିଶ୍ଳେଷଣ ପ୍ରାପ୍ତ କରନ୍ତୁ।"
-    },
-    "legalQA": {
-      "title": "ଆଇନଗତ ପ୍ରଶ୍ନୋତ୍ତର",
-      "description": "ଯେକୌଣସି ଆଇନଗତ ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ ଏବଂ ଉନ୍ନତ AI ଟେକ୍ନୋଲୋଜି ଦ୍ୱାରା ଚାଳିତ ସମ୍ପୂର୍ଣ୍ଣ ଉତ୍ତର ପ୍ରାପ୍ତ କରନ୍ତୁ।"
-    },
-    "voiceInput": {
-      "title": "ଭଏସ୍ ଇନପୁଟ୍",
-      "description": "ଏକ ସୁଗମ ଅନୁଭବ ପାଇଁ ଭଏସ୍-ଟୁ-ଟେକ୍ସ୍ଟ ଟେକ୍ନୋଲୋଜି ବ୍ୟବହାର କରି ଆପଣଙ୍କର ପ୍ରଶ୍ନଗୁଡ଼ିକୁ ସ୍ୱାଭାବିକ ଭାବରେ କହନ୍ତୁ।"
-    },
-    "contractReview": {
-      "title": "ଚୁକ୍ତିନାମା ସମୀକ୍ଷା",
-      "description": "ହାଇଲାଇଟ୍ କରାଯାଇଥିବା ବିପଦ, ମୁଖ୍ୟ ନିୟମ, ଏବଂ ସୁପାରିଶ ସହିତ ଚୁକ୍ତିନାମାର ବିସ୍ତୃତ ସମୀକ୍ଷା ପ୍ରାପ୍ତ କରନ୍ତୁ।"
-    },
-    "securePrivate": {
-      "title": "ସୁରକ୍ଷିତ ଏବଂ ବ୍ୟକ୍ତିଗତ",
-      "description": "ଆପଣଙ୍କର ଦସ୍ତାବିଜ୍ ଏବଂ ବାର୍ତ୍ତାଳାପ ସର୍ବୋଚ୍ଚ ସୁରକ୍ଷା ମାନକ ସହିତ ହ୍ୟାଣ୍ଡଲ୍ କରାଯାଏ।"
-    },
-    "availability": {
-      "title": "24/7 ଉପଲବ୍ଧତା",
-      "description": "ଯେକୌଣସି ସମୟରେ, ଯେଉଁଠାରେ ହେଉନା କେନ୍ଦୁ, ଆଇନଗତ ସହାୟତା ପ୍ରାପ୍ତ କରନ୍ତୁ। କୌଣସି ନିଯୁକ୍ତି ଆବଶ୍ୟକ ନୁହେଁ।"
-    },
-    "documentDrafting": {
-      "title": "ଦସ୍ତାବିଜ୍ ମସୌଦା",
-      "description": "ଉପଯୁକ୍ତ ଫରମାଟିଂ ଏବଂ ଆଇନଗତ ନିୟମ ସହିତ ନୋଟିସ୍, ଚୁକ୍ତିନାମା, ଯାଚିକା, ଏବଂ ଚୁକ୍ତିନାମା ସହିତ ସମ୍ପୂର୍ଣ୍ଣ ଆଇନଗତ ଦସ୍ତାବିଜ୍ ଉତ୍ପାଦନ କରନ୍ତୁ।"
-    },
-    "contextAwareSuggestions": {
-      "title": "ସ୍ମାର୍ଟ୍ ସୁପାରିଶ",
-      "description": "ସୁଗମ ଇଣ୍ଟରାକ୍ସନ୍ ପାଇଁ ଆପଣଙ୍କର ବାର୍ତ୍ତାଳାପ ଇତିହାସ ଉପରେ ଆଧାରିତ ସନ୍ଦର୍ଭ-ଜାଗରୁକ ଅନୁସରଣ ପ୍ରଶ୍ନ ଏବଂ ସୁପାରିଶ ପ୍ରାପ୍ତ କରନ୍ତୁ।"
-    },
-    "redditParsing": {
-      "title": "Reddit ସଂଯୋଗ",
-      "description": "ଆଇନଗତ ଅନ୍ତର୍ଦୃଷ୍ଟି ଏବଂ ଚର୍ଚ୍ଚା ପାଇଁ Reddit ପୋଷ୍ଟ୍‌ଗୁଡ଼ିକୁ ପାର୍ସ ଏବଂ ବିଶ୍ଳେଷଣ କରନ୍ତୁ, ଯାହା ସମ୍ପ୍ରଦାୟ ଚର୍ଚ୍ଚାରୁ ଆଇନଗତ ସଳାହ ପାଇବା ସହଜ କରେ।"
-    },
-    "downloadDocx": {
-      "title": "ଦସ୍ତାବିଜ୍ ରପ୍ତାନି",
-      "description": "ସହଜ ଅଂଶୀଦାରୀ ଏବଂ ଅଫ୍‌ଲାଇନ୍ ପ୍ରବେଶ ପାଇଁ ଆପଣଙ୍କର ଆଇନଗତ ଦସ୍ତାବିଜ୍ ଏବଂ ଚାଟ୍ ପ୍ରତିକ୍ରିୟାକୁ Word ଫାଇଲ୍‌ଗୁଡ଼ିକ (DOCX) ଭାବରେ ଡାଉନ୍‌ଲୋଡ୍ କରନ୍ତୁ।"
-    },
-    "indianLawFocus": {
-      "title": "ଭାରତୀୟ ଆଇନ ବିଶେଷଜ୍ଞ",
-      "description": "ସଠିକ୍ ଆଇନଗତ ପଦଜାଲ ଏବଂ ସୁଚନା ସହିତ ବିଶେଷ ଭାବରେ ଭାରତୀୟ ଆଇନ, ଆଇନ, ଶାସନ, ଏବଂ ଆଇନଗତ ପ୍ରକ୍ରିୟା ଉପରେ ଧ୍ୟାନ ଦିଆଯାଇଛି।"
-    },
-    "multiLanguage": {
-      "title": "ବହୁ-ଭାଷା ସମର୍ଥନ",
-      "description": "ଇଂରାଜୀ, ହିନ୍ଦୀ, ତେଲୁଗୁ, ଏବଂ ଓଡ଼ିଆରେ ଆପଣଙ୍କର ପସନ୍ଦିତ ଭାଷାରେ ଉପଯୁକ୍ତ ଆଇନଗତ ପଦଜାଲ ସହିତ ଆଇନଗତ ସହାୟତା ପ୍ରାପ୍ତ କରନ୍ତୁ।"
-    },
-    "themeSupport": {
-      "title": "ଥିମ୍ ଅନୁକୂଳନ",
-      "description": "ଆରାମଦାୟକ ଦର୍ଶନ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ସିଷ୍ଟମ୍ ପ୍ରାଧାନ୍ୟ ସନ୍ଧାନ ସହିତ ଲାଇଟ୍ ଏବଂ ଡାର୍କ୍ ଥିମ୍‌ଗୁଡ଼ିକ ମଧ୍ୟରେ ସୁଇଚ୍ କରନ୍ତୁ।"
+  "whyUseTemplate": {
+    "title": "Why Use This Template?",
+    "features": {
+      "cuttingEdgePerformance": {
+        "title": "Cutting Edge Performance",
+        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+      },
+      "blazingFastTooling": {
+        "title": "Blazing Fast Tooling",
+        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+      },
+      "mantineUI": {
+        "title": "Mantine UI v8",
+        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+      },
+      "robustStateManagement": {
+        "title": "Robust State Management",
+        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+      }
     }
   },
-  "cta": {
-    "title": "ଆରମ୍ଭ କରିବାକୁ ପ୍ରସ୍ତୁତ?",
-    "description": "ସହସ୍ରାଧିକ ଉପଭୋକ୍ତାମାନଙ୍କ ସହିତ ଯୋଗ ଦିଅନ୍ତୁ ଯେଉଁମାନେ ସେମାନଙ୍କର ଆଇନଗତ ଦସ୍ତାବିଜ୍ ବିଶ୍ଳେଷଣ ଏବଂ ଆଇନଗତ ପ୍ରଶ୍ନ ପାଇଁ Verdict.ai‌କୁ ବିଶ୍ୱାସ କରନ୍ତି। ଆଜି ହିଁ ଆପଣଙ୍କର ପ୍ରଥମ ବିଶ୍ଳେଷଣ ଆରମ୍ଭ କରନ୍ତୁ।"
-  },
-  "chat": {
-    "welcomeMessage": "ନମସ୍କାର! ମୁଁ ଆପଣଙ୍କର Verdict.ai ସହାୟକ, ଭାରତୀୟ ଆଇନରେ ବିଶେଷଜ୍ଞ। ମୁଁ ଆଜି ଆପଣଙ୍କର ଆଇନଗତ ପ୍ରଶ୍ନରେ କିପରି ସାହାଯ୍ୟ କରିପାରିବି?",
-    "placeholder": "ଆପଣଙ୍କର ଆଇନଗତ ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ...",
-    "getStartedWith": "ଏହା ସହିତ ଆରମ୍ଭ କରନ୍ତୁ:",
-    "suggestions": "ପରାମର୍ଶ:",
-    "defaultPrompts": {
-      "contractAct": "ଭାରତୀୟ ଚୁକ୍ତିନାମା ଆଇନର ମୁଖ୍ୟ ବ୍ୟବସ୍ଥା କଣ?",
-      "filingCase": "ଭାରତୀୟ ନ୍ୟାୟାଳୟରେ ମାମଲା ଦାଖଲ କରିବାର ପ୍ରକ୍ରିୟା ବ୍ୟାଖ୍ୟା କରନ୍ତୁ",
-      "consumerRights": "କନ୍ସ୍ୟୁମର୍ ପ୍ରୋଟେକ୍ସନ୍ ଆଇନ ଅଧୀନରେ ମୋର ଅଧିକାର କଣ?",
-      "criminalOffenses": "ଭାରତୀୟ ଦଣ୍ଡ ସଂହିତା ଅପରାଧକୁ କିପରି ସଂଜ୍ଞା ଦିଏ?",
-      "propertyRegistration": "ଭାରତରେ ସମ୍ପତ୍ତି ନାମଲେଖା ପ୍ରକ୍ରିୟା କଣ?"
-    },
-    "errorMessages": {
-      "generic": "ମୁଁ ଦୁଃଖିତ, କିନ୍ତୁ ମୁଁ ଆପଣଙ୍କର ଅନୁରୋଧ ପ୍ରକ୍ରିୟାକରଣରେ ଏକ ତ୍ରୁଟିର ସମ୍ମୁଖୀନ ହୋଇଛି। ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ କିମ୍ବା ଆପଣଙ୍କର ପ୍ରଶ୍ନକୁ ପୁନର୍ବାର ଲେଖନ୍ତୁ।",
-      "failedToGetResponse": "ଉତ୍ତର ପ୍ରାପ୍ତ କରିବାରେ ବିଫଳ। ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।",
-      "permissionDenied": "ଅନୁମତି ପ୍ରତ୍ୟାଖ୍ୟାନ କରାଯାଇଛି",
-      "permissionDeniedMessage": "ସ୍ପିଚ୍-ଟୁ-ଟେକ୍ସ୍ଟ ବ୍ୟବହାର କରିବାକୁ ଦୟାକରି ମାଇକ୍ରୋଫୋନ୍ ପ୍ରବେଶକୁ ଅନୁମତି ଦିଅନ୍ତୁ। ଅବରୋଧିତ ହୋଇଥିଲେ ଆପଣଙ୍କର ବ୍ରାଉଜର୍ ସେଟିଂସ୍ ଯାଞ୍ଚ କରନ୍ତୁ।",
-      "invalidFileType": "ଅବୈଧ ଫାଇଲ୍ ପ୍ରକାର",
-      "invalidFileTypeMessage": "ଦୟାକରି ଏକ PDF ଫାଇଲ୍ ଅପଲୋଡ୍ କରନ୍ତୁ।",
-      "fileTooLarge": "ଫାଇଲ୍ ବହୁତ ବଡ଼",
-      "fileTooLargeMessage": "ଫାଇଲ୍ ଆକାର 2MB ଠାରୁ କମ୍ ହେବା ଉଚିତ୍।",
-      "fileAttached": "ଫାଇଲ୍ ସଂଲଗ୍ନ ହୋଇଛି",
-      "fileAttachedMessage": "{{fileName}} ପଠାଇବାକୁ ପ୍ରସ୍ତୁତ।",
-      "pdfExtractionFailed": "PDFରୁ ଟେକ୍ସ୍ଟ ବାହାର କରିବାରେ ବିଫଳ। ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।",
-      "redditParseFailed": "Reddit ପୋଷ୍ଟ୍ ପାର୍ସ କରିବାରେ ବିଫଳ। ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।"
-    },
-    "tooltips": {
-      "uploadPdf": "PDF ଅପଲୋଡ୍ କରନ୍ତୁ (ସର୍ବାଧିକ 2MB)",
-      "speechNotSupported": "ଏହି ବ୍ରାଉଜରରେ ସ୍ପିଚ୍ ଚିହ୍ନଟ ସମର୍ଥିତ ନୁହେଁ",
-      "stopListening": "ଶୁଣିବା ବନ୍ଦ କରନ୍ତୁ",
-      "startVoiceInput": "ଭଏସ୍ ଇନପୁଟ୍ ଆରମ୍ଭ କରନ୍ତୁ"
-    },
-    "fileAttachment": {
-      "userAttachedFile": "[ବ୍ୟବହାରକାରୀ ଏକ ଫାଇଲ୍ ସଂଲଗ୍ନ କରିଛନ୍ତି: {{fileName}}]",
-      "documentContent": "ଦସ୍ତାବିଜ୍ ସାମଗ୍ରୀ",
-      "extractingText": "PDFରୁ ଟେକ୍ସ୍ଟ ବାହାର କରାଯାଉଛି...",
-      "extractionSuccess": "ଟେକ୍ସ୍ଟ ବାହାର କରାଯାଇଛି",
-      "extractionSuccessMessage": "PDF ସାମଗ୍ରୀ ବାହାର କରାଯାଇଛି ଏବଂ ବିଶ୍ଳେଷଣ କରାଯିବ।"
-    },
-    "download": {
-      "button": "DOCX ଭାବରେ ଡାଉନ୍‌ଲୋଡ୍ କରନ୍ତୁ",
-      "tooltip": "ଏହି ଦସ୍ତାବିଜ୍‌କୁ Word ଫାଇଲ୍ ଭାବରେ ଡାଉନ୍‌ଲୋଡ୍ କରନ୍ତୁ",
-      "success": "ଡାଉନ୍‌ଲୋଡ୍ ସଫଳ",
-      "successMessage": "{{filename}} ସଫଳତାପୂର୍ବକ ଡାଉନ୍‌ଲୋଡ୍ ହୋଇଛି",
-      "error": "ଦସ୍ତାବିଜ୍ ଡାଉନ୍‌ଲୋଡ୍ କରିବାରେ ବିଫଳ। ଦୟାକରି ପୁନର୍ବାର ଚେଷ୍ଟା କରନ୍ତୁ।"
-    },
-    "tone": {
-      "normal": "ସାଧାରଣ",
-      "lawyer": "ଓକିଲ"
-    },
-    "reddit": {
-      "parseSuccess": "Reddit ପୋଷ୍ଟ୍ ପାର୍ସ କରାଯାଇଛି",
-      "parseSuccessMessage": "Reddit ପୋଷ୍ଟ୍ ବିଷୟବସ୍ତୁ ସଫଳତାପୂର୍ବକ ବାହାର କରାଯାଇଛି",
-      "parsing": "Reddit ପୋଷ୍ଟ୍ ପାର୍ସ ହେଉଛି..."
-    },
-    "disclaimer": "ନିରାକରଣ: ଏହା ଏକ AI ଉତ୍ପାଦ ଏବଂ ଆଇନଗତ ସଳାହର ବିକଳ୍ପ ନୁହେଁ। ଦୟାକରି ଆଇନଗତ ସଳାହ ପାଇଁ ଏକ ଲାଇସେନ୍ସପ୍ରାପ୍ତ ଓକିଲଙ୍କ ସହିତ ପରାମର୍ଶ କରନ୍ତୁ।"
-  },
-  "dashboard": {
-    "header": {
-      "toggleNavigation": "ନାଭିଗେସନ୍ ଟୋଗଲ୍ କରନ୍ତୁ",
-      "toggleColorScheme": "ରଙ୍ଗ ଯୋଜନା ଟୋଗଲ୍ କରନ୍ତୁ"
-    },
-    "sidebar": {
-      "startNewAnalysis": "ନୂଆ ବିଶ୍ଳେଷଣ ଆରମ୍ଭ କରନ୍ତୁ",
-      "recentChats": "ସାମ୍ପ୍ରତିକ ଚାଟ୍",
-      "noRecentChats": "କୌଣସି ସାମ୍ପ୍ରତିକ ଚାଟ୍ ନାହିଁ",
-      "deleteChat": "ଚାଟ୍ ମିଟାନ୍ତୁ",
-      "deleteChatConfirm": "ଆପଣ ନିଶ୍ଚିତ ଭାବରେ \"{{name}}\" କୁ ମିଟାଇବାକୁ ଚାହୁଁଛନ୍ତି କି? ଏହି କାର୍ଯ୍ୟକୁ ପୂର୍ବବତ୍ କରାଯାଇପାରିବ ନାହିଁ।"
+  "modernTooling": {
+    "title": "Modern Tooling Stack",
+    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "tools": {
+      "nextjs": {
+        "title": "Next.js 16",
+        "description": "The latest framework features including Server Actions and enhanced routing."
+      },
+      "react": {
+        "title": "React 19",
+        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+      },
+      "biome": {
+        "title": "Biome",
+        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+      },
+      "typescript": {
+        "title": "TypeScript 5",
+        "description": "Latest type safety features to catch errors early and improve maintainability."
+      },
+      "zustand": {
+        "title": "Zustand",
+        "description": "A small, fast, and scalable bearbones state-management solution."
+      },
+      "husky": {
+        "title": "Husky & Commitlint",
+        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+      }
     }
   },
-  "login": {
-    "title": "ପୁନର୍ବାର ସ୍ୱାଗତ!",
-    "noAccount": "ଏଯାଏଁ ଖାତା ନାହିଁ?",
-    "createAccount": "ଖାତା ସୃଷ୍ଟି କରନ୍ତୁ",
-    "email": "ଇମେଲ୍",
-    "emailPlaceholder": "you@mantine.dev",
-    "password": "ପାସୱାର୍ଡ୍",
-    "passwordPlaceholder": "ଆପଣଙ୍କର ପାସୱାର୍ଡ୍",
-    "rememberMe": "ମୋତେ ମନେ ରଖନ୍ତୁ",
-    "forgotPassword": "ପାସୱାର୍ଡ୍ ଭୁଲିଗଲେ?",
-    "signIn": "ସାଇନ୍ ଇନ୍ କରନ୍ତୁ",
-    "loginSuccessful": "ଲଗଇନ୍ ସଫଳ",
-    "loginSuccessfulMessage": "ଆପଣ ବର୍ତ୍ତମାନ ଲଗ୍ ଇନ୍ ହୋଇଛନ୍ତି",
-    "invalidEmail": "ଅବୈଧ ଇମେଲ୍ ଠିକଣା",
-    "passwordTooShort": "ପାସୱାର୍ଡ୍ ଅତିକମରେ 6 ଅକ୍ଷରର ହେବା ଉଚିତ୍"
+  "quickLinks": {
+    "title": "Quick Links",
+    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "links": {
+      "nextjs": {
+        "label": "Next.js",
+        "description": "The React Framework for the Web"
+      },
+      "react": {
+        "label": "React",
+        "description": "The library for web and native user interfaces"
+      },
+      "mantine": {
+        "label": "Mantine",
+        "description": "A fully featured React component library"
+      },
+      "biome": {
+        "label": "Biome",
+        "description": "Toolchain of the web"
+      },
+      "zustand": {
+        "label": "Zustand",
+        "description": "Global state manager in react/next"
+      },
+      "repository": {
+        "label": "Repository",
+        "description": "View the source code for this template"
+      }
+    }
+  },
+  "usageInstructions": {
+    "title": "How to use this template",
+    "subtitle": "Follow these simple steps to get your project up and running:",
+    "steps": {
+      "clone": {
+        "bold": "Clone the repository",
+        "text": " and navigate to the project directory."
+      },
+      "install": {
+        "bold": "Install dependencies",
+        "text": " using your preferred package manager:"
+      },
+      "start": {
+        "bold": "Start the development server",
+        "text": " to see changes in real-time:"
+      },
+      "build": {
+        "text": "Start building your application by modifying ",
+        "code": "src/app/page.tsx"
+      }
+    }
+  },
+  "socialShare": {
+    "share": {
+      "title": "Share This Template",
+      "subtitle": "Help others discover this production-ready boilerplate"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "emailLabel": "Email:",
+      "websiteLabel": "Website:"
+    }
   },
   "notFound": {
     "title": "404",
-    "heading": "ପୃଷ୍ଠା ମିଳିଲା ନାହିଁ",
-    "description": "ଓହ! ଆପଣ ଖୋଜୁଥିବା ପୃଷ୍ଠା ବିଦ୍ୟମାନ ନାହିଁ। ଏହା ସ୍ଥାନାନ୍ତରିତ, ବିଲୋପିତ ହୋଇଥାଇପାରେ, କିମ୍ବା URL ଭୁଲ୍ ହୋଇଥାଇପାରେ।"
+    "heading": "Page Not Found",
+    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
   }
 }

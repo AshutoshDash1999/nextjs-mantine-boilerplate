@@ -11,8 +11,11 @@ import {
   Title,
 } from "@mantine/core";
 import { IconBrandGithub, IconCheck } from "@tabler/icons-react";
+import { useTranslation } from "@/i18n";
 
 export function UsageInstructions() {
+  const { t } = useTranslation();
+
   return (
     <Card withBorder radius="md" p="xl" bg="var(--mantine-color-body)">
       <Stack gap="md">
@@ -20,12 +23,10 @@ export function UsageInstructions() {
           <ThemeIcon size={40} radius="md" variant="light" color="blue">
             <IconBrandGithub size={24} />
           </ThemeIcon>
-          <Title order={2}>How to use this template</Title>
+          <Title order={2}>{t("usageInstructions.title")}</Title>
         </Group>
 
-        <Text c="dimmed">
-          Follow these simple steps to get your project up and running:
-        </Text>
+        <Text c="dimmed">{t("usageInstructions.subtitle")}</Text>
 
         <List
           spacing="md"
@@ -38,31 +39,31 @@ export function UsageInstructions() {
         >
           <List.Item>
             <Text span fw={700}>
-              Clone the repository
+              {t("usageInstructions.steps.clone.bold")}
             </Text>{" "}
-            and navigate to the project directory.
+            {t("usageInstructions.steps.clone.text")}
           </List.Item>
           <List.Item>
             <Text span fw={700}>
-              Install dependencies
+              {t("usageInstructions.steps.install.bold")}
             </Text>{" "}
-            using your preferred package manager:
+            {t("usageInstructions.steps.install.text")}
             <Code block mt="xs">
               npm install
             </Code>
           </List.Item>
           <List.Item>
             <Text span fw={700}>
-              Start the development server
+              {t("usageInstructions.steps.start.bold")}
             </Text>{" "}
-            to see changes in real-time:
+            {t("usageInstructions.steps.start.text")}
             <Code block mt="xs">
               npm run dev
             </Code>
           </List.Item>
           <List.Item>
-            Start building your application by modifying{" "}
-            <Code>src/app/page.tsx</Code>.
+            {t("usageInstructions.steps.build.text")}
+            <Code>{t("usageInstructions.steps.build.code")}</Code>.
           </List.Item>
         </List>
       </Stack>

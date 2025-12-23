@@ -6,13 +6,16 @@ import {
   IconRocket,
   IconTool,
 } from "@tabler/icons-react";
+import { useTranslation } from "@/i18n";
 import { FeatureCard } from "./FeatureCard";
 
 export function WhyUseTemplate() {
+  const { t } = useTranslation();
+
   return (
     <Stack mb={80}>
       <Title order={2} ta="center" mb="xl">
-        Why Use This Template?
+        {t("whyUseTemplate.title")}
       </Title>
       <SimpleGrid
         cols={{
@@ -23,23 +26,29 @@ export function WhyUseTemplate() {
       >
         <FeatureCard
           icon={<IconRocket size={30} />}
-          title="Cutting Edge Performance"
-          description="Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+          title={t("whyUseTemplate.features.cuttingEdgePerformance.title")}
+          description={t(
+            "whyUseTemplate.features.cuttingEdgePerformance.description"
+          )}
         />
         <FeatureCard
           icon={<IconBolt size={30} />}
-          title="Blazing Fast Tooling"
-          description="Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+          title={t("whyUseTemplate.features.blazingFastTooling.title")}
+          description={t(
+            "whyUseTemplate.features.blazingFastTooling.description"
+          )}
         />
         <FeatureCard
           icon={<IconPalette size={30} />}
-          title="Mantine UI v8"
-          description="Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+          title={t("whyUseTemplate.features.mantineUI.title")}
+          description={t("whyUseTemplate.features.mantineUI.description")}
         />
         <FeatureCard
           icon={<IconTool size={30} />}
-          title="Robust State Management"
-          description="Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+          title={t("whyUseTemplate.features.robustStateManagement.title")}
+          description={t(
+            "whyUseTemplate.features.robustStateManagement.description"
+          )}
         />
       </SimpleGrid>
     </Stack>

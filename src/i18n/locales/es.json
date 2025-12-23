@@ -1,181 +1,148 @@
 {
   "common": {
-    "signIn": "Iniciar sesión",
-    "startChatting": "Comienza a chatear ahora",
-    "startAnalysis": "Iniciar análisis legal",
-    "view": "Ver",
-    "preview": "Vista previa",
+    "login": "Login",
+    "dashboard": "Dashboard",
+    "language": "Language",
+    "theme": "Theme",
+    "account": "Account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "backToHome": "Back to Home",
+    "goBackHome": "Go Back Home",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "rename": "Rename",
     "error": "Error",
-    "success": "Éxito",
-    "loading": "Cargando",
-    "thinking": "Pensando...",
-    "language": "Idioma",
-    "theme": "Tema",
-    "account": "Cuenta",
-    "profile": "Perfil",
-    "settings": "Configuración",
-    "logout": "Cerrar sesión",
-    "lightMode": "Modo claro",
-    "darkMode": "Modo oscuro",
-    "backToHome": "Volver al inicio",
-    "goBackHome": "Volver al inicio",
-    "delete": "Eliminar",
-    "cancel": "Cancelar",
-    "rename": "Renombrar"
+    "success": "Success",
+    "loading": "Loading"
   },
   "hero": {
-    "title": "Verdict.ai",
-    "subtitle": "Tu asistente legal inteligente impulsado por IA. Analiza contratos, revisa documentos, obtén información legal y redacta acuerdos, todo en un solo lugar."
+    "title": "Next.js Mantine Boilerplate",
+    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
+    "loginButton": "Login",
+    "dashboardButton": "Dashboard"
   },
-  "features": {
-    "title": "Herramientas legales poderosas al alcance de tu mano",
-    "subtitle": "Todo lo que necesitas para manejar documentos legales y obtener respuestas a tus preguntas legales.",
-    "documentAnalysis": {
-      "title": "Análisis de documentos",
-      "description": "Sube documentos PDF y obtén análisis instantáneo de contratos, acuerdos y documentos legales."
-    },
-    "legalQA": {
-      "title": "Preguntas y respuestas legales",
-      "description": "Haz cualquier pregunta legal y recibe respuestas completas impulsadas por tecnología de IA avanzada."
-    },
-    "voiceInput": {
-      "title": "Entrada de voz",
-      "description": "Habla tus preguntas de forma natural usando tecnología de voz a texto para una experiencia fluida."
-    },
-    "contractReview": {
-      "title": "Revisión de contratos",
-      "description": "Obtén revisiones detalladas de contratos con riesgos destacados, términos clave y recomendaciones."
-    },
-    "securePrivate": {
-      "title": "Seguro y privado",
-      "description": "Tus documentos y conversaciones se manejan con los más altos estándares de seguridad."
-    },
-    "availability": {
-      "title": "Disponibilidad 24/7",
-      "description": "Accede a asistencia legal en cualquier momento y lugar. No se necesitan citas."
-    },
-    "documentDrafting": {
-      "title": "Redacción de documentos",
-      "description": "Genera documentos legales completos incluyendo avisos, acuerdos, peticiones y contratos con formato adecuado y cláusulas legales."
-    },
-    "contextAwareSuggestions": {
-      "title": "Sugerencias inteligentes",
-      "description": "Obtén preguntas de seguimiento y sugerencias contextuales basadas en tu historial de conversación para interacciones fluidas."
-    },
-    "redditParsing": {
-      "title": "Integración con Reddit",
-      "description": "Analiza y procesa publicaciones de Reddit para obtener información legal y discusiones, facilitando la obtención de asesoramiento legal de discusiones comunitarias."
-    },
-    "downloadDocx": {
-      "title": "Exportar documentos",
-      "description": "Descarga tus documentos legales y respuestas de chat como archivos Word (DOCX) para compartir fácilmente y acceso sin conexión."
-    },
-    "indianLawFocus": {
-      "title": "Especializado en derecho indio",
-      "description": "Enfocado exclusivamente en leyes, actos, estatutos y procedimientos legales indios con terminología legal precisa y referencias."
-    },
-    "multiLanguage": {
-      "title": "Soporte multiidioma",
-      "description": "Obtén asistencia legal en inglés, hindi, telugu y odia con terminología legal adecuada en tu idioma preferido."
-    },
-    "themeSupport": {
-      "title": "Personalización de tema",
-      "description": "Cambia entre temas claro y oscuro con detección automática de preferencias del sistema para una visualización cómoda."
+  "whyUseTemplate": {
+    "title": "Why Use This Template?",
+    "features": {
+      "cuttingEdgePerformance": {
+        "title": "Cutting Edge Performance",
+        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+      },
+      "blazingFastTooling": {
+        "title": "Blazing Fast Tooling",
+        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+      },
+      "mantineUI": {
+        "title": "Mantine UI v8",
+        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+      },
+      "robustStateManagement": {
+        "title": "Robust State Management",
+        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+      }
     }
   },
-  "cta": {
-    "title": "¿Listo para comenzar?",
-    "description": "Únete a miles de usuarios que confían en Verdict.ai para su análisis de documentos legales y preguntas legales. Comienza tu primer análisis hoy."
-  },
-  "chat": {
-    "welcomeMessage": "¡Hola! Soy tu asistente Verdict.ai especializado en leyes indias. ¿Cómo puedo ayudarte con tus preguntas legales hoy?",
-    "placeholder": "Haz tu pregunta legal...",
-    "getStartedWith": "Comienza con:",
-    "suggestions": "Sugerencias:",
-    "defaultPrompts": {
-      "contractAct": "¿Cuáles son las disposiciones clave de la Ley de Contratos de la India?",
-      "filingCase": "Explica el procedimiento para presentar un caso en los tribunales indios",
-      "consumerRights": "¿Cuáles son mis derechos bajo la Ley de Protección al Consumidor?",
-      "criminalOffenses": "¿Cómo define el Código Penal de la India los delitos penales?",
-      "propertyRegistration": "¿Cuál es el proceso para el registro de propiedades en la India?"
-    },
-    "errorMessages": {
-      "generic": "Me disculpo, pero encontré un error al procesar tu solicitud. Por favor, intenta de nuevo o reformula tu pregunta.",
-      "failedToGetResponse": "Error al obtener respuesta. Por favor, intenta de nuevo.",
-      "permissionDenied": "Permiso denegado",
-      "permissionDeniedMessage": "Por favor, permite el acceso al micrófono para usar voz a texto. Verifica la configuración de tu navegador si está bloqueado.",
-      "invalidFileType": "Tipo de archivo inválido",
-      "invalidFileTypeMessage": "Por favor, sube un archivo PDF.",
-      "fileTooLarge": "Archivo demasiado grande",
-      "fileTooLargeMessage": "El tamaño del archivo debe ser menor a 2MB.",
-      "fileAttached": "Archivo adjunto",
-      "fileAttachedMessage": "{{fileName}} está listo para ser enviado.",
-      "pdfExtractionFailed": "Error al extraer texto del PDF. Por favor, intenta de nuevo.",
-      "redditParseFailed": "Error al analizar la publicación de Reddit. Por favor, intenta de nuevo."
-    },
-    "tooltips": {
-      "uploadPdf": "Subir PDF (máx. 2MB)",
-      "speechNotSupported": "El reconocimiento de voz no es compatible con este navegador",
-      "stopListening": "Dejar de escuchar",
-      "startVoiceInput": "Iniciar entrada de voz"
-    },
-    "fileAttachment": {
-      "userAttachedFile": "[El usuario ha adjuntado un archivo: {{fileName}}]",
-      "documentContent": "Contenido del documento",
-      "extractingText": "Extrayendo texto del PDF...",
-      "extractionSuccess": "Texto extraído",
-      "extractionSuccessMessage": "El contenido del PDF ha sido extraído y será analizado."
-    },
-    "download": {
-      "button": "Descargar como DOCX",
-      "tooltip": "Descargar este documento como archivo Word",
-      "success": "Descarga exitosa",
-      "successMessage": "{{filename}} se ha descargado exitosamente",
-      "error": "Error al descargar el documento. Por favor, intenta de nuevo."
-    },
-    "tone": {
-      "normal": "Normal",
-      "lawyer": "Abogado"
-    },
-    "reddit": {
-      "parseSuccess": "Publicación de Reddit analizada",
-      "parseSuccessMessage": "Contenido de la publicación de Reddit extraído exitosamente",
-      "parsing": "Analizando publicación de Reddit..."
-    },
-    "disclaimer": "Descargo de responsabilidad: Este es un producto de IA y no es un sustituto del asesoramiento legal. Por favor, consulta con un abogado licenciado para asesoramiento legal."
-  },
-  "dashboard": {
-    "header": {
-      "toggleNavigation": "Alternar navegación",
-      "toggleColorScheme": "Alternar esquema de color"
-    },
-    "sidebar": {
-      "startNewAnalysis": "Iniciar nuevo análisis",
-      "recentChats": "Chats recientes",
-      "noRecentChats": "No hay chats recientes",
-      "deleteChat": "Eliminar chat",
-      "deleteChatConfirm": "¿Estás seguro de que deseas eliminar \"{{name}}\"? Esta acción no se puede deshacer."
+  "modernTooling": {
+    "title": "Modern Tooling Stack",
+    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "tools": {
+      "nextjs": {
+        "title": "Next.js 16",
+        "description": "The latest framework features including Server Actions and enhanced routing."
+      },
+      "react": {
+        "title": "React 19",
+        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+      },
+      "biome": {
+        "title": "Biome",
+        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+      },
+      "typescript": {
+        "title": "TypeScript 5",
+        "description": "Latest type safety features to catch errors early and improve maintainability."
+      },
+      "zustand": {
+        "title": "Zustand",
+        "description": "A small, fast, and scalable bearbones state-management solution."
+      },
+      "husky": {
+        "title": "Husky & Commitlint",
+        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+      }
     }
   },
-  "login": {
-    "title": "¡Bienvenido de nuevo!",
-    "noAccount": "¿Aún no tienes una cuenta?",
-    "createAccount": "Crear cuenta",
-    "email": "Correo electrónico",
-    "emailPlaceholder": "tu@mantine.dev",
-    "password": "Contraseña",
-    "passwordPlaceholder": "Tu contraseña",
-    "rememberMe": "Recordarme",
-    "forgotPassword": "¿Olvidaste tu contraseña?",
-    "signIn": "Iniciar sesión",
-    "loginSuccessful": "Inicio de sesión exitoso",
-    "loginSuccessfulMessage": "Ahora estás conectado",
-    "invalidEmail": "Dirección de correo electrónico inválida",
-    "passwordTooShort": "La contraseña debe tener al menos 6 caracteres"
+  "quickLinks": {
+    "title": "Quick Links",
+    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "links": {
+      "nextjs": {
+        "label": "Next.js",
+        "description": "The React Framework for the Web"
+      },
+      "react": {
+        "label": "React",
+        "description": "The library for web and native user interfaces"
+      },
+      "mantine": {
+        "label": "Mantine",
+        "description": "A fully featured React component library"
+      },
+      "biome": {
+        "label": "Biome",
+        "description": "Toolchain of the web"
+      },
+      "zustand": {
+        "label": "Zustand",
+        "description": "Global state manager in react/next"
+      },
+      "repository": {
+        "label": "Repository",
+        "description": "View the source code for this template"
+      }
+    }
+  },
+  "usageInstructions": {
+    "title": "How to use this template",
+    "subtitle": "Follow these simple steps to get your project up and running:",
+    "steps": {
+      "clone": {
+        "bold": "Clone the repository",
+        "text": " and navigate to the project directory."
+      },
+      "install": {
+        "bold": "Install dependencies",
+        "text": " using your preferred package manager:"
+      },
+      "start": {
+        "bold": "Start the development server",
+        "text": " to see changes in real-time:"
+      },
+      "build": {
+        "text": "Start building your application by modifying ",
+        "code": "src/app/page.tsx"
+      }
+    }
+  },
+  "socialShare": {
+    "share": {
+      "title": "Share This Template",
+      "subtitle": "Help others discover this production-ready boilerplate"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "emailLabel": "Email:",
+      "websiteLabel": "Website:"
+    }
   },
   "notFound": {
     "title": "404",
-    "heading": "Página no encontrada",
-    "description": "¡Ups! La página que buscas no existe. Puede haber sido movida, eliminada o la URL podría ser incorrecta."
+    "heading": "Page Not Found",
+    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
   }
 }
