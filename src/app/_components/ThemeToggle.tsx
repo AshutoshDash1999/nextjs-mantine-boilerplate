@@ -2,6 +2,7 @@
 
 import {
   ActionIcon,
+  Affix,
   useComputedColorScheme,
   useMantineColorScheme,
 } from "@mantine/core";
@@ -14,22 +15,27 @@ export function ThemeToggle() {
   });
 
   return (
-    <ActionIcon
-      onClick={() =>
-        setColorScheme(computedColorScheme === "light" ? "dark" : "light")
-      }
-      variant="default"
-      size="xl"
-      aria-label="Toggle color scheme"
-      pos="fixed"
-      top={20}
-      right={20}
+    <Affix
+      position={{
+        bottom: 20,
+        right: 200,
+      }}
+      zIndex={1000}
     >
-      {computedColorScheme === "dark" ? (
-        <IconSun stroke={1.5} />
-      ) : (
-        <IconMoon stroke={1.5} />
-      )}
-    </ActionIcon>
+      <ActionIcon
+        onClick={() =>
+          setColorScheme(computedColorScheme === "light" ? "dark" : "light")
+        }
+        variant="default"
+        size="xl"
+        aria-label="Toggle color scheme"
+      >
+        {computedColorScheme === "dark" ? (
+          <IconSun stroke={1.5} />
+        ) : (
+          <IconMoon stroke={1.5} />
+        )}
+      </ActionIcon>
+    </Affix>
   );
 }

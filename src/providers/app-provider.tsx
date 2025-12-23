@@ -2,6 +2,8 @@
 import { createTheme, MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 import type React from "react";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
+import { LanguageToggler } from "@/components/common/LanguageToggler";
 import { QueryProvider } from "./query-provider";
 
 // Styles
@@ -22,6 +24,8 @@ export const AppProvider = ({ children }: AppProviderProps) => {
       <MantineProvider theme={theme} defaultColorScheme="auto">
         <Notifications autoClose={4000} position="top-right" />
         {children}
+        <LanguageToggler />
+        <ThemeToggle />
       </MantineProvider>
     </QueryProvider>
   );

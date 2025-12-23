@@ -4,7 +4,6 @@ import {
   ModernTooling,
   QuickLinks,
   SocialShare,
-  ThemeToggle,
   UsageInstructions,
   WhyUseTemplate,
 } from "./_components";
@@ -12,7 +11,6 @@ import {
 export default function Home() {
   return (
     <Container size="lg" py={50}>
-      <ThemeToggle />
       <HeroSection />
       <WhyUseTemplate />
       <ModernTooling />
