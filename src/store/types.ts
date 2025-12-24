@@ -1,13 +1,11 @@
 export interface LocalStoreState {
   count: number;
   preferredCurrency: string;
-  preferredLanguage: string;
   autoDetectedLanguage: string | null;
   increment: () => void;
   decrement: () => void;
   reset: () => void;
   setPreferredCurrency: (currency: string) => void;
-  setPreferredLanguage: (language: string) => void;
   setAutoDetectedLanguage: (language: string | null) => void;
 }
 

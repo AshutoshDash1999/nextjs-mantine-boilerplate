@@ -42,6 +42,7 @@ export function LanguageToggler() {
 
             // If current language is still default (en) or matches detected, use auto-detected
             const currentLang = getCurrentLanguage();
+            console.log("currentLang :", currentLang);
             if (currentLang === "en" || currentLang === lang) {
               changeLanguage(lang);
               setCurrentLanguage(lang);

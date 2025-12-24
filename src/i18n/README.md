@@ -30,13 +30,6 @@ export function MyComponent() {
 
 The language can be changed using the `LanguageSwitcher` component or programmatically:
 
-```tsx
-import { useLocalStore } from "@/store/useLocalStore";
-
-const { setPreferredLanguage } = useLocalStore();
-setPreferredLanguage("hi"); // Switch to Hindi
-```
-
 ### Adding New Translations
 
 1. Add translation keys to `src/i18n/locales/en.json`
