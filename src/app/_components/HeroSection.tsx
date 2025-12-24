@@ -18,6 +18,7 @@ export function HeroSection() {
         <Button
           component={Link}
           href="/login"
+          prefetch={false}
           size="lg"
           leftSection={<IconLogin size={20} />}
           variant="gradient"
@@ -31,6 +32,7 @@ export function HeroSection() {
         <Button
           component={Link}
           href="/home"
+          prefetch={false}
           size="lg"
           variant="default"
           leftSection={<IconDashboard size={20} />}

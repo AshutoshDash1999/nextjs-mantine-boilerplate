@@ -110,7 +110,7 @@ export default function RootLayout({
         <ColorSchemeScript defaultColorScheme="auto" suppressHydrationWarning />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
-      <body className={`${nunito.variable}`}>
+      <body className={`${nunito.variable}`} suppressHydrationWarning>
         <AppProvider>{children}</AppProvider>
       </body>
     </html>

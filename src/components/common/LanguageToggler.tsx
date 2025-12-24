@@ -24,48 +24,76 @@ export function LanguageToggler() {
   const [isLoading, setIsLoading] = useState(true);
   const [detectedLanguage, setDetectedLanguage] = useState<string | null>(null);
   const [currentLanguage, setCurrentLanguage] = useState<string>("en");
+  const [isMounted, setIsMounted] = useState(false);
   const { i18n } = useTranslation();
 
-  const fetchGeolocation = async () => {
-    try {
-      const response = await fetch("/api/geolocation");
-      if (response.ok) {
-        const data: GeolocationResponse = await response.json();
-        const language = data.language || "en";
-
-        // Check if the detected language is supported
-        const isSupported = SUPPORTED_LANGUAGES.some(
-          (l) => l.code === language
-        );
-
-        if (isSupported && language !== "en") {
-          setDetectedLanguage(language);
-
-          i18n.changeLanguage(language);
-        } else {
-          setDetectedLanguage(null);
-        }
-      }
-    } catch (error) {
-      console.error("Failed to fetch geolocation:", error);
-      setDetectedLanguage(null);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  console.log("detectedLanguage :", detectedLanguage);
-
-  // Initialize current language from i18n
+  // Handle mount to prevent hydration mismatch
   useEffect(() => {
-    // Set initial language from i18n
+    setIsMounted(true);
+    // Set initial language from i18n (only on client)
     const initialLang = getCurrentLanguage();
     setCurrentLanguage(initialLang);
-
-    // Fetch geolocation on mount (only once)
-
-    fetchGeolocation();
   }, []);
+
+  // Listen to language changes from i18n
+  useEffect(() => {
+    if (!isMounted) {
+      return;
+    }
+
+    const handleLanguageChanged = (lng: string) => {
+      setCurrentLanguage(lng);
+    };
+
+    i18n.on("languageChanged", handleLanguageChanged);
+
+    // Fetch geolocation after mount
+    const fetchGeolocationData = async () => {
+      try {
+        const response = await fetch("/api/geolocation");
+        if (response.ok) {
+          const data: GeolocationResponse = await response.json();
+          const language = data.language || "en";
+
+          // Check if the detected language is supported
+          const isSupported = SUPPORTED_LANGUAGES.some(
+            (l) => l.code === language
+          );
+
+          if (isSupported && language !== "en") {
+            setDetectedLanguage(language);
+
+            // Only auto-switch if no language preference is stored
+            const storedLang =
+              typeof window !== "undefined"
+                ? localStorage.getItem("i18nextLng")
+                : null;
+
+            if (!storedLang) {
+              i18n.changeLanguage(language);
+              setCurrentLanguage(language);
+            }
+          } else {
+            setDetectedLanguage(null);
+          }
+        }
+      } catch (error) {
+        console.error("Failed to fetch geolocation:", error);
+        setDetectedLanguage(null);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchGeolocationData();
+
+    return () => {
+      i18n.off("languageChanged", handleLanguageChanged);
+    };
+  }, [
+    isMounted,
+    i18n,
+  ]);
 
   // Get the language label for display
   const getLanguageLabel = (langCode: string | null): string => {
@@ -100,15 +128,26 @@ export function LanguageToggler() {
   });
 
   // Determine current value for segmented control
-  // If current language is in segmentData, use it; otherwise default to "en"
-  const currentValue = segmentData.some(
-    (item) => item.value === currentLanguage
-  )
-    ? currentLanguage
-    : "en";
+  // Use detected language as default if available, otherwise use current language or "en"
+  const currentValue = (() => {
+    // If we have a detected language and no stored preference, use detected language
+    if (detectedLanguage && detectedLanguage !== "en") {
+      const storedLang =
+        typeof window !== "undefined"
+          ? localStorage.getItem("i18nextLng")
+          : null;
+      if (!storedLang) {
+        return detectedLanguage;
+      }
+    }
+    // Otherwise, use current language if it's in segmentData, or default to "en"
+    return segmentData.some((item) => item.value === currentLanguage)
+      ? currentLanguage
+      : "en";
+  })();
 
-  // Show loading state or always show the control
-  if (isLoading) {
+  // Prevent hydration mismatch - don't render until mounted on client
+  if (!isMounted) {
     return (
       <SegmentedControl
         value="en"
@@ -120,6 +159,13 @@ export function LanguageToggler() {
           },
         ]}
       />
+    );
+  }
+
+  // Show loading state
+  if (isLoading) {
+    return (
+      <SegmentedControl value={currentValue} disabled data={segmentData} />
     );
   }
 

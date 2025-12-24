@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "Σύνδεση",
+    "dashboard": "Πίνακας Ελέγχου",
+    "language": "Γλώσσα",
+    "theme": "Θέμα",
+    "account": "Λογαριασμός",
+    "profile": "Προφίλ",
+    "settings": "Ρυθμίσεις",
+    "logout": "Αποσύνδεση",
+    "lightMode": "Φωτεινή Λειτουργία",
+    "darkMode": "Σκοτεινή Λειτουργία",
+    "backToHome": "Επιστροφή στην Αρχική",
+    "goBackHome": "Επιστροφή στην Αρχική",
+    "delete": "Διαγραφή",
+    "cancel": "Ακύρωση",
+    "rename": "Μετονομασία",
+    "error": "Σφάλμα",
+    "success": "Επιτυχία",
+    "loading": "Φόρτωση"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "Ένα πλήρως λειτουργικό, έτοιμο για παραγωγή πρότυπο για να ξεκινήσετε το νέο σας έργο. Χτισμένο με Next.js 16, React 19, Mantine v8, react-query-ease για απλοποιημένη ενσωμάτωση API και σύγχρονα εργαλεία όπως το Biome.",
+    "loginButton": "Σύνδεση",
+    "dashboardButton": "Πίνακας Ελέγχου"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Γιατί να χρησιμοποιήσετε αυτό το πρότυπο;",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Απόδοση Κορυφαίας Τεχνολογίας",
+        "description": "Αξιοποιήστε τη δύναμη του Next.js 16 και React 19 (RC) με τον νέο React Compiler ενεργοποιημένο για βέλτιστη ταχύτητα και SEO."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Εξαιρετικά Γρήγορα Εργαλεία",
+        "description": "Αντικατάσταση ESLint και Prettier με Biome - μια γρήγορη αλυσίδα εργαλείων βασισμένη σε Rust για μορφοποίηση και linting που εξοικονομεί χρόνο."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Χτισμένο στην τελευταία έκδοση του Mantine, προσφέροντας μια ολοκληρωμένη σουίτα προσβάσιμων και προσαρμόσιμων στοιχείων."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Αξιόπιστη Διαχείριση Κατάστασης",
+        "description": "Περιλαμβάνει Zustand για καθολική κατάσταση πελάτη και TanStack Query για αποτελεσματική κατάσταση διακομιστή και ανάκτηση δεδομένων."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "Σύγχρονη Στοίβα Εργαλείων",
+    "subtitle": "Έχουμε επιλέξει προσεκτικά τα καλύτερα σύγχρονα εργαλεία για να εξασφαλίσουμε μια ομαλή εμπειρία προγραμματιστή και μια βάση κώδικα υψηλής ποιότητας.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Οι τελευταίες λειτουργίες πλαισίου, συμπεριλαμβανομένων Server Actions και βελτιωμένης δρομολόγησης."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Έτοιμο για το μέλλον με Actions, αισιόδοξες ενημερώσεις UI και τον React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Ενοποιημένος μορφοποιητής και linter. Είναι απίστευτα γρήγορος και μειώνει την κόπωση ρύθμισης."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Οι τελευταίες λειτουργίες ασφαλείας τύπων για να εντοπίσετε σφάλματα νωρίς και να βελτιώσετε τη συντήρηση."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Μια μικρή, γρήγορη και κλιμακώσιμη λύση διαχείρισης κατάστασης."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Εξασφαλίζει ότι όλα τα commits πληρούν τις τυπικές συμβάσεις και ελέγχους ποιότητας κώδικα πριν από το push."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "Γρήγοροι Σύνδεσμοι",
+    "subtitle": "Απαραίτητοι πόροι και τεκμηρίωση για τις τεχνολογίες που χρησιμοποιούνται σε αυτό το boilerplate.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Το React Framework για τον Ιστό"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Η βιβλιοθήκη για διασυνδέσεις χρήστη ιστού και εγγενούς"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Μια πλήρως λειτουργική βιβλιοθήκη στοιχείων React"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Αλυσίδα εργαλείων του ιστού"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "Καθολικός διαχειριστής κατάστασης στο react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "Αποθετήριο",
+        "description": "Προβολή του πηγαίου κώδικα για αυτό το πρότυπο"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Πώς να χρησιμοποιήσετε αυτό το πρότυπο",
+    "subtitle": "Ακολουθήστε αυτά τα απλά βήματα για να ξεκινήσετε το έργο σας:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "Κλωνοποίηση του αποθετηρίου",
+        "text": " και πλοήγηση στον κατάλογο του έργου."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "Εγκατάσταση εξαρτήσεων",
+        "text": " χρησιμοποιώντας τον προτιμώμενο διαχειριστή πακέτων σας:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "Εκκίνηση του διακομιστή ανάπτυξης",
+        "text": " για να δείτε τις αλλαγές σε πραγματικό χρόνο:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Ξεκινήστε να δημιουργείτε την εφαρμογή σας τροποποιώντας ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "Κοινοποίηση αυτού του προτύπου",
+      "subtitle": "Βοηθήστε άλλους να ανακαλύψουν αυτό το έτοιμο για παραγωγή boilerplate"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "title": "Επικοινωνήστε μαζί μας",
+      "subtitle": "Έχετε ερωτήσεις ή θέλετε να συνεργαστείτε; Επικοινωνήστε μαζί μας!",
       "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "websiteLabel": "Ιστοσελίδα:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Η σελίδα δεν βρέθηκε",
+    "description": "Ωχ! Η σελίδα που αναζητάτε δεν υπάρχει. Μπορεί να έχει μετακινηθεί, διαγραφεί ή το URL μπορεί να είναι λανθασμένο."
   }
 }

@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "Đăng nhập",
+    "dashboard": "Bảng điều khiển",
+    "language": "Ngôn ngữ",
+    "theme": "Giao diện",
+    "account": "Tài khoản",
+    "profile": "Hồ sơ",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "lightMode": "Chế độ sáng",
+    "darkMode": "Chế độ tối",
+    "backToHome": "Về trang chủ",
+    "goBackHome": "Về trang chủ",
+    "delete": "Xóa",
+    "cancel": "Hủy",
+    "rename": "Đổi tên",
+    "error": "Lỗi",
+    "success": "Thành công",
+    "loading": "Đang tải"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "Một mẫu đầy đủ tính năng, sẵn sàng cho sản xuất để khởi động dự án mới của bạn. Được xây dựng với Next.js 16, React 19, Mantine v8, react-query-ease để tích hợp API đơn giản hóa và các công cụ hiện đại như Biome.",
+    "loginButton": "Đăng nhập",
+    "dashboardButton": "Bảng điều khiển"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Tại sao sử dụng mẫu này?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Hiệu suất đỉnh cao",
+        "description": "Tận dụng sức mạnh của Next.js 16 và React 19 (RC) với React Compiler mới được kích hoạt để tối ưu tốc độ và SEO."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Công cụ cực nhanh",
+        "description": "Thay thế ESLint và Prettier bằng Biome - một công cụ nhanh dựa trên Rust để định dạng và kiểm tra mã giúp tiết kiệm thời gian."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Được xây dựng trên phiên bản mới nhất của Mantine, cung cấp một bộ thành phần đầy đủ, dễ truy cập và có thể tùy chỉnh."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Quản lý trạng thái mạnh mẽ",
+        "description": "Bao gồm Zustand cho trạng thái khách hàng toàn cục và TanStack Query cho trạng thái máy chủ hiệu quả và lấy dữ liệu."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "Bộ công cụ hiện đại",
+    "subtitle": "Chúng tôi đã chọn lọc cẩn thận các công cụ hiện đại tốt nhất để đảm bảo trải nghiệm nhà phát triển mượt mà và cơ sở mã chất lượng cao.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Các tính năng framework mới nhất bao gồm Server Actions và định tuyến được cải thiện."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Sẵn sàng cho tương lai với Actions, cập nhật UI lạc quan và React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Bộ định dạng và kiểm tra mã thống nhất. Nó cực kỳ nhanh và giảm mệt mỏi cấu hình."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Các tính năng an toàn kiểu mới nhất để phát hiện lỗi sớm và cải thiện khả năng bảo trì."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Một giải pháp quản lý trạng thái nhỏ, nhanh và có thể mở rộng."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Đảm bảo tất cả các commit đáp ứng các quy ước tiêu chuẩn và kiểm tra chất lượng mã trước khi đẩy."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "Liên kết nhanh",
+    "subtitle": "Tài nguyên và tài liệu thiết yếu cho các công nghệ được sử dụng trong boilerplate này.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Framework React cho Web"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Thư viện cho giao diện người dùng web và native"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Thư viện thành phần React đầy đủ tính năng"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Bộ công cụ của web"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "Trình quản lý trạng thái toàn cục trong react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "Kho lưu trữ",
+        "description": "Xem mã nguồn của mẫu này"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Cách sử dụng mẫu này",
+    "subtitle": "Làm theo các bước đơn giản sau để đưa dự án của bạn vào hoạt động:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "Sao chép kho lưu trữ",
+        "text": " và điều hướng đến thư mục dự án."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "Cài đặt các phụ thuộc",
+        "text": " sử dụng trình quản lý gói ưa thích của bạn:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "Khởi động máy chủ phát triển",
+        "text": " để xem các thay đổi trong thời gian thực:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Bắt đầu xây dựng ứng dụng của bạn bằng cách sửa đổi ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "Chia sẻ mẫu này",
+      "subtitle": "Giúp người khác khám phá boilerplate sẵn sàng cho sản xuất này"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "title": "Liên hệ",
+      "subtitle": "Có câu hỏi hoặc muốn hợp tác? Liên hệ với chúng tôi!",
       "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "websiteLabel": "Trang web:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Không tìm thấy trang",
+    "description": "Rất tiếc! Trang bạn đang tìm kiếm không tồn tại. Nó có thể đã được di chuyển, xóa hoặc URL có thể không đúng."
   }
 }

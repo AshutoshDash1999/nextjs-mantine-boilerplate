@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "Giriş yap",
+    "dashboard": "Kontrol Paneli",
+    "language": "Dil",
+    "theme": "Tema",
+    "account": "Hesap",
+    "profile": "Profil",
+    "settings": "Ayarlar",
+    "logout": "Çıkış yap",
+    "lightMode": "Açık Mod",
+    "darkMode": "Koyu Mod",
+    "backToHome": "Ana Sayfaya Dön",
+    "goBackHome": "Ana Sayfaya Dön",
+    "delete": "Sil",
+    "cancel": "İptal",
+    "rename": "Yeniden Adlandır",
+    "error": "Hata",
+    "success": "Başarılı",
+    "loading": "Yükleniyor"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "Yeni projenizi başlatmak için tam özellikli, üretime hazır bir şablon. Next.js 16, React 19, Mantine v8, sadeleştirilmiş API entegrasyonu için react-query-ease ve Biome gibi modern araçlarla oluşturulmuştur.",
+    "loginButton": "Giriş yap",
+    "dashboardButton": "Kontrol Paneli"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Bu Şablonu Neden Kullanmalısınız?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Son Teknoloji Performans",
+        "description": "Optimal hız ve SEO için yeni React Compiler etkinleştirilmiş Next.js 16 ve React 19 (RC) gücünden yararlanın."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Aşırı Hızlı Araçlar",
+        "description": "ESLint ve Prettier Biome ile değiştirildi - zaman tasarrufu sağlayan biçimlendirme ve linting için hızlı, Rust tabanlı bir araç zinciri."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Mantine'in en son sürümü üzerine kurulmuştur ve erişilebilir ve özelleştirilebilir bileşenlerin kapsamlı bir paketini sunar."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Güçlü Durum Yönetimi",
+        "description": "Global istemci durumu için Zustand ve verimli sunucu durumu ve veri getirme için TanStack Query içerir."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "Modern Araç Yığını",
+    "subtitle": "Sorunsuz bir geliştirici deneyimi ve yüksek kaliteli bir kod tabanı sağlamak için en iyi modern araçları dikkatle seçtik.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Sunucu İşlemleri ve geliştirilmiş yönlendirme dahil olmak üzere en son framework özellikleri."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Eylemler, iyimser UI güncellemeleri ve React Compiler ile geleceğe hazır."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Birleşik biçimlendirici ve linter. İnanılmaz derecede hızlıdır ve yapılandırma yorgunluğunu azaltır."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Hataları erken yakalamak ve bakımı iyileştirmek için en son tip güvenliği özellikleri."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Küçük, hızlı ve ölçeklenebilir bir durum yönetimi çözümü."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Gönderimden önce tüm commitlerin standart kurallara ve kod kalitesi kontrollerine uygun olmasını sağlar."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "Hızlı Bağlantılar",
+    "subtitle": "Bu şablonda kullanılan teknolojiler için temel kaynaklar ve dokümantasyon.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Web için React Framework"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Web ve yerel kullanıcı arayüzleri için kütüphane"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Tam özellikli React bileşen kütüphanesi"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Web'in araç zinciri"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "react/next içinde global durum yöneticisi"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "Depo",
+        "description": "Bu şablonun kaynak kodunu görüntüle"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Bu Şablonu Nasıl Kullanılır",
+    "subtitle": "Projenizi çalıştırmak için şu basit adımları izleyin:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "Depoyu klonlayın",
+        "text": " ve proje dizinine gidin."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "Bağımlılıkları yükleyin",
+        "text": " tercih ettiğiniz paket yöneticisini kullanarak:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "Geliştirme sunucusunu başlatın",
+        "text": " değişiklikleri gerçek zamanlı görmek için:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Düzenleyerek uygulamanızı oluşturmaya başlayın ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "Bu Şablonu Paylaş",
+      "subtitle": "Diğerlerinin bu üretime hazır şablonu keşfetmesine yardımcı olun"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "İletişime Geçin",
+      "subtitle": "Sorularınız mı var veya işbirliği yapmak mı istiyorsunuz? Bize ulaşın!",
+      "emailLabel": "E-posta:",
+      "websiteLabel": "Web sitesi:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Sayfa Bulunamadı",
+    "description": "Hay aksi! Aradığınız sayfa mevcut değil. Taşınmış, silinmiş olabilir veya URL yanlış olabilir."
   }
 }

@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "登录",
+    "dashboard": "仪表板",
+    "language": "语言",
+    "theme": "主题",
+    "account": "账户",
+    "profile": "个人资料",
+    "settings": "设置",
+    "logout": "退出",
+    "lightMode": "浅色模式",
+    "darkMode": "深色模式",
+    "backToHome": "返回首页",
+    "goBackHome": "返回首页",
+    "delete": "删除",
+    "cancel": "取消",
+    "rename": "重命名",
+    "error": "错误",
+    "success": "成功",
+    "loading": "加载中"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "一个功能齐全、可用于生产的模板，快速启动您的新项目。使用 Next.js 16、React 19、Mantine v8、react-query-ease 简化 API 集成以及 Biome 等现代工具构建。",
+    "loginButton": "登录",
+    "dashboardButton": "仪表板"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "为什么使用此模板？",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "前沿性能",
+        "description": "利用 Next.js 16 和 React 19 (RC) 的强大功能，启用新的 React Compiler 以获得最佳速度和 SEO。"
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "超快工具",
+        "description": "用 Biome 替换 ESLint 和 Prettier - 一个快速的、基于 Rust 的工具链，用于格式化和代码检查，节省您的时间。"
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "基于最新版本的 Mantine 构建，提供一套全面的可访问和可自定义组件。"
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "强大的状态管理",
+        "description": "包含 Zustand 用于全局客户端状态，以及 TanStack Query 用于高效的服务器状态和数据获取。"
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "现代工具栈",
+    "subtitle": "我们精心挑选了最好的现代工具，以确保流畅的开发体验和高质量的代码库。",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "最新的框架功能，包括服务器操作和增强的路由。"
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "面向未来，具有操作、乐观 UI 更新和 React 编译器。"
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "统一的格式化器和代码检查器。它非常快速，减少了配置疲劳。"
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "最新的类型安全功能，可及早发现错误并提高可维护性。"
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "一个小型、快速且可扩展的状态管理解决方案。"
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "确保所有提交在推送前符合标准约定和代码质量检查。"
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "快速链接",
+    "subtitle": "此样板中使用的技术的基本资源和文档。",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "适用于 Web 的 React 框架"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "适用于 Web 和本机用户界面的库"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "功能齐全的 React 组件库"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Web 工具链"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "react/next 中的全局状态管理器"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "存储库",
+        "description": "查看此模板的源代码"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "如何使用此模板",
+    "subtitle": "按照这些简单步骤启动您的项目：",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "克隆存储库",
+        "text": " 并导航到项目目录。"
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "安装依赖项",
+        "text": " 使用您首选的包管理器："
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "启动开发服务器",
+        "text": " 以实时查看更改："
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "通过修改开始构建您的应用程序 ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "分享此模板",
+      "subtitle": "帮助他人发现这个可用于生产的样板"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "取得联系",
+      "subtitle": "有问题或想要合作？联系我们！",
+      "emailLabel": "电子邮件：",
+      "websiteLabel": "网站："
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "页面未找到",
+    "description": "糟糕！您要找的页面不存在。它可能已被移动、删除，或者 URL 可能不正确。"
   }
 }

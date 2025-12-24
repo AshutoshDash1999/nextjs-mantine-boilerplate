@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "Masuk",
+    "dashboard": "Dasbor",
+    "language": "Bahasa",
+    "theme": "Tema",
+    "account": "Akun",
+    "profile": "Profil",
+    "settings": "Pengaturan",
+    "logout": "Keluar",
+    "lightMode": "Mode Terang",
+    "darkMode": "Mode Gelap",
+    "backToHome": "Kembali ke Beranda",
+    "goBackHome": "Kembali ke Beranda",
+    "delete": "Hapus",
+    "cancel": "Batal",
+    "rename": "Ubah Nama",
+    "error": "Kesalahan",
+    "success": "Berhasil",
+    "loading": "Memuat"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "Template lengkap dan siap produksi untuk memulai proyek baru Anda. Dibangun dengan Next.js 16, React 19, Mantine v8, react-query-ease untuk integrasi API yang disederhanakan, dan alat modern seperti Biome.",
+    "loginButton": "Masuk",
+    "dashboardButton": "Dasbor"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Mengapa Menggunakan Template Ini?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Performa Terdepan",
+        "description": "Manfaatkan kekuatan Next.js 16 dan React 19 (RC) dengan React Compiler baru yang diaktifkan untuk kecepatan dan SEO yang optimal."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Alat Super Cepat",
+        "description": "ESLint dan Prettier diganti dengan Biome - toolchain cepat berbasis Rust untuk pemformatan dan linting yang menghemat waktu Anda."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Dibangun di versi terbaru Mantine, menawarkan rangkaian komponen yang dapat diakses dan dapat disesuaikan."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Manajemen State yang Kuat",
+        "description": "Termasuk Zustand untuk state klien global dan TanStack Query untuk state server yang efisien dan pengambilan data."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "Stack Alat Modern",
+    "subtitle": "Kami telah memilih dengan cermat alat modern terbaik untuk memastikan pengalaman pengembang yang mulus dan basis kode berkualitas tinggi.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Fitur framework terbaru termasuk Server Actions dan routing yang ditingkatkan."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Siap untuk masa depan dengan Actions, pembaruan UI yang optimis, dan React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Formatter dan linter terpadu. Sangat cepat dan mengurangi kelelahan konfigurasi."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Fitur keamanan tipe terbaru untuk mendeteksi kesalahan lebih awal dan meningkatkan pemeliharaan."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Solusi manajemen state yang kecil, cepat, dan dapat diskalakan."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Memastikan semua commit memenuhi konvensi standar dan pemeriksaan kualitas kode sebelum push."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "Tautan Cepat",
+    "subtitle": "Sumber daya dan dokumentasi penting untuk teknologi yang digunakan dalam boilerplate ini.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Framework React untuk Web"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Pustaka untuk antarmuka pengguna web dan native"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Pustaka komponen React lengkap"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Toolchain web"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "Manajer state global di react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "Repositori",
+        "description": "Lihat kode sumber template ini"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Cara Menggunakan Template Ini",
+    "subtitle": "Ikuti langkah-langkah sederhana ini untuk menjalankan proyek Anda:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "Kloning repositori",
+        "text": " dan navigasi ke direktori proyek."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "Instal dependensi",
+        "text": " menggunakan manajer paket pilihan Anda:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "Mulai server pengembangan",
+        "text": " untuk melihat perubahan secara real-time:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Mulai membangun aplikasi Anda dengan memodifikasi ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "Bagikan Template Ini",
+      "subtitle": "Bantu orang lain menemukan boilerplate siap produksi ini"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "title": "Hubungi Kami",
+      "subtitle": "Ada pertanyaan atau ingin berkolaborasi? Hubungi kami!",
       "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "websiteLabel": "Situs web:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Halaman Tidak Ditemukan",
+    "description": "Ups! Halaman yang Anda cari tidak ada. Mungkin telah dipindahkan, dihapus, atau URL mungkin salah."
   }
 }

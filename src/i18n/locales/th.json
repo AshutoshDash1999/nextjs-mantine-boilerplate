@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "เข้าสู่ระบบ",
+    "dashboard": "แดชบอร์ด",
+    "language": "ภาษา",
+    "theme": "ธีม",
+    "account": "บัญชี",
+    "profile": "โปรไฟล์",
+    "settings": "การตั้งค่า",
+    "logout": "ออกจากระบบ",
+    "lightMode": "โหมดสว่าง",
+    "darkMode": "โหมดมืด",
+    "backToHome": "กลับหน้าแรก",
+    "goBackHome": "กลับหน้าแรก",
+    "delete": "ลบ",
+    "cancel": "ยกเลิก",
+    "rename": "เปลี่ยนชื่อ",
+    "error": "ข้อผิดพลาด",
+    "success": "สำเร็จ",
+    "loading": "กำลังโหลด"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "เทมเพลตที่พร้อมใช้งานเต็มรูปแบบและพร้อมสำหรับการผลิตเพื่อเริ่มโครงการใหม่ของคุณ สร้างด้วย Next.js 16, React 19, Mantine v8, react-query-ease สำหรับการรวม API ที่เรียบง่าย และเครื่องมือสมัยใหม่เช่น Biome",
+    "loginButton": "เข้าสู่ระบบ",
+    "dashboardButton": "แดชบอร์ด"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "ทำไมต้องใช้เทมเพลตนี้?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "ประสิทธิภาพที่ล้ำสมัย",
+        "description": "ใช้ประโยชน์จากพลังของ Next.js 16 และ React 19 (RC) ด้วย React Compiler ใหม่ที่เปิดใช้งานเพื่อความเร็วและ SEO ที่เหมาะสมที่สุด"
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "เครื่องมือที่รวดเร็วอย่างเหลือเชื่อ",
+        "description": "แทนที่ ESLint และ Prettier ด้วย Biome - เครื่องมือที่รวดเร็วบนพื้นฐาน Rust สำหรับการจัดรูปแบบและการตรวจสอบโค้ดที่ช่วยประหยัดเวลา"
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "สร้างบนเวอร์ชันล่าสุดของ Mantine นำเสนอชุดคอมโพเนนต์ที่เข้าถึงได้และปรับแต่งได้อย่างครอบคลุม"
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "การจัดการสถานะที่แข็งแกร่ง",
+        "description": "รวม Zustand สำหรับสถานะไคลเอนต์แบบทั่วโลกและ TanStack Query สำหรับสถานะเซิร์ฟเวอร์ที่มีประสิทธิภาพและการดึงข้อมูล"
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "สแต็กเครื่องมือสมัยใหม่",
+    "subtitle": "เราได้คัดเลือกเครื่องมือสมัยใหม่ที่ดีที่สุดอย่างระมัดระวังเพื่อให้แน่ใจว่ามีประสบการณ์นักพัฒนาที่ราบรื่นและฐานโค้ดคุณภาพสูง",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "คุณสมบัติเฟรมเวิร์กล่าสุดรวมถึง Server Actions และการกำหนดเส้นทางที่ปรับปรุงแล้ว"
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "พร้อมสำหรับอนาคตด้วย Actions, การอัปเดต UI แบบมองโลกในแง่ดี และ React Compiler"
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "ตัวจัดรูปแบบและตัวตรวจสอบที่รวมกัน มันเร็วอย่างไม่น่าเชื่อและลดความเหนื่อยล้าจากการกำหนดค่า"
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "คุณสมบัติความปลอดภัยประเภทล่าสุดเพื่อตรวจจับข้อผิดพลาดในระยะแรกและปรับปรุงการบำรุงรักษา"
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "โซลูชันการจัดการสถานะที่เล็ก เร็ว และปรับขนาดได้"
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "รับประกันว่าการคอมมิตทั้งหมดเป็นไปตามมาตรฐานและการตรวจสอบคุณภาพโค้ดก่อนที่จะ push"
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "ลิงก์ด่วน",
+    "subtitle": "ทรัพยากรและเอกสารสำคัญสำหรับเทคโนโลยีที่ใช้ใน boilerplate นี้",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "เฟรมเวิร์ก React สำหรับเว็บ"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "ไลบรารีสำหรับอินเทอร์เฟซผู้ใช้บนเว็บและเนทีฟ"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "ไลบรารีคอมโพเนนต์ React ที่มีฟังก์ชันครบถ้วน"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "เครื่องมือของเว็บ"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "ตัวจัดการสถานะทั่วโลกใน react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "ที่เก็บ",
+        "description": "ดูซอร์สโค้ดของเทมเพลตนี้"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "วิธีใช้เทมเพลตนี้",
+    "subtitle": "ทำตามขั้นตอนง่ายๆ เหล่านี้เพื่อให้โครงการของคุณทำงาน:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "โคลนที่เก็บ",
+        "text": " และนำทางไปยังไดเร็กทอรีโครงการ"
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "ติดตั้งการพึ่งพา",
+        "text": " โดยใช้ตัวจัดการแพ็กเกจที่คุณต้องการ:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "เริ่มเซิร์ฟเวอร์พัฒนา",
+        "text": " เพื่อดูการเปลี่ยนแปลงแบบเรียลไทม์:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "เริ่มสร้างแอปพลิเคชันของคุณโดยแก้ไข ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "แชร์เทมเพลตนี้",
+      "subtitle": "ช่วยให้ผู้อื่นค้นพบ boilerplate ที่พร้อมสำหรับการผลิตนี้"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "ติดต่อ",
+      "subtitle": "มีคำถามหรือต้องการทำงานร่วมกัน? ติดต่อเรา!",
+      "emailLabel": "อีเมล:",
+      "websiteLabel": "เว็บไซต์:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "ไม่พบหน้า",
+    "description": "ขออภัย! หน้าที่คุณกำลังมองหาไม่มีอยู่ อาจถูกย้าย ลบ หรือ URL อาจไม่ถูกต้อง"
   }
 }

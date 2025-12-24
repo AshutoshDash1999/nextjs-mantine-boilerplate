@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "Přihlásit se",
+    "dashboard": "Nástěnka",
+    "language": "Jazyk",
+    "theme": "Téma",
+    "account": "Účet",
+    "profile": "Profil",
+    "settings": "Nastavení",
+    "logout": "Odhlásit se",
+    "lightMode": "Světlý režim",
+    "darkMode": "Tmavý režim",
+    "backToHome": "Zpět domů",
+    "goBackHome": "Zpět domů",
+    "delete": "Smazat",
+    "cancel": "Zrušit",
+    "rename": "Přejmenovat",
+    "error": "Chyba",
+    "success": "Úspěch",
+    "loading": "Načítání"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "Kompletní šablona připravená pro produkci, která vám pomůže nastartovat váš nový projekt. Vytvořeno s Next.js 16, React 19, Mantine v8, react-query-ease pro zjednodušenou integraci API a moderními nástroji jako Biome.",
+    "loginButton": "Přihlásit se",
+    "dashboardButton": "Nástěnka"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Proč použít tuto šablonu?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Špičkový výkon",
+        "description": "Využijte sílu Next.js 16 a React 19 (RC) s novým React Compilerem aktivovaným pro optimální rychlost a SEO."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Bleskově rychlé nástroje",
+        "description": "ESLint a Prettier nahrazeny Biome - rychlým nástrojovým řetězcem založeným na Rust pro formátování a linting, který vám ušetří čas."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Postaveno na nejnovější verzi Mantine, nabízí komplexní sadu dostupných a přizpůsobitelných komponent."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Robustní správa stavu",
+        "description": "Zahrnuje Zustand pro globální stav klienta a TanStack Query pro efektivní stav serveru a načítání dat."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "Moderní sada nástrojů",
+    "subtitle": "Peblivě jsme vybrali nejlepší moderní nástroje, abychom zajistili plynulý vývojářský zážitek a vysoce kvalitní kódovou základnu.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Nejnovější funkce frameworku včetně Server Actions a vylepšeného směrování."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Připraveno na budoucnost s Actions, optimistickými aktualizacemi UI a React Compilerem."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Sjednocený formátovač a linter. Je neuvěřitelně rychlý a snižuje únavu z konfigurace."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Nejnovější funkce bezpečnosti typů pro včasné odhalení chyb a zlepšení udržovatelnosti."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Malé, rychlé a škálovatelné řešení pro správu stavu."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Zajišťuje, že všechny commity splňují standardní konvence a kontroly kvality kódu před odesláním."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "Rychlé odkazy",
+    "subtitle": "Základní zdroje a dokumentace pro technologie používané v této šabloně.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "React Framework pro web"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Knihovna pro webová a nativní uživatelská rozhraní"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Kompletní knihovna React komponent"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Nástrojový řetězec webu"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "Globální správce stavu v react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "Repozitář",
+        "description": "Zobrazit zdrojový kód této šablony"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Jak použít tuto šablonu",
+    "subtitle": "Následujte tyto jednoduché kroky, abyste spustili váš projekt:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "Naklonovat repozitář",
+        "text": " a přejít do adresáře projektu."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "Nainstalovat závislosti",
+        "text": " pomocí vašeho preferovaného správce balíčků:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "Spustit vývojový server",
+        "text": " pro zobrazení změn v reálném čase:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Začněte vytvářet vaši aplikaci úpravou ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "Sdílet tuto šablonu",
+      "subtitle": "Pomozte ostatním objevit tuto šablonu připravenou pro produkci"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "title": "Kontaktujte nás",
+      "subtitle": "Máte dotazy nebo chcete spolupracovat? Kontaktujte nás!",
       "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "websiteLabel": "Web:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Stránka nenalezena",
+    "description": "Ups! Stránka, kterou hledáte, neexistuje. Mohla být přesunuta, smazána nebo URL může být nesprávné."
   }
 }

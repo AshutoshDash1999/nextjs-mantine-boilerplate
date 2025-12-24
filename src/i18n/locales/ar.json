@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "تسجيل الدخول",
+    "dashboard": "لوحة التحكم",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "account": "حساب",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "lightMode": "الوضع الفاتح",
+    "darkMode": "الوضع الداكن",
+    "backToHome": "العودة إلى الصفحة الرئيسية",
+    "goBackHome": "العودة إلى الصفحة الرئيسية",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "rename": "إعادة تسمية",
+    "error": "خطأ",
+    "success": "نجاح",
+    "loading": "جاري التحميل"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "قالب كامل الوظائف وجاهز للإنتاج لبدء مشروعك الجديد. مبني باستخدام Next.js 16 و React 19 و Mantine v8 و react-query-ease لتبسيط تكامل API وأدوات حديثة مثل Biome.",
+    "loginButton": "تسجيل الدخول",
+    "dashboardButton": "لوحة التحكم"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "لماذا تستخدم هذا القالب؟",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "أداء متطور",
+        "description": "استفد من قوة Next.js 16 و React 19 (RC) مع تفعيل React Compiler الجديد للحصول على سرعة وتحسين محركات البحث مثالية."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "أدوات فائقة السرعة",
+        "description": "استبدال ESLint و Prettier بـ Biome - سلسلة أدوات سريعة قائمة على Rust للتنسيق والتدقيق اللغوي توفر عليك الوقت."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "مبني على أحدث إصدار من Mantine، يقدم مجموعة شاملة من المكونات القابلة للوصول والتخصيص."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "إدارة حالة قوية",
+        "description": "يتضمن Zustand لحالة العميل العامة و TanStack Query لحالة الخادم الفعالة وجلب البيانات."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "مجموعة أدوات حديثة",
+    "subtitle": "لقد اخترنا بعناية أفضل الأدوات الحديثة لضمان تجربة مطور سلسة وقاعدة كود عالية الجودة.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "أحدث ميزات الإطار بما في ذلك Server Actions والتوجيه المحسن."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "جاهز للمستقبل مع Actions وتحديثات UI التفاؤلية و React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "منسق ومدقق موحد. إنه سريع بشكل لا يصدق ويقلل من إرهاق التكوين."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "أحدث ميزات سلامة الأنواع لاكتشاف الأخطاء مبكرًا وتحسين الصيانة."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "حل إدارة حالة صغير وسريع وقابل للتوسع."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "يضمن أن جميع الالتزامات تلتزم بالاتفاقيات القياسية وفحوصات جودة الكود قبل الدفع."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "روابط سريعة",
+    "subtitle": "موارد ووثائق أساسية للتقنيات المستخدمة في هذا القالب.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "إطار React للويب"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "مكتبة لواجهات المستخدم للويب والأصلي"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "مكتبة مكونات React كاملة الوظائف"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "سلسلة أدوات الويب"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "مدير حالة عام في react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "المستودع",
+        "description": "عرض الكود المصدري لهذا القالب"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "كيفية استخدام هذا القالب",
+    "subtitle": "اتبع هذه الخطوات البسيطة لبدء مشروعك:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "استنساخ المستودع",
+        "text": " والانتقال إلى دليل المشروع."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "تثبيت التبعيات",
+        "text": " باستخدام مدير الحزم المفضل لديك:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "بدء خادم التطوير",
+        "text": " لرؤية التغييرات في الوقت الفعلي:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "ابدأ في بناء تطبيقك عن طريق تعديل ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "مشاركة هذا القالب",
+      "subtitle": "ساعد الآخرين في اكتشاف هذا القالب الجاهز للإنتاج"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "تواصل معنا",
+      "subtitle": "هل لديك أسئلة أو تريد التعاون؟ تواصل معنا!",
+      "emailLabel": "البريد الإلكتروني:",
+      "websiteLabel": "الموقع الإلكتروني:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "الصفحة غير موجودة",
+    "description": "عذراً! الصفحة التي تبحث عنها غير موجودة. قد تم نقلها أو حذفها أو قد يكون الرابط غير صحيح."
   }
 }

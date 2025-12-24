@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "로그인",
+    "dashboard": "대시보드",
+    "language": "언어",
+    "theme": "테마",
+    "account": "계정",
+    "profile": "프로필",
+    "settings": "설정",
+    "logout": "로그아웃",
+    "lightMode": "라이트 모드",
+    "darkMode": "다크 모드",
+    "backToHome": "홈으로 돌아가기",
+    "goBackHome": "홈으로 돌아가기",
+    "delete": "삭제",
+    "cancel": "취소",
+    "rename": "이름 변경",
+    "error": "오류",
+    "success": "성공",
+    "loading": "로딩 중"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "새 프로젝트를 빠르게 시작할 수 있는 완전히 기능하는 프로덕션 준비 템플릿입니다. Next.js 16, React 19, Mantine v8, 간소화된 API 통합을 위한 react-query-ease 및 Biome과 같은 현대적인 도구로 구축되었습니다.",
+    "loginButton": "로그인",
+    "dashboardButton": "대시보드"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "이 템플릿을 사용하는 이유",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "최첨단 성능",
+        "description": "최적의 속도와 SEO를 위해 새로운 React Compiler가 활성화된 Next.js 16 및 React 19 (RC)의 강력한 기능을 활용하세요."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "초고속 도구",
+        "description": "ESLint와 Prettier를 Biome으로 교체했습니다 - 시간을 절약하는 포맷팅 및 린팅을 위한 빠른 Rust 기반 도구 체인입니다."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Mantine의 최신 버전으로 구축되어 접근 가능하고 사용자 정의 가능한 컴포넌트의 포괄적인 제품군을 제공합니다."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "강력한 상태 관리",
+        "description": "전역 클라이언트 상태를 위한 Zustand와 효율적인 서버 상태 및 데이터 가져오기를 위한 TanStack Query를 포함합니다."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "현대적인 도구 스택",
+    "subtitle": "우리는 원활한 개발자 경험과 고품질 코드베이스를 보장하기 위해 최고의 현대적인 도구를 신중하게 선택했습니다.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "서버 액션 및 향상된 라우팅을 포함한 최신 프레임워크 기능."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "액션, 낙관적 UI 업데이트 및 React Compiler를 갖춘 미래 대비."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "통합 포맷터 및 린터. 놀라울 정도로 빠르며 구성 피로를 줄입니다."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "오류를 조기에 발견하고 유지보수성을 향상시키기 위한 최신 타입 안전성 기능."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "작고 빠르며 확장 가능한 상태 관리 솔루션."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "모든 커밋이 푸시하기 전에 표준 규칙 및 코드 품질 검사를 통과하도록 보장합니다."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "빠른 링크",
+    "subtitle": "이 보일러플레이트에 사용된 기술에 대한 필수 리소스 및 문서.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "웹을 위한 React 프레임워크"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "웹 및 네이티브 사용자 인터페이스를 위한 라이브러리"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "완전히 기능하는 React 컴포넌트 라이브러리"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "웹의 도구 체인"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "react/next의 전역 상태 관리자"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "저장소",
+        "description": "이 템플릿의 소스 코드 보기"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "이 템플릿 사용 방법",
+    "subtitle": "프로젝트를 시작하려면 다음 간단한 단계를 따르세요:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "저장소 클론",
+        "text": " 하고 프로젝트 디렉토리로 이동합니다."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "의존성 설치",
+        "text": " 선호하는 패키지 관리자를 사용하여:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "개발 서버 시작",
+        "text": " 하여 실시간으로 변경 사항을 확인합니다:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "수정하여 애플리케이션 구축 시작 ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "이 템플릿 공유",
+      "subtitle": "다른 사람들이 이 프로덕션 준비 보일러플레이트를 발견하도록 도와주세요"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "문의하기",
+      "subtitle": "질문이 있거나 협력하고 싶으신가요? 문의하세요!",
+      "emailLabel": "이메일:",
+      "websiteLabel": "웹사이트:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "페이지를 찾을 수 없음",
+    "description": "앗! 찾고 있는 페이지가 존재하지 않습니다. 이동되었거나 삭제되었을 수 있으며 URL이 잘못되었을 수 있습니다."
   }
 }

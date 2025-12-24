@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
+    "login": "Mag-login",
     "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
+    "language": "Wika",
+    "theme": "Tema",
     "account": "Account",
     "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
+    "settings": "Mga Setting",
+    "logout": "Mag-logout",
     "lightMode": "Light Mode",
     "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
+    "backToHome": "Bumalik sa Home",
+    "goBackHome": "Bumalik sa Home",
+    "delete": "Tanggalin",
+    "cancel": "Kanselahin",
+    "rename": "Palitan ang Pangalan",
     "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "success": "Tagumpay",
+    "loading": "Naglo-load"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
+    "subtitle": "Isang ganap na feature na, production-ready na template upang simulan ang iyong bagong proyekto. Itinayo gamit ang Next.js 16, React 19, Mantine v8, react-query-ease para sa pinasimpleng API integration, at modernong tooling tulad ng Biome.",
+    "loginButton": "Mag-login",
     "dashboardButton": "Dashboard"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Bakit Gamitin ang Template na Ito?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Pinakabagong Performance",
+        "description": "Leverage ang kapangyarihan ng Next.js 16 at React 19 (RC) na may bagong React Compiler na naka-enable para sa optimal na bilis at SEO."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Napakabilis na Tooling",
+        "description": "Pinalitan ang ESLint at Prettier ng Biome - isang mabilis na Rust-based toolchain para sa formatting at linting na nakakatipid ng oras."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Itinayo sa pinakabagong bersyon ng Mantine, nag-aalok ng comprehensive suite ng accessible at customizable components."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Matibay na State Management",
+        "description": "Kasama ang Zustand para sa global client state at TanStack Query para sa efficient server state at data fetching."
       }
     }
   },
   "modernTooling": {
     "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "subtitle": "Maingat naming pinili ang pinakamahusay na modernong tools upang matiyak ang maayos na developer experience at high-quality codebase.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Pinakabagong framework features kabilang ang Server Actions at enhanced routing."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Future-ready na may Actions, Optimistic UI updates, at React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Unified formatter at linter. Napakabilis nito at binabawasan ang configuration fatigue."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Pinakabagong type safety features upang ma-detect ang errors nang maaga at mapabuti ang maintainability."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Isang maliit, mabilis, at scalable na bearbones state-management solution."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Tinitiyak na lahat ng commits ay sumusunod sa standard conventions at code quality checks bago i-push."
       }
     }
   },
   "quickLinks": {
     "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "subtitle": "Mahahalagang resources at documentation para sa mga teknolohiya na ginagamit sa boilerplate na ito.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Ang React Framework para sa Web"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Ang library para sa web at native user interfaces"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Isang fully featured React component library"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Toolchain ng web"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "Global state manager sa react/next"
       },
       "repository": {
         "label": "Repository",
-        "description": "View the source code for this template"
+        "description": "Tingnan ang source code para sa template na ito"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Paano Gamitin ang Template na Ito",
+    "subtitle": "Sundin ang mga simpleng hakbang na ito upang mapatakbo ang iyong proyekto:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "I-clone ang repository",
+        "text": " at mag-navigate sa project directory."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "I-install ang dependencies",
+        "text": " gamit ang iyong preferred package manager:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "I-start ang development server",
+        "text": " upang makita ang mga pagbabago sa real-time:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Simulan ang pagbuo ng iyong application sa pamamagitan ng pag-modify ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "I-share ang Template na Ito",
+      "subtitle": "Tulungan ang iba na matuklasan ang production-ready boilerplate na ito"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
+      "title": "Makipag-ugnayan",
+      "subtitle": "May mga katanungan o gusto mong makipag-collaborate? Makipag-ugnayan!",
       "emailLabel": "Email:",
       "websiteLabel": "Website:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Hindi Natagpuan ang Page",
+    "description": "Oops! Ang page na hinahanap mo ay hindi umiiral. Maaaring ito ay inilipat, tinanggal, o ang URL ay maaaring mali."
   }
 }

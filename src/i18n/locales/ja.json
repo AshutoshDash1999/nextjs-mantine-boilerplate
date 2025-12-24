@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "ログイン",
+    "dashboard": "ダッシュボード",
+    "language": "言語",
+    "theme": "テーマ",
+    "account": "アカウント",
+    "profile": "プロフィール",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "backToHome": "ホームに戻る",
+    "goBackHome": "ホームに戻る",
+    "delete": "削除",
+    "cancel": "キャンセル",
+    "rename": "名前を変更",
+    "error": "エラー",
+    "success": "成功",
+    "loading": "読み込み中"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "新しいプロジェクトを迅速に開始するための、完全に機能する本番環境対応のテンプレート。Next.js 16、React 19、Mantine v8、簡素化された API 統合用の react-query-ease、および Biome などのモダンツールで構築されています。",
+    "loginButton": "ログイン",
+    "dashboardButton": "ダッシュボード"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "このテンプレートを使用する理由",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "最先端のパフォーマンス",
+        "description": "最適な速度と SEO のために新しい React Compiler を有効にした Next.js 16 と React 19 (RC) の力を活用します。"
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "超高速ツール",
+        "description": "ESLint と Prettier を Biome に置き換えました - フォーマットとリンティングのための高速な Rust ベースのツールチェーンで、時間を節約します。"
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Mantine の最新バージョンで構築され、アクセシブルでカスタマイズ可能なコンポーネントの包括的なスイートを提供します。"
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "堅牢な状態管理",
+        "description": "グローバルクライアント状態用の Zustand と、効率的なサーバー状態とデータフェッチ用の TanStack Query を含みます。"
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "モダンツールスタック",
+    "subtitle": "スムーズな開発者体験と高品質のコードベースを確保するため、最高のモダンツールを厳選しました。",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Server Actions と強化されたルーティングを含む、最新のフレームワーク機能。"
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Actions、楽観的 UI 更新、および React Compiler を備えた将来対応。"
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "統一されたフォーマッターとリンター。信じられないほど高速で、設定の負担を軽減します。"
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "エラーを早期に検出し、保守性を向上させる最新の型安全性機能。"
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "小さく、高速で、スケーラブルな状態管理ソリューション。"
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "プッシュ前にすべてのコミットが標準的な規則とコード品質チェックを満たすようにします。"
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "クイックリンク",
+    "subtitle": "このボイラープレートで使用されるテクノロジーの必須リソースとドキュメント。",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Web 用の React フレームワーク"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "Web およびネイティブユーザーインターフェース用のライブラリ"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "完全に機能する React コンポーネントライブラリ"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Web のツールチェーン"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "react/next のグローバル状態マネージャー"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "リポジトリ",
+        "description": "このテンプレートのソースコードを表示"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "このテンプレートの使用方法",
+    "subtitle": "プロジェクトを起動するには、次の簡単な手順に従ってください：",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "リポジトリをクローン",
+        "text": " して、プロジェクトディレクトリに移動します。"
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "依存関係をインストール",
+        "text": " 好みのパッケージマネージャーを使用して："
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "開発サーバーを開始",
+        "text": " して、リアルタイムで変更を確認します："
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "修正してアプリケーションの構築を開始 ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "このテンプレートを共有",
+      "subtitle": "この本番環境対応のボイラープレートを他の人に発見してもらう"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "お問い合わせ",
+      "subtitle": "質問がある場合や協力したい場合は、お気軽にお問い合わせください！",
+      "emailLabel": "メール：",
+      "websiteLabel": "ウェブサイト："
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "ページが見つかりません",
+    "description": "おっと！お探しのページは存在しません。移動、削除されたか、URL が間違っている可能性があります。"
   }
 }

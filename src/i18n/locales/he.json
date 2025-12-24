@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "התחברות",
+    "dashboard": "לוח בקרה",
+    "language": "שפה",
+    "theme": "ערכת נושא",
+    "account": "חשבון",
+    "profile": "פרופיל",
+    "settings": "הגדרות",
+    "logout": "התנתקות",
+    "lightMode": "מצב בהיר",
+    "darkMode": "מצב כהה",
+    "backToHome": "חזרה לעמוד הבית",
+    "goBackHome": "חזרה לעמוד הבית",
+    "delete": "מחיקה",
+    "cancel": "ביטול",
+    "rename": "שינוי שם",
+    "error": "שגיאה",
+    "success": "הצלחה",
+    "loading": "טוען"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "תבנית מלאה ומוכנה לייצור כדי להתחיל את הפרויקט החדש שלך. נבנה עם Next.js 16, React 19, Mantine v8, react-query-ease לאינטגרציה פשוטה של API, וכלים מודרניים כמו Biome.",
+    "loginButton": "התחברות",
+    "dashboardButton": "לוח בקרה"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "למה להשתמש בתבנית הזו?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "ביצועים מתקדמים",
+        "description": "נצל את הכוח של Next.js 16 ו-React 19 (RC) עם React Compiler החדש מופעל לביצועים מיטביים ו-SEO."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "כלים מהירים מאוד",
+        "description": "ESLint ו-Prettier הוחלפו ב-Biome - שרשרת כלים מהירה מבוססת Rust לעיצוב ולניתוח קוד שחסכת לך זמן."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "נבנה על הגרסה העדכנית ביותר של Mantine, מציע סוויטה מקיפה של רכיבים נגישים וניתנים להתאמה אישית."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "ניהול מצב חזק",
+        "description": "כולל Zustand למצב לקוח גלובלי ו-TanStack Query למצב שרת יעיל ושליפת נתונים."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "ערימת כלים מודרנית",
+    "subtitle": "בחרנו בקפידה את הכלים המודרניים הטובים ביותר כדי להבטיח חוויית מפתח חלקה ובסיס קוד איכותי.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "התכונות העדכניות ביותר של המסגרת כולל Server Actions וניתוב משופר."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "מוכן לעתיד עם Actions, עדכוני UI אופטימיסטיים ו-React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "מעצב ולינטר מאוחדים. זה מהיר מאוד ומפחית עייפות תצורה."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "תכונות בטיחות סוגים עדכניות כדי לתפוס שגיאות מוקדם ולשפר תחזוקה."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "פתרון ניהול מצב קטן, מהיר וניתן להרחבה."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "מבטיח שכל ה-commits עומדים במוסכמות התקן ובבדיקות איכות קוד לפני push."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "קישורים מהירים",
+    "subtitle": "משאבים חיוניים ותיעוד לטכנולוגיות המשמשות בתבנית זו.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "מסגרת React לאינטרנט"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "הספרייה לממשקי משתמש באינטרנט ו-native"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "ספריית רכיבי React מלאה"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "שרשרת כלים של האינטרנט"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "מנהל מצב גלובלי ב-react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "מאגר",
+        "description": "הצג את קוד המקור של תבנית זו"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "איך להשתמש בתבנית זו",
+    "subtitle": "עקוב אחר השלבים הפשוטים הבאים כדי להפעיל את הפרויקט שלך:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "שכפל את המאגר",
+        "text": " ונווט לתיקיית הפרויקט."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "התקן תלויות",
+        "text": " באמצעות מנהל החבילות המועדף עליך:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "הפעל את שרת הפיתוח",
+        "text": " כדי לראות שינויים בזמן אמת:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "התחל לבנות את האפליקציה שלך על ידי עריכת ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "שתף תבנית זו",
+      "subtitle": "עזור לאחרים לגלות את התבנית המוכנה לייצור הזו"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "צור קשר",
+      "subtitle": "יש שאלות או רוצה לשתף פעולה? צור קשר!",
+      "emailLabel": "אימייל:",
+      "websiteLabel": "אתר אינטרנט:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "הדף לא נמצא",
+    "description": "אופס! הדף שאתה מחפש אינו קיים. הוא אולי הועבר, נמחק, או שה-URL עלול להיות שגוי."
   }
 }

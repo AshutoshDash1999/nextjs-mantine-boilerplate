@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "লগইন",
+    "dashboard": "ড্যাশবোর্ড",
+    "language": "ভাষা",
+    "theme": "থিম",
+    "account": "অ্যাকাউন্ট",
+    "profile": "প্রোফাইল",
+    "settings": "সেটিংস",
+    "logout": "লগআউট",
+    "lightMode": "লাইট মোড",
+    "darkMode": "ডার্ক মোড",
+    "backToHome": "হোমে ফিরে যান",
+    "goBackHome": "হোমে ফিরে যান",
+    "delete": "মুছে ফেলুন",
+    "cancel": "বাতিল",
+    "rename": "নাম পরিবর্তন করুন",
+    "error": "ত্রুটি",
+    "success": "সাফল্য",
+    "loading": "লোড হচ্ছে"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "আপনার নতুন প্রকল্প শুরু করার জন্য একটি সম্পূর্ণ বৈশিষ্ট্যযুক্ত, উৎপাদন-প্রস্তুত টেমপ্লেট। Next.js 16, React 19, Mantine v8, সরলীকৃত API ইন্টিগ্রেশনের জন্য react-query-ease এবং Biome এর মতো আধুনিক সরঞ্জাম দিয়ে তৈরি।",
+    "loginButton": "লগইন",
+    "dashboardButton": "ড্যাশবোর্ড"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "এই টেমপ্লেট কেন ব্যবহার করবেন?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "অত্যাধুনিক পারফরম্যান্স",
+        "description": "সর্বোত্তম গতি এবং SEO এর জন্য নতুন React Compiler সক্রিয় সহ Next.js 16 এবং React 19 (RC) এর শক্তি ব্যবহার করুন।"
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "অত্যন্ত দ্রুত সরঞ্জাম",
+        "description": "ESLint এবং Prettier কে Biome দিয়ে প্রতিস্থাপন করা হয়েছে - ফরম্যাটিং এবং লিন্টিংয়ের জন্য একটি দ্রুত, Rust-ভিত্তিক টুলচেইন যা আপনার সময় সাশ্রয় করে।"
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Mantine-এর সর্বশেষ সংস্করণে তৈরি, অ্যাক্সেসযোগ্য এবং কাস্টমাইজযোগ্য উপাদানগুলির একটি সম্পূর্ণ স্যুট অফার করে।"
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "শক্তিশালী স্টেট ম্যানেজমেন্ট",
+        "description": "গ্লোবাল ক্লায়েন্ট স্টেটের জন্য Zustand এবং দক্ষ সার্ভার স্টেট এবং ডেটা আনয়নের জন্য TanStack Query অন্তর্ভুক্ত করে।"
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "আধুনিক সরঞ্জাম স্ট্যাক",
+    "subtitle": "আমরা একটি মসৃণ ডেভেলপার অভিজ্ঞতা এবং উচ্চ-মানের কোডবেস নিশ্চিত করার জন্য সেরা আধুনিক সরঞ্জামগুলি সাবধানে বেছে নিয়েছি।",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "সার্ভার অ্যাকশন এবং উন্নত রাউটিং সহ সর্বশেষ ফ্রেমওয়ার্ক বৈশিষ্ট্য।"
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "অ্যাকশন, আশাবাদী UI আপডেট এবং React Compiler সহ ভবিষ্যত-প্রস্তুত।"
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "একীকৃত ফরম্যাটার এবং লিন্টার। এটি অবিশ্বাস্যভাবে দ্রুত এবং কনফিগারেশন ক্লান্তি হ্রাস করে।"
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "ত্রুটি আগে ধরার জন্য এবং রক্ষণাবেক্ষণ উন্নত করার জন্য সর্বশেষ টাইপ নিরাপত্তা বৈশিষ্ট্য।"
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "একটি ছোট, দ্রুত এবং স্কেলযোগ্য স্টেট-ম্যানেজমেন্ট সমাধান।"
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "পুশ করার আগে নিশ্চিত করে যে সমস্ত কমিট মানক কনভেনশন এবং কোড গুণমান পরীক্ষা পূরণ করে।"
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "দ্রুত লিঙ্ক",
+    "subtitle": "এই বয়লারপ্লেটে ব্যবহৃত প্রযুক্তিগুলির জন্য অপরিহার্য সম্পদ এবং ডকুমেন্টেশন।",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "ওয়েবের জন্য React ফ্রেমওয়ার্ক"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "ওয়েব এবং নেটিভ ব্যবহারকারী ইন্টারফেসের জন্য লাইব্রেরি"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "একটি সম্পূর্ণ বৈশিষ্ট্যযুক্ত React কম্পোনেন্ট লাইব্রেরি"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "ওয়েবের টুলচেইন"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "react/next-এ গ্লোবাল স্টেট ম্যানেজার"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "রিপজিটরি",
+        "description": "এই টেমপ্লেটের সোর্স কোড দেখুন"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "এই টেমপ্লেট কীভাবে ব্যবহার করবেন",
+    "subtitle": "আপনার প্রকল্প চালু করতে এই সহজ পদক্ষেপগুলি অনুসরণ করুন:",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "রিপজিটরি ক্লোন করুন",
+        "text": " এবং প্রকল্প ডাইরেক্টরিতে নেভিগেট করুন।"
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "নির্ভরতা ইনস্টল করুন",
+        "text": " আপনার পছন্দসই প্যাকেজ ম্যানেজার ব্যবহার করে:"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "ডেভেলপমেন্ট সার্ভার শুরু করুন",
+        "text": " রিয়েল-টাইমে পরিবর্তন দেখতে:"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "পরিবর্তন করে আপনার অ্যাপ্লিকেশন তৈরি শুরু করুন ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "এই টেমপ্লেট শেয়ার করুন",
+      "subtitle": "অন্যদের এই উৎপাদন-প্রস্তুত বয়লারপ্লেট আবিষ্কার করতে সাহায্য করুন"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "যোগাযোগ করুন",
+      "subtitle": "প্রশ্ন আছে বা সহযোগিতা করতে চান? যোগাযোগ করুন!",
+      "emailLabel": "ইমেইল:",
+      "websiteLabel": "ওয়েবসাইট:"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "পৃষ্ঠা পাওয়া যায়নি",
+    "description": "ওহো! আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নেই। এটি সরানো, মুছে ফেলা হতে পারে বা URL ভুল হতে পারে।"
   }
 }

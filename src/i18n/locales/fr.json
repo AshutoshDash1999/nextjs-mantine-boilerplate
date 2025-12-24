@@ -1,148 +1,148 @@
 {
   "common": {
-    "login": "Login",
-    "dashboard": "Dashboard",
-    "language": "Language",
-    "theme": "Theme",
-    "account": "Account",
-    "profile": "Profile",
-    "settings": "Settings",
-    "logout": "Logout",
-    "lightMode": "Light Mode",
-    "darkMode": "Dark Mode",
-    "backToHome": "Back to Home",
-    "goBackHome": "Go Back Home",
-    "delete": "Delete",
-    "cancel": "Cancel",
-    "rename": "Rename",
-    "error": "Error",
-    "success": "Success",
-    "loading": "Loading"
+    "login": "Connexion",
+    "dashboard": "Tableau de bord",
+    "language": "Langue",
+    "theme": "Thème",
+    "account": "Compte",
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre",
+    "backToHome": "Retour à l'accueil",
+    "goBackHome": "Retour à l'accueil",
+    "delete": "Supprimer",
+    "cancel": "Annuler",
+    "rename": "Renommer",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement"
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "A fully featured, production-ready template to jumpstart your new project. Built with Next.js 16, React 19, Mantine v8, react-query-ease for simplified API integration, and modern tooling like Biome.",
-    "loginButton": "Login",
-    "dashboardButton": "Dashboard"
+    "subtitle": "Un modèle complet et prêt pour la production pour démarrer votre nouveau projet. Construit avec Next.js 16, React 19, Mantine v8, react-query-ease pour une intégration API simplifiée, et des outils modernes comme Biome.",
+    "loginButton": "Connexion",
+    "dashboardButton": "Tableau de bord"
   },
   "whyUseTemplate": {
-    "title": "Why Use This Template?",
+    "title": "Pourquoi utiliser ce modèle ?",
     "features": {
       "cuttingEdgePerformance": {
-        "title": "Cutting Edge Performance",
-        "description": "Leverage the power of Next.js 16 and React 19 (RC) with the new React Compiler enabled for optimal speed and SEO."
+        "title": "Performance de pointe",
+        "description": "Exploitez la puissance de Next.js 16 et React 19 (RC) avec le nouveau React Compiler activé pour une vitesse et un SEO optimaux."
       },
       "blazingFastTooling": {
-        "title": "Blazing Fast Tooling",
-        "description": "Replaced ESLint and Prettier with Biome - a fast, Rust-based toolchain for formatting and linting that saves you time."
+        "title": "Outils ultra-rapides",
+        "description": "ESLint et Prettier remplacés par Biome - une chaîne d'outils rapide basée sur Rust pour le formatage et le linting qui vous fait gagner du temps."
       },
       "mantineUI": {
         "title": "Mantine UI v8",
-        "description": "Built on the latest version of Mantine, offering a comprehensive suite of accessible and customizable components."
+        "description": "Construit sur la dernière version de Mantine, offrant une suite complète de composants accessibles et personnalisables."
       },
       "robustStateManagement": {
-        "title": "Robust State Management",
-        "description": "Includes Zustand for global client state and TanStack Query for efficient server state and data fetching."
+        "title": "Gestion d'état robuste",
+        "description": "Inclut Zustand pour l'état client global et TanStack Query pour un état serveur efficace et la récupération de données."
       }
     }
   },
   "modernTooling": {
-    "title": "Modern Tooling Stack",
-    "subtitle": "We've hand-picked the best modern tools to ensure a smooth developer experience and a high-quality codebase.",
+    "title": "Stack d'outils modernes",
+    "subtitle": "Nous avons soigneusement sélectionné les meilleurs outils modernes pour assurer une expérience de développeur fluide et une base de code de haute qualité.",
     "tools": {
       "nextjs": {
         "title": "Next.js 16",
-        "description": "The latest framework features including Server Actions and enhanced routing."
+        "description": "Les dernières fonctionnalités du framework, notamment Server Actions et un routage amélioré."
       },
       "react": {
         "title": "React 19",
-        "description": "Future-ready with Actions, Optimistic UI updates, and the React Compiler."
+        "description": "Prêt pour l'avenir avec Actions, mises à jour UI optimistes et le React Compiler."
       },
       "biome": {
         "title": "Biome",
-        "description": "Unified formatter and linter. It's incredibly fast and reduces configuration fatigue."
+        "description": "Formateur et linter unifiés. Il est incroyablement rapide et réduit la fatigue de configuration."
       },
       "typescript": {
         "title": "TypeScript 5",
-        "description": "Latest type safety features to catch errors early and improve maintainability."
+        "description": "Dernières fonctionnalités de sécurité de type pour détecter les erreurs tôt et améliorer la maintenabilité."
       },
       "zustand": {
         "title": "Zustand",
-        "description": "A small, fast, and scalable bearbones state-management solution."
+        "description": "Une solution de gestion d'état petite, rapide et scalable."
       },
       "husky": {
         "title": "Husky & Commitlint",
-        "description": "Ensures all commits meet standard conventions and code quality checks before pushing."
+        "description": "Garantit que tous les commits respectent les conventions standard et les vérifications de qualité du code avant le push."
       }
     }
   },
   "quickLinks": {
-    "title": "Quick Links",
-    "subtitle": "Essential resources and documentation for the technologies used in this boilerplate.",
+    "title": "Liens rapides",
+    "subtitle": "Ressources essentielles et documentation pour les technologies utilisées dans ce boilerplate.",
     "links": {
       "nextjs": {
         "label": "Next.js",
-        "description": "The React Framework for the Web"
+        "description": "Le framework React pour le Web"
       },
       "react": {
         "label": "React",
-        "description": "The library for web and native user interfaces"
+        "description": "La bibliothèque pour interfaces utilisateur web et natives"
       },
       "mantine": {
         "label": "Mantine",
-        "description": "A fully featured React component library"
+        "description": "Une bibliothèque de composants React complète"
       },
       "biome": {
         "label": "Biome",
-        "description": "Toolchain of the web"
+        "description": "Chaîne d'outils du web"
       },
       "zustand": {
         "label": "Zustand",
-        "description": "Global state manager in react/next"
+        "description": "Gestionnaire d'état global dans react/next"
       },
       "repository": {
-        "label": "Repository",
-        "description": "View the source code for this template"
+        "label": "Dépôt",
+        "description": "Voir le code source de ce modèle"
       }
     }
   },
   "usageInstructions": {
-    "title": "How to use this template",
-    "subtitle": "Follow these simple steps to get your project up and running:",
+    "title": "Comment utiliser ce modèle",
+    "subtitle": "Suivez ces étapes simples pour démarrer votre projet :",
     "steps": {
       "clone": {
-        "bold": "Clone the repository",
-        "text": " and navigate to the project directory."
+        "bold": "Cloner le dépôt",
+        "text": " et naviguer vers le répertoire du projet."
       },
       "install": {
-        "bold": "Install dependencies",
-        "text": " using your preferred package manager:"
+        "bold": "Installer les dépendances",
+        "text": " en utilisant votre gestionnaire de paquets préféré :"
       },
       "start": {
-        "bold": "Start the development server",
-        "text": " to see changes in real-time:"
+        "bold": "Démarrer le serveur de développement",
+        "text": " pour voir les changements en temps réel :"
       },
       "build": {
-        "text": "Start building your application by modifying ",
+        "text": "Commencez à construire votre application en modifiant ",
         "code": "src/app/page.tsx"
       }
     }
   },
   "socialShare": {
     "share": {
-      "title": "Share This Template",
-      "subtitle": "Help others discover this production-ready boilerplate"
+      "title": "Partager ce modèle",
+      "subtitle": "Aidez les autres à découvrir ce boilerplate prêt pour la production"
     },
     "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Have questions or want to collaborate? Reach out!",
-      "emailLabel": "Email:",
-      "websiteLabel": "Website:"
+      "title": "Nous contacter",
+      "subtitle": "Des questions ou envie de collaborer ? Contactez-nous !",
+      "emailLabel": "E-mail :",
+      "websiteLabel": "Site web :"
     }
   },
   "notFound": {
     "title": "404",
-    "heading": "Page Not Found",
-    "description": "Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect."
+    "heading": "Page non trouvée",
+    "description": "Oups ! La page que vous recherchez n'existe pas. Elle a peut-être été déplacée, supprimée ou l'URL pourrait être incorrecte."
   }
 }

@@ -16,6 +16,7 @@ import {
   IconMail,
   IconShare,
 } from "@tabler/icons-react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "@/i18n";
 
 // Contact information
@@ -30,15 +31,29 @@ const CONTACT_INFO = {
 
 export function SocialShare() {
   const { t } = useTranslation();
-  const url = typeof window !== "undefined" ? window.location.href : "";
+  const [url, setUrl] = useState("");
+  const [canShare, setCanShare] = useState(false);
   const title = "Next.js Mantine Boilerplate | Dashboard Template";
   const description =
     "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease.";
 
+  useEffect(() => {
+    setUrl(window.location.href);
+    setCanShare(
+      typeof navigator !== "undefined" && typeof navigator.share === "function"
+    );
+  }, []);
+
   const shareLinks = {
-    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
-    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+    twitter: url
+      ? `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`
+      : "",
+    facebook: url
+      ? `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`
+      : "",
+    linkedin: url
+      ? `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`
+      : "",
   };
 
   const handleEmailClick = () => {
@@ -70,58 +85,61 @@ export function SocialShare() {
           {t("socialShare.share.subtitle")}
         </Text>
         <Group gap="sm" justify="center">
-          <ActionIcon
-            component="a"
-            href={shareLinks.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            size="lg"
-            variant="light"
-            color="blue"
-            title="Share on Twitter/X"
-            aria-label="Share on Twitter/X"
-          >
-            <IconBrandX size={20} />
-          </ActionIcon>
-          <ActionIcon
-            component="a"
-            href={shareLinks.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            size="lg"
-            variant="light"
-            color="blue"
-            title="Share on Facebook"
-            aria-label="Share on Facebook"
-          >
-            <IconBrandFacebook size={20} />
-          </ActionIcon>
-          <ActionIcon
-            component="a"
-            href={shareLinks.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            size="lg"
-            variant="light"
-            color="blue"
-            title="Share on LinkedIn"
-            aria-label="Share on LinkedIn"
-          >
-            <IconBrandLinkedin size={20} />
-          </ActionIcon>
-          {typeof navigator !== "undefined" &&
-            typeof navigator.share === "function" && (
+          {url && (
+            <>
               <ActionIcon
-                onClick={handleShare}
+                component="a"
+                href={shareLinks.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
                 size="lg"
                 variant="light"
-                color="grape"
-                title="Share via native share"
-                aria-label="Share via native share"
+                color="blue"
+                title="Share on Twitter/X"
+                aria-label="Share on Twitter/X"
               >
-                <IconShare size={20} />
+                <IconBrandX size={20} />
               </ActionIcon>
-            )}
+              <ActionIcon
+                component="a"
+                href={shareLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="lg"
+                variant="light"
+                color="blue"
+                title="Share on Facebook"
+                aria-label="Share on Facebook"
+              >
+                <IconBrandFacebook size={20} />
+              </ActionIcon>
+              <ActionIcon
+                component="a"
+                href={shareLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="lg"
+                variant="light"
+                color="blue"
+                title="Share on LinkedIn"
+                aria-label="Share on LinkedIn"
+              >
+                <IconBrandLinkedin size={20} />
+              </ActionIcon>
+            </>
+          )}
+          {canShare && (
+            <ActionIcon
+              onClick={handleShare}
+              size="lg"
+              variant="light"
+              color="grape"
+              title="Share via native share"
+              aria-label="Share via native share"
+            >
+              <IconShare size={20} />
+            </ActionIcon>
+          )}
         </Group>
       </Stack>
 
