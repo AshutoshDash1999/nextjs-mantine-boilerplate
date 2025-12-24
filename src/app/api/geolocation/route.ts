@@ -629,10 +629,20 @@ export async function GET(request: NextRequest) {
     const headers = request.headers;
 
     // Geographic location data
+    // Vercel provides these headers: x-vercel-ip-city, x-vercel-ip-country, x-vercel-ip-country-region
+    // Note: City and state/region may not always be available depending on:
+    // - IP geolocation database coverage
+    // - Privacy settings
+    // - VPN/proxy usage
+    // - Regional data availability
     const city = headers.get("x-vercel-ip-city");
     const country = headers.get("x-vercel-ip-country");
     const countryRegion = headers.get("x-vercel-ip-country-region");
-    const region = headers.get("x-vercel-ip-country-region");
+    // Also check for alternative header names (though Vercel typically uses x-vercel-ip-country-region)
+    const region =
+      headers.get("x-vercel-ip-country-region") ||
+      headers.get("x-vercel-ip-region") ||
+      headers.get("x-vercel-ip-state");
 
     // Coordinates from headers
     const latitudeHeader = headers.get("x-vercel-ip-latitude");

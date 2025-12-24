@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import {
   changeLanguage,
   getCurrentLanguage,
-  i18n,
   SUPPORTED_LANGUAGES,
+  useTranslation,
 } from "@/i18n";
 
 interface GeolocationResponse {
@@ -24,53 +24,47 @@ export function LanguageToggler() {
   const [isLoading, setIsLoading] = useState(true);
   const [detectedLanguage, setDetectedLanguage] = useState<string | null>(null);
   const [currentLanguage, setCurrentLanguage] = useState<string>("en");
+  const { i18n } = useTranslation();
 
-  // Fetch geolocation on mount (only once)
-  useEffect(() => {
-    const fetchGeolocation = async () => {
-      try {
-        const response = await fetch("/api/geolocation");
-        if (response.ok) {
-          const data: GeolocationResponse = await response.json();
-          const lang = data.language || "en";
+  const fetchGeolocation = async () => {
+    try {
+      const response = await fetch("/api/geolocation");
+      if (response.ok) {
+        const data: GeolocationResponse = await response.json();
+        const language = data.language || "en";
 
-          // Check if the detected language is supported
-          const isSupported = SUPPORTED_LANGUAGES.some((l) => l.code === lang);
+        // Check if the detected language is supported
+        const isSupported = SUPPORTED_LANGUAGES.some(
+          (l) => l.code === language
+        );
 
-          if (isSupported && lang !== "en") {
-            setDetectedLanguage(lang);
+        if (isSupported && language !== "en") {
+          setDetectedLanguage(language);
 
-            // If current language is still default (en) or matches detected, use auto-detected
-            const currentLang = getCurrentLanguage();
-            console.log("currentLang :", currentLang);
-            if (currentLang === "en" || currentLang === lang) {
-              changeLanguage(lang);
-              setCurrentLanguage(lang);
-            }
-          } else {
-            setDetectedLanguage(null);
-          }
+          i18n.changeLanguage(language);
+        } else {
+          setDetectedLanguage(null);
         }
-      } catch (error) {
-        console.error("Failed to fetch geolocation:", error);
-        setDetectedLanguage(null);
-      } finally {
-        setIsLoading(false);
       }
-    };
+    } catch (error) {
+      console.error("Failed to fetch geolocation:", error);
+      setDetectedLanguage(null);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  console.log("detectedLanguage :", detectedLanguage);
+
+  // Initialize current language from i18n
+  useEffect(() => {
+    // Set initial language from i18n
+    const initialLang = getCurrentLanguage();
+    setCurrentLanguage(initialLang);
+
+    // Fetch geolocation on mount (only once)
 
     fetchGeolocation();
-
-    // Listen to language changes from i18n
-    const handleLanguageChanged = (lng: string) => {
-      setCurrentLanguage(lng);
-    };
-
-    i18n.on("languageChanged", handleLanguageChanged);
-
-    return () => {
-      i18n.off("languageChanged", handleLanguageChanged);
-    };
   }, []);
 
   // Get the language label for display
@@ -82,41 +76,58 @@ export function LanguageToggler() {
     return lang ? lang.nativeLabel : langCode.toUpperCase();
   };
 
-  // Determine current value for segmented control
-  // If currentLanguage matches detectedLanguage, show detected language code, otherwise show "en"
-  const currentValue =
-    currentLanguage === detectedLanguage && detectedLanguage
-      ? detectedLanguage
-      : "en";
-
   // Handle language change
   const handleLanguageChange = (value: string) => {
-    if (value === "en") {
-      changeLanguage("en");
-    } else if (value === detectedLanguage && detectedLanguage) {
-      changeLanguage(detectedLanguage);
-    }
+    changeLanguage(value);
+    setCurrentLanguage(value);
   };
 
-  // Don't show if no language detected or still loading
-  if (isLoading || !detectedLanguage) {
-    return null;
+  // Build data array for segmented control
+  const segmentData = [];
+
+  // If we have a detected language and it's not English, show it as first option
+  if (detectedLanguage && detectedLanguage !== "en") {
+    segmentData.push({
+      label: getLanguageLabel(detectedLanguage),
+      value: detectedLanguage,
+    });
+  }
+
+  // Always show English
+  segmentData.push({
+    label: "English",
+    value: "en",
+  });
+
+  // Determine current value for segmented control
+  // If current language is in segmentData, use it; otherwise default to "en"
+  const currentValue = segmentData.some(
+    (item) => item.value === currentLanguage
+  )
+    ? currentLanguage
+    : "en";
+
+  // Show loading state or always show the control
+  if (isLoading) {
+    return (
+      <SegmentedControl
+        value="en"
+        disabled
+        data={[
+          {
+            label: "English",
+            value: "en",
+          },
+        ]}
+      />
+    );
   }
 
   return (
     <SegmentedControl
       value={currentValue}
       onChange={handleLanguageChange}
-      data={[
-        {
-          label: getLanguageLabel(detectedLanguage),
-          value: detectedLanguage,
-        },
-        {
-          label: "English",
-          value: "en",
-        },
-      ]}
+      data={segmentData}
     />
   );
 }

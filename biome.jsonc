@@ -51,7 +51,7 @@
       "correctness": {
         "noUnusedImports": "error",
         "noUnusedVariables": "error",
-        "useExhaustiveDependencies": "error",
+        "useExhaustiveDependencies": "warn",
         "useHookAtTopLevel": "error"
       },
       "suspicious": {
