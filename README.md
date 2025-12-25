@@ -120,7 +120,19 @@ const { coins, isLoading } = useMarkets({
 
 ## 🏃 Getting Started
 
-### Installation
+### Quick Start (Recommended)
+
+Create a new project using npx:
+
+```bash
+npx @ashutoshdash/nextjs-mantine-boilerplate
+```
+
+The CLI will prompt you for a project name and set up everything automatically!
+
+### Manual Installation
+
+Alternatively, you can clone the repository:
 
 1. Clone the repository:
 
