@@ -1,4 +1,5 @@
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { AppProvider } from "@/providers/app-provider";
@@ -112,6 +113,7 @@ export default function RootLayout({
       </head>
       <body className={`${nunito.variable}`} suppressHydrationWarning>
         <AppProvider>{children}</AppProvider>
+        <Analytics />
       </body>
     </html>
   );

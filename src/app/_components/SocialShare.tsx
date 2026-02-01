@@ -26,7 +26,7 @@ const CONTACT_INFO = {
   github: "https://github.com/AshutoshDash1999",
   twitter: "https://x.com/ashutoshdash99",
   linkedin: "https://www.linkedin.com/in/ashutoshdash1999/",
-  website: "https://ashutoshdash.netlify.app",
+  website: "https://ashutoshdash.in",
 };
 
 export function SocialShare() {
