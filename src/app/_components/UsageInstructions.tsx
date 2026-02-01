@@ -17,10 +17,10 @@ export function UsageInstructions() {
   const { t } = useTranslation();
 
   return (
-    <Card withBorder radius="md" p="xl" bg="var(--mantine-color-body)">
+    <Card withBorder p="xl" bg="var(--mantine-color-body)">
       <Stack gap="md">
         <Group>
-          <ThemeIcon size={40} radius="md" variant="light" color="blue">
+          <ThemeIcon size={40} variant="light" color="blue">
             <IconBrandGithub size={24} />
           </ThemeIcon>
           <Title order={2}>{t("usageInstructions.title")}</Title>

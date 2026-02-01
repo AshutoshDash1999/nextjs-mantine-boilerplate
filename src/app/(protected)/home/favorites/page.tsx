@@ -7,7 +7,7 @@ function FavoritesPage() {
   return (
     <Stack gap="md" p="md">
       <Title order={2}>Favorites</Title>
-      <Card shadow="sm" padding="xl" radius="md" withBorder>
+      <Card shadow="sm" padding="xl" withBorder>
         <Center>
           <Stack align="center" gap="md">
             <IconStar size={48} color="gray" />

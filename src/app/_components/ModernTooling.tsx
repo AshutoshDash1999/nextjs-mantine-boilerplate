@@ -54,9 +54,9 @@ export function ModernTooling() {
   ];
 
   return (
-    <Card withBorder radius="md" p="xl" mb={80} bg="var(--mantine-color-body)">
+    <Card withBorder p="xl" mb={80} bg="var(--mantine-color-body)">
       <Group mb="md">
-        <ThemeIcon size={40} radius="md" variant="light" color="grape">
+        <ThemeIcon size={40} variant="light" color="grape">
           <IconBrandVscode size={24} />
         </ThemeIcon>
         <Title order={2}>{t("modernTooling.title")}</Title>
@@ -74,7 +74,7 @@ export function ModernTooling() {
       >
         {TOOLS.map((tool) => (
           <Group key={tool.title} wrap="nowrap" align="flex-start">
-            <ThemeIcon radius="md" variant="light" color={tool.color}>
+            <ThemeIcon variant="light" color={tool.color}>
               <tool.icon />
             </ThemeIcon>
             <div>

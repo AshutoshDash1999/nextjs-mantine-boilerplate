@@ -45,7 +45,7 @@ function MarketsPage() {
     <Table.Tr key={coin.id}>
       <Table.Td>
         <Group gap="sm">
-          <Avatar src={coin.image} size={32} radius="md" />
+          <Avatar src={coin.image} size={32} />
           <Stack gap={0}>
             <Text fw={500}>{coin.name}</Text>
             <Text size="xs" c="dimmed">

@@ -71,9 +71,9 @@ export function QuickLinks() {
   ];
 
   return (
-    <Card withBorder radius="md" p="xl" mb={80} bg="var(--mantine-color-body)">
+    <Card withBorder p="xl" mb={80} bg="var(--mantine-color-body)">
       <Group mb="md">
-        <ThemeIcon size={40} radius="md" variant="light" color="cyan">
+        <ThemeIcon size={40} variant="light" color="cyan">
           <IconExternalLink size={24} />
         </ThemeIcon>
         <Title order={2}>{t("quickLinks.title")}</Title>
@@ -99,14 +99,9 @@ export function QuickLinks() {
             underline="never"
             c="unset"
           >
-            <Paper withBorder radius="md" h="100%" className={styles.card}>
+            <Paper withBorder h="100%" className={styles.card}>
               <Group wrap="nowrap" p="md">
-                <ThemeIcon
-                  size={34}
-                  radius="md"
-                  variant="light"
-                  color={link.color}
-                >
+                <ThemeIcon size={34} variant="light" color={link.color}>
                   <link.icon size={20} />
                 </ThemeIcon>
                 <div>

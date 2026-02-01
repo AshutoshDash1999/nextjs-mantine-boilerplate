@@ -16,6 +16,7 @@ interface AppProviderProps {
 
 const theme = createTheme({
   fontFamily: "var(--font-nunito), sans-serif",
+  defaultRadius: "xl",
 });
 
 export const AppProvider = ({ children }: AppProviderProps) => {

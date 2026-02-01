@@ -77,13 +77,12 @@ function LoginPage() {
         Do not have an account yet? <Anchor>Create account</Anchor>
       </Text>
 
-      <Paper withBorder shadow="sm" p={22} mt={30} radius="md">
+      <Paper withBorder shadow="sm" p={22} mt={30}>
         <form onSubmit={form.onSubmit(handleLogin)}>
           <TextInput
             label="Email"
             placeholder="you@mantine.dev"
             required
-            radius="md"
             {...form.getInputProps("email")}
           />
           <PasswordInput
@@ -91,7 +90,6 @@ function LoginPage() {
             placeholder="Your password"
             required
             mt="md"
-            radius="md"
             {...form.getInputProps("password")}
           />
           <Group justify="space-between" mt="lg">
@@ -105,7 +103,7 @@ function LoginPage() {
               Forgot password?
             </Anchor>
           </Group>
-          <Button fullWidth mt="xl" radius="md" type="submit">
+          <Button fullWidth mt="xl" type="submit">
             Sign in
           </Button>
         </form>

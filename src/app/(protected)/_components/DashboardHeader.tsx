@@ -117,9 +117,7 @@ export function DashboardHeader({
           <Menu shadow="md" width={200} position="bottom-end">
             <Menu.Target>
               <UnstyledButton>
-                <Avatar color="blue" radius="xl">
-                  U
-                </Avatar>
+                <Avatar color="blue">U</Avatar>
               </UnstyledButton>
             </Menu.Target>
 

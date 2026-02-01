@@ -12,11 +12,10 @@ export function FeatureCard({
   description: string;
 }) {
   return (
-    <Card radius="md" withBorder padding="lg" shadow="sm">
+    <Card withBorder padding="lg" shadow="sm">
       <ThemeIcon
         variant="light"
         size={60}
-        radius="md"
         gradient={{
           from: "blue",
           to: "cyan",
