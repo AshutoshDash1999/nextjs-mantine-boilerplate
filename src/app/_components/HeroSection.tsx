@@ -3,13 +3,16 @@ import { Button, Group, Stack, Text, Title } from "@mantine/core";
 import { IconDashboard, IconLogin } from "@tabler/icons-react";
 import Link from "next/link";
 import { useTranslation } from "@/i18n";
+import { APP_VERSION } from "@/utils/constants";
 
 export function HeroSection() {
   const { t } = useTranslation();
 
   return (
     <Stack align="center" gap="lg" mb={80}>
-      <Title order={1}>{t("hero.title")}</Title>
+      <Title order={1}>
+        {t("hero.title")} v{APP_VERSION}
+      </Title>
       <Text c="dimmed" size="xl" maw={600}>
         {t("hero.subtitle")}
       </Text>
