@@ -2,24 +2,7 @@
   "name": "@ashutoshdash/nextjs-mantine-boilerplate",
   "version": "1.2.0",
   "description": "A modern, production-ready boilerplate for building web applications with Next.js 16, React 19, and Mantine UI v8",
-  "bin": {
-    "create-nextjs-mantine-app": "./bin/cli.js",
-    "nextjs-mantine-boilerplate": "./bin/cli.js"
-  },
-  "files": [
-    "bin",
-    "src",
-    "public",
-    "*.json",
-    "*.js",
-    "*.ts",
-    "*.config.*",
-    "*.config.js",
-    "*.config.ts",
-    "*.md",
-    ".npmignore",
-    "AGENTS.md"
-  ],
+  "private": true,
   "keywords": [
     "nextjs",
     "mantine",
@@ -35,7 +18,6 @@
     "type": "git",
     "url": "https://github.com/AshutoshDash1999/nextjs-mantine-boilerplate.git"
   },
-  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
