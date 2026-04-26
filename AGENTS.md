@@ -8,7 +8,7 @@ This document provides essential information for AI coding assistants working on
 
 - **Next.js 16** (App Router) - React framework
 - **React 19** with React Compiler enabled
-- **Mantine UI v8** - Component library
+- **Mantine UI v9** - Component library
 - **TypeScript 5** - Type safety
 - **Zustand** - Client state management
 - **TanStack Query (React Query)** - Server state management
@@ -28,27 +28,27 @@ This document provides essential information for AI coding assistants working on
 
 1. **Official Documentation**: https://mantine.dev/
    - Navigate to the component you need
-   - **Ensure you're viewing v8 docs** (check URL or version selector)
+   - **Ensure you're viewing v9 docs** (check URL or version selector)
    - Example: https://mantine.dev/core/app-shell/ for AppShell
 
 2. **Component-Specific Search**:
    - Go to https://mantine.dev/
    - Use the search bar or navigate Components section
-   - **Always verify the version is v8** before using examples
+   - **Always verify the version is v9** before using examples
 
-3. **Breaking Changes from v7**:
+3. **Breaking Changes from v8**:
    - No standalone `Header`, `Footer`, `Navbar` components - use `AppShell.Header`, etc.
    - Many components now use different prop names
    - Style props have changed (e.g., `sx` is deprecated, use `style` or component props)
-   - Always check the v8 migration guide if unsure
+   - Always check the v9 migration guide if unsure
 
 4. **Example Pattern for Documentation Lookup**:
    ```
    When user asks about a Mantine component:
-   1. Search: "mantine [component-name] v8"
+   1. Search: "mantine [component-name] v9"
    2. Always link to mantine.dev (official docs)
-   3. Verify version is v8 before using code examples
-   4. If component doesn't exist in v8, suggest alternatives
+   3. Verify version is v9 before using code examples
+   4. If component doesn't exist in v9, suggest alternatives
    ```
 
 ## 📁 File Structure Conventions
@@ -349,7 +349,7 @@ import { usePathname } from "next/navigation";
 
 ## 🐛 Common Issues to Avoid
 
-1. **❌ Don't use Mantine v7 patterns** - Always check v8 docs
+1. **❌ Don't use Mantine v7 patterns** - Always check v9 docs
 2. **❌ Don't use `any` types** - Biome will error
 3. **❌ Don't forget `"use client"`** - Required for all interactive components
 4. **❌ Don't ignore Biome errors** - Fix them before committing
@@ -405,3 +405,52 @@ export default function Page() {
 ---
 
 **Remember**: Always prioritize type safety, follow Mantine v9 patterns, and maintain consistency with existing codebase patterns.
+
+## 🤖 LLM Documentation Reference
+
+Mantine provides dedicated LLM documentation at https://mantine.dev/llms.txt for AI assistants.
+Key resources:
+
+- **LLM Index**: https://mantine.dev/llms.txt - Component documentation index formatted for AI
+- **Full Documentation**: https://mantine.dev/llms-full.txt - Consolidated file with all content
+
+### Core Components (most used)
+- [AppShell](https://mantine.dev/llms/core-app-shell.md) - Responsive shell with header, navbar, aside, footer
+- [Grid](https://mantine.dev/llms/core-grid.md), [Stack](https://mantine.dev/llms/core-stack.md), [Group](https://mantine.dev/llms/core-group.md) - Layout
+- [Button](https://mantine.dev/llms/core-button.md), [ActionIcon](https://mantine.dev/llms/core-action-icon.md) - Actions
+- [TextInput](https://mantine.dev/llms/core-text-input.md), [NumberInput](https://mantine.dev/llms/core-number-input.md), [Textarea](https://mantine.dev/llms/core-textarea.md) - Inputs
+- [Select](https://mantine.dev/llms/core-select.md), [MultiSelect](https://mantine.dev/llms/core-multi-select.md), [Combobox](https://mantine.dev/llms/core-combobox.md) - Selection
+- [Modal](https://mantine.dev/llms/core-modal.md), [Drawer](https://mantine.dev/llms/core-drawer.md), [Popover](https://mantine.dev/llms/core-popover.md) - Overlays
+- [Menu](https://mantine.dev/llms/core-menu.md), [NavLink](https://mantine.dev/llms/core-nav-link.md) - Navigation
+- [Table](https://mantine.dev/llms/core-table.md), [Pagination](https://mantine.dev/llms/core-pagination.md), [Tabs](https://mantine.dev/llms/core-tabs.md) - Data display
+- [Skeleton](https://mantine.dev/llms/core-skeleton.md), [Loader](https://mantine.dev/llms/core-loader.md), [Progress](https://mantine.dev/llms/core-progress.md) - Feedback
+
+### Key Hooks
+- [use-local-storage](https://mantine.dev/llms/hooks-use-local-storage.md) - Persistent state
+- [use-color-scheme](https://mantine.dev/llms/hooks-use-color-scheme.md) - Theme switching
+- [use-disclosure](https://mantine.dev/llms/hooks-use-disclosure.md) - Boolean toggle
+- [use-debounced-value](https://mantine.dev/llms/hooks-use-debounced-value.md) - Input debouncing
+- [use-hotkeys](https://mantine.dev/llms/hooks-use-hotkeys.md) - Keyboard shortcuts
+
+### Form (@mantine/form)
+- [use-form](https://mantine.dev/llms/form-use-form.md) - Form state management
+- [use-field](https://mantine.dev/llms/form-use-field.md) - Single field state
+- [form-validation](https://mantine.dev/llms/form-validation.md) - Built-in validators
+- [form-schema-validation](https://mantine.dev/llms/form-schema-validation.md) - Zod integration
+
+### Charts (@mantine/charts)
+- [BarChart](https://mantine.dev/llms/charts-bar-chart.md), [LineChart](https://mantine.dev/llms/charts-line-chart.md), [AreaChart](https://mantine.dev/llms/charts-area-chart.md)
+- [PieChart](https://mantine.dev/llms/charts-pie-chart.md), [DonutChart](https://mantine.dev/llms/charts-donut-chart.md)
+
+### Extensions (@mantine/x)
+- [Notifications](https://mantine.dev/llms/x-notifications.md) - Toast notifications
+- [Spotlight](https://mantine.dev/llms/x-spotlight.md) - Command palette
+- [Carousel](https://mantine.dev/llms/x-carousel.md) - Embla carousel
+- [Dropzone](https://mantine.dev/llms/x-dropzone.md) - File upload
+- [Tiptap](https://mantine.dev/llms/x-tiptap.md) - Rich text editor
+
+### Theming
+- [ThemeObject](https://mantine.dev/llms/theming-theme-object.md) - Theme configuration
+- [ColorSchemes](https://mantine.dev/llms/theming-color-schemes.md) - Light/dark mode
+- [Colors](https://mantine.dev/llms/theming-colors.md) - Color palette
+- [MantineProvider](https://mantine.dev/llms/theming-mantine-provider.md) - Provider setup
