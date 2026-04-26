@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "Una plantilla completamente funcional y lista para producción para iniciar tu nuevo proyecto. Construido con Next.js 16, React 19, Mantine v8, react-query-ease para integración simplificada de API, y herramientas modernas como Biome.",
+    "subtitle": "Una plantilla completamente funcional y lista para producción para iniciar tu nuevo proyecto. Construido con Next.js 16, React 19, Mantine v9, react-query-ease para integración simplificada de API, y herramientas modernas como Biome.",
     "loginButton": "Iniciar sesión",
     "dashboardButton": "Panel"
   },

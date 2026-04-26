@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "Yeni projenizi başlatmak için tam özellikli, üretime hazır bir şablon. Next.js 16, React 19, Mantine v8, sadeleştirilmiş API entegrasyonu için react-query-ease ve Biome gibi modern araçlarla oluşturulmuştur.",
+    "subtitle": "Yeni projenizi başlatmak için tam özellikli, üretime hazır bir şablon. Next.js 16, React 19, Mantine v9, sadeleştirilmiş API entegrasyonu için react-query-ease ve Biome gibi modern araçlarla oluşturulmuştur.",
     "loginButton": "Giriş yap",
     "dashboardButton": "Kontrol Paneli"
   },

@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "一个功能齐全、可用于生产的模板，快速启动您的新项目。使用 Next.js 16、React 19、Mantine v8、react-query-ease 简化 API 集成以及 Biome 等现代工具构建。",
+    "subtitle": "一个功能齐全、可用于生产的模板，快速启动您的新项目。使用 Next.js 16、React 19、Mantine v9、react-query-ease 简化 API 集成以及 Biome 等现代工具构建。",
     "loginButton": "登录",
     "dashboardButton": "仪表板"
   },

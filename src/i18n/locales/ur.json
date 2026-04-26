@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "آپ کے نئے پروجیکٹ کو شروع کرنے کے لیے ایک مکمل خصوصیات، پروڈکشن کے لیے تیار ٹیمپلیٹ۔ Next.js 16، React 19، Mantine v8، react-query-ease آسان API انٹیگریشن کے لیے، اور جدید ٹولز جیسے Biome کے ساتھ بنایا گیا۔",
+    "subtitle": "آپ کے نئے پروجیکٹ کو شروع کرنے کے لیے ایک مکمل خصوصیات، پروڈکشن کے لیے تیار ٹیمپلیٹ۔ Next.js 16، React 19، Mantine v9، react-query-ease آسان API انٹیگریشن کے لیے، اور جدید ٹولز جیسے Biome کے ساتھ بنایا گیا۔",
     "loginButton": "لاگ ان",
     "dashboardButton": "ڈیش بورڈ"
   },

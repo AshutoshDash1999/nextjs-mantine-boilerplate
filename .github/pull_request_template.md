@@ -76,10 +76,10 @@ Related to #<!-- issue number -->
 - [ ] All types are properly defined
 - [ ] TypeScript compilation passes without errors
 
-### Mantine v8
+### Mantine v9
 
-- [ ] Using Mantine v8 patterns only (not v7 or older)
-- [ ] Components follow Mantine v8 API
+- [ ] Using Mantine v9 patterns only (not v7 or older)
+- [ ] Components follow Mantine v9 API
 - [ ] Responsive design implemented where applicable
 
 ### Build & Lint

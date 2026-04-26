@@ -35,7 +35,7 @@ export function SocialShare() {
   const [canShare, setCanShare] = useState(false);
   const title = "Next.js Mantine Boilerplate | Dashboard Template";
   const description =
-    "Production-ready Next.js 16 + React 19 + Mantine v8 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease.";
+    "Production-ready Next.js 16 + React 19 + Mantine v9 dashboard boilerplate with TypeScript, Zustand, TanStack Query, and react-query-ease.";
 
   useEffect(() => {
     setUrl(window.location.href);

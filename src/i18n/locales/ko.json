@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "새 프로젝트를 빠르게 시작할 수 있는 완전히 기능하는 프로덕션 준비 템플릿입니다. Next.js 16, React 19, Mantine v8, 간소화된 API 통합을 위한 react-query-ease 및 Biome과 같은 현대적인 도구로 구축되었습니다.",
+    "subtitle": "새 프로젝트를 빠르게 시작할 수 있는 완전히 기능하는 프로덕션 준비 템플릿입니다. Next.js 16, React 19, Mantine v9, 간소화된 API 통합을 위한 react-query-ease 및 Biome과 같은 현대적인 도구로 구축되었습니다.",
     "loginButton": "로그인",
     "dashboardButton": "대시보드"
   },

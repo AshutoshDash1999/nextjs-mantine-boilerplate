@@ -25,7 +25,7 @@ Have you checked:
 - [ ] README.md
 - [ ] AGENTS.md
 - [ ] Existing issues and discussions
-- [ ] Mantine v8 documentation (if UI-related)
+- [ ] Mantine v9 documentation (if UI-related)
 - [ ] Next.js 16 documentation (if framework-related)
 
 ## 💡 Additional Information

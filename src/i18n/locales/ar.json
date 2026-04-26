@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "قالب كامل الوظائف وجاهز للإنتاج لبدء مشروعك الجديد. مبني باستخدام Next.js 16 و React 19 و Mantine v8 و react-query-ease لتبسيط تكامل API وأدوات حديثة مثل Biome.",
+    "subtitle": "قالب كامل الوظائف وجاهز للإنتاج لبدء مشروعك الجديد. مبني باستخدام Next.js 16 و React 19 و Mantine v9 و react-query-ease لتبسيط تكامل API وأدوات حديثة مثل Biome.",
     "loginButton": "تسجيل الدخول",
     "dashboardButton": "لوحة التحكم"
   },

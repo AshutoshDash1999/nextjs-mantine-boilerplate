@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "Templat lengkap dan siap untuk pengeluaran untuk memulakan projek baru anda. Dibina dengan Next.js 16, React 19, Mantine v8, react-query-ease untuk integrasi API yang dipermudahkan, dan alatan moden seperti Biome.",
+    "subtitle": "Templat lengkap dan siap untuk pengeluaran untuk memulakan projek baru anda. Dibina dengan Next.js 16, React 19, Mantine v9, react-query-ease untuk integrasi API yang dipermudahkan, dan alatan moden seperti Biome.",
     "loginButton": "Log masuk",
     "dashboardButton": "Papan pemuka"
   },

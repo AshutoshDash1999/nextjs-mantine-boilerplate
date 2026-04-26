@@ -66,7 +66,7 @@ const { coins, isLoading } = useMarkets({
 
 ### 🛠️ Modern & Production-Ready
 
-- **Latest Tech Stack**: Next.js 16, React 19 with React Compiler, Mantine v8, TypeScript 5
+- **Latest Tech Stack**: Next.js 16, React 19 with React Compiler, Mantine v9, TypeScript 5
 - **Developer Experience**: Biome (faster than ESLint/Prettier), Husky, lint-staged, commitlint
 - **Best Practices**: Error boundaries, skeleton loaders, theme system, responsive design
 - **Type Safety**: Full TypeScript coverage with proper type definitions
@@ -103,7 +103,7 @@ const { coins, isLoading } = useMarkets({
 ## 🛠️ Tech Stack
 
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **UI Library**: [Mantine v8](https://mantine.dev/)
+- **UI Library**: [Mantine v9](https://mantine.dev/)
 - **Language**: TypeScript
 - **State Management**:
   - [Zustand](https://zustand-demo.pmnd.rs/) for global state
@@ -376,9 +376,9 @@ We welcome contributions to the Next.js Mantine Boilerplate! This document provi
 - Use custom hooks for reusable logic
 - Prefer named exports for components
 
-#### Mantine v8
+#### Mantine v9
 
-- **Always use Mantine v8 patterns** - check [Mantine v8 docs](https://mantine.dev/)
+- **Always use Mantine v9 patterns** - check [Mantine v9 docs](https://mantine.dev/)
 - Use component props for styling when possible
 - Follow Mantine's spacing and color systems
 - Use responsive props for mobile-first design

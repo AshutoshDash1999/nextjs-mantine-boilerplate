@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "Isang ganap na feature na, production-ready na template upang simulan ang iyong bagong proyekto. Itinayo gamit ang Next.js 16, React 19, Mantine v8, react-query-ease para sa pinasimpleng API integration, at modernong tooling tulad ng Biome.",
+    "subtitle": "Isang ganap na feature na, production-ready na template upang simulan ang iyong bagong proyekto. Itinayo gamit ang Next.js 16, React 19, Mantine v9, react-query-ease para sa pinasimpleng API integration, at modernong tooling tulad ng Biome.",
     "loginButton": "Mag-login",
     "dashboardButton": "Dashboard"
   },

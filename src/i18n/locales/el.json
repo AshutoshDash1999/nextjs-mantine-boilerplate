@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "Ένα πλήρως λειτουργικό, έτοιμο για παραγωγή πρότυπο για να ξεκινήσετε το νέο σας έργο. Χτισμένο με Next.js 16, React 19, Mantine v8, react-query-ease για απλοποιημένη ενσωμάτωση API και σύγχρονα εργαλεία όπως το Biome.",
+    "subtitle": "Ένα πλήρως λειτουργικό, έτοιμο για παραγωγή πρότυπο για να ξεκινήσετε το νέο σας έργο. Χτισμένο με Next.js 16, React 19, Mantine v9, react-query-ease για απλοποιημένη ενσωμάτωση API και σύγχρονα εργαλεία όπως το Biome.",
     "loginButton": "Σύνδεση",
     "dashboardButton": "Πίνακας Ελέγχου"
   },

@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "תבנית מלאה ומוכנה לייצור כדי להתחיל את הפרויקט החדש שלך. נבנה עם Next.js 16, React 19, Mantine v8, react-query-ease לאינטגרציה פשוטה של API, וכלים מודרניים כמו Biome.",
+    "subtitle": "תבנית מלאה ומוכנה לייצור כדי להתחיל את הפרויקט החדש שלך. נבנה עם Next.js 16, React 19, Mantine v9, react-query-ease לאינטגרציה פשוטה של API, וכלים מודרניים כמו Biome.",
     "loginButton": "התחברות",
     "dashboardButton": "לוח בקרה"
   },

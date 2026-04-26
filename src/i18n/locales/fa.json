@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "یک الگوی کامل و آماده تولید برای شروع پروژه جدید شما. ساخته شده با Next.js 16، React 19، Mantine v8، react-query-ease برای ادغام API ساده‌شده و ابزارهای مدرن مانند Biome.",
+    "subtitle": "یک الگوی کامل و آماده تولید برای شروع پروژه جدید شما. ساخته شده با Next.js 16، React 19، Mantine v9، react-query-ease برای ادغام API ساده‌شده و ابزارهای مدرن مانند Biome.",
     "loginButton": "ورود",
     "dashboardButton": "داشبورد"
   },

@@ -20,26 +20,23 @@ This document provides essential information for AI coding assistants working on
 2. **Client Components**: Use `"use client"` directive for all interactive components
 3. **Component Co-location**: Keep related components close together
 4. **Biome Formatting**: Follow Biome's formatting rules (check `biome.jsonc`)
-5. **Mantine v8 Patterns**: Use Mantine v8 API only (NOT v7 or older)
+5. **Mantine v9 Patterns**: Use Mantine v9 API only (NOT v7 or older)
 
 ## 🔍 How to Look Up Mantine Documentation
 
-### **CRITICAL: Always use Mantine v8 documentation**
+### **CRITICAL: Always use Mantine v9 documentation**
 
 1. **Official Documentation**: https://mantine.dev/
-
    - Navigate to the component you need
    - **Ensure you're viewing v8 docs** (check URL or version selector)
    - Example: https://mantine.dev/core/app-shell/ for AppShell
 
 2. **Component-Specific Search**:
-
    - Go to https://mantine.dev/
    - Use the search bar or navigate Components section
    - **Always verify the version is v8** before using examples
 
 3. **Breaking Changes from v7**:
-
    - No standalone `Header`, `Footer`, `Navbar` components - use `AppShell.Header`, etc.
    - Many components now use different prop names
    - Style props have changed (e.g., `sx` is deprecated, use `style` or component props)
@@ -125,7 +122,7 @@ export function MyComponent() {
 ### Mantine Component Usage
 
 ```typescript
-// ✅ Good: Using Mantine v8 patterns
+// ✅ Good: Using Mantine v9 patterns
 import { Box, Group, Stack, Text } from "@mantine/core";
 
 export function MyComponent() {
@@ -331,14 +328,12 @@ import { usePathname } from "next/navigation";
 ## ⚠️ Important Notes
 
 1. **Biome Linting**: Always run `npm run lint` before committing. Biome has strict rules:
-
    - No unused imports/variables
    - No `any` types
    - Proper hook dependencies
    - Consistent array types
 
 2. **Import Organization**: Biome auto-organizes imports, but keep them logical:
-
    - React imports first
    - Third-party imports
    - Local imports (use `@/` alias)
@@ -363,7 +358,7 @@ import { usePathname } from "next/navigation";
 
 ## 🔗 Quick Reference Links
 
-- **Mantine v8 Docs**: https://mantine.dev/
+- **Mantine v9 Docs**: https://mantine.dev/
 - **Next.js 16 Docs**: https://nextjs.org/docs
 - **React Query Docs**: https://tanstack.com/query/latest
 - **Zustand Docs**: https://zustand-demo.pmnd.rs/
@@ -409,4 +404,4 @@ export default function Page() {
 
 ---
 
-**Remember**: Always prioritize type safety, follow Mantine v8 patterns, and maintain consistency with existing codebase patterns.
+**Remember**: Always prioritize type safety, follow Mantine v9 patterns, and maintain consistency with existing codebase patterns.

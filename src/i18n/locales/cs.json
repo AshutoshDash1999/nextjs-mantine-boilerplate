@@ -21,7 +21,7 @@
   },
   "hero": {
     "title": "Next.js Mantine Boilerplate",
-    "subtitle": "Kompletní šablona připravená pro produkci, která vám pomůže nastartovat váš nový projekt. Vytvořeno s Next.js 16, React 19, Mantine v8, react-query-ease pro zjednodušenou integraci API a moderními nástroji jako Biome.",
+    "subtitle": "Kompletní šablona připravená pro produkci, která vám pomůže nastartovat váš nový projekt. Vytvořeno s Next.js 16, React 19, Mantine v9, react-query-ease pro zjednodušenou integraci API a moderními nástroji jako Biome.",
     "loginButton": "Přihlásit se",
     "dashboardButton": "Nástěnka"
   },
