@@ -26,7 +26,7 @@ const CONTACT_INFO = {
   github: "https://github.com/AshutoshDash1999",
   twitter: "https://x.com/ashutoshdash99",
   linkedin: "https://www.linkedin.com/in/ashutoshdash1999/",
-  website: "https://ashutoshdash.in",
+  website: "https://ashutoshdash.in/?utm_source=boilerplate",
 };
 
 export function SocialShare() {
@@ -242,7 +242,7 @@ export function SocialShare() {
               rel="noopener noreferrer"
               size="sm"
             >
-              {CONTACT_INFO.website.replace(/^https?:\/\//, "")}
+              ashutoshdash.in
             </Anchor>
           </Text>
         )}
